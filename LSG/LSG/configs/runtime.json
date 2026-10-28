@@ -1,0 +1,10 @@
+{
+  "default_context": "configs/elevator-hall-context.json",
+  "splitter_backend": "instruct_v0.1",
+  "gate_backend": "embedding_v0.1",
+  "model_registry": "configs/model_registry.json",
+  "request_timeout_seconds": 120,
+  "max_queue_length": 8,
+  "listen_host": "127.0.0.1",
+  "listen_port": 8765
+}

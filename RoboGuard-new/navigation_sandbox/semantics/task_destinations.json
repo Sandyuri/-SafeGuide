@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0.0",
+  "map_id": "hospital_1f",
+  "destinations": [
+    {
+      "task_id": "medication_delivery_pickup",
+      "node_id": "task-f1-pharmacy-medication-delivery",
+      "name_zh": "药房送药服务点",
+      "task_kind": "MEDICATION_DELIVERY",
+      "resolution_scope": "task_only",
+      "required_permissions": [
+        "ENTER_PHARMACY_CONTROLLED_AREA"
+      ],
+      "required_roles": [
+        "pharmacy_staff",
+        "authorized_robot"
+      ],
+      "allowed_cargo_kinds": [
+        "MEDICATION"
+      ],
+      "safegate_exposed": false,
+      "verification": {
+        "status": "provisional",
+        "method": "operator_annotated_task_route",
+        "reviewer": null,
+        "reviewed_at": null,
+        "note": "Five medication-delivery-only route variants include the two annotated routes and three operator-requested redundant connectors; general navigation use is forbidden."
+      },
+      "route_graph_scope": "medication_delivery_only",
+      "general_navigation_allowed": false,
+      "task_route_node_ids": [
+        "task-f1-pharmacy-delivery-north-gate",
+        "task-f1-pharmacy-delivery-junction",
+        "task-f1-pharmacy-delivery-south-gate"
+      ],
+      "task_route_edge_ids": [
+        "TDE301",
+        "TDE302",
+        "TDE303",
+        "TDE304",
+        "TDE305",
+        "TDE306",
+        "TDE307",
+        "TDE308"
+      ],
+      "route_variants": [
+        {
+          "route_id": "pharmacy_delivery_north_route",
+          "name_zh": "药房送药北侧路线",
+          "entry_navigation_node_id": "nav-f1-waypoint-017",
+          "node_sequence": [
+            "nav-f1-waypoint-017",
+            "task-f1-pharmacy-delivery-north-gate",
+            "task-f1-pharmacy-delivery-junction",
+            "task-f1-pharmacy-medication-delivery"
+          ],
+          "edge_sequence": [
+            "TDE301",
+            "TDE302",
+            "TDE303"
+          ]
+        },
+        {
+          "route_id": "pharmacy_delivery_south_route",
+          "name_zh": "药房送药南侧路线",
+          "entry_navigation_node_id": "nav-f1-waypoint-032",
+          "node_sequence": [
+            "nav-f1-waypoint-032",
+            "task-f1-pharmacy-delivery-south-gate",
+            "task-f1-pharmacy-delivery-junction",
+            "task-f1-pharmacy-medication-delivery"
+          ],
+          "edge_sequence": [
+            "TDE305",
+            "TDE304",
+            "TDE303"
+          ]
+        },
+        {
+          "route_id": "pharmacy_delivery_north_east_route",
+          "name_zh": "药房送药北侧东向备用路线",
+          "entry_navigation_node_id": "nav-f1-corridor-12",
+          "node_sequence": [
+            "nav-f1-corridor-12",
+            "task-f1-pharmacy-delivery-north-gate",
+            "task-f1-pharmacy-delivery-junction",
+            "task-f1-pharmacy-medication-delivery"
+          ],
+          "edge_sequence": [
+            "TDE306",
+            "TDE302",
+            "TDE303"
+          ]
+        },
+        {
+          "route_id": "pharmacy_delivery_south_west_route",
+          "name_zh": "药房送药南侧西向备用路线",
+          "entry_navigation_node_id": "nav-f1-waypoint-021",
+          "node_sequence": [
+            "nav-f1-waypoint-021",
+            "task-f1-pharmacy-delivery-south-gate",
+            "task-f1-pharmacy-delivery-junction",
+            "task-f1-pharmacy-medication-delivery"
+          ],
+          "edge_sequence": [
+            "TDE307",
+            "TDE304",
+            "TDE303"
+          ]
+        },
+        {
+          "route_id": "pharmacy_delivery_south_lower_route",
+          "name_zh": "药房送药南侧下方备用路线",
+          "entry_navigation_node_id": "nav-f1-waypoint-041",
+          "node_sequence": [
+            "nav-f1-waypoint-041",
+            "task-f1-pharmacy-delivery-south-gate",
+            "task-f1-pharmacy-delivery-junction",
+            "task-f1-pharmacy-medication-delivery"
+          ],
+          "edge_sequence": [
+            "TDE308",
+            "TDE304",
+            "TDE303"
+          ]
+        }
+      ]
+    }
+  ]
+}

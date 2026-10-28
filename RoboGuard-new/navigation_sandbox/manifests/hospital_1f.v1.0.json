@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "map_release_id": "hospital_1f.v1.0",
+  "map_id": "hospital_1f",
+  "status": "under_review",
+  "generated_on": "2026-10-24",
+  "node_count": 135,
+  "edge_count": 176,
+  "safe_stop_count": 27,
+  "authoritative_files": {
+    "maps/hospital_1f.navigation.json": {
+      "sha256": "e6500e8648981154da6834b9d0855eb852882678bb98d35aed0a7c04002d7e6d"
+    },
+    "maps/hospital_1f.coordinate_mapping.json": {
+      "sha256": "e6c57fbaeba1eb37fa31f81bb4706c8e3315491e20f1e303567cb6422e791789"
+    },
+    "maps/hospital_1f.entrance_mapping.json": {
+      "sha256": "84497d30fb0a233b132221d1e898c47d3bdf83c884edab754302fe7e0b01a5fc"
+    },
+    "maps/hospital_1f.no_through_zones.json": {
+      "sha256": "2e1fc955475c9c722b1fd04390b2c0d8f3b3bf3d027768c5dd5639ff2d7f0da9"
+    },
+    "artifacts/floorplan/hospital_1f.edge_routes.json": {
+      "sha256": "f8722657100da8558241d7b9b3f0126a6dd4d4f874463457c4075d2d04acdee0"
+    },
+    "semantics/access_zones.json": {
+      "sha256": "d9d783a53719f7235d2a0bf0bcd2bf2f03ab61f86c9fbfef449bd1757942aace"
+    },
+    "semantics/location_registry.json": {
+      "sha256": "0949c93c7ddea60e784b0ac35c0ca4980dd1f61b4b894a1c937bded483f1d02e"
+    },
+    "semantics/route_semantics.json": {
+      "sha256": "922ba9c22b7c6a3443c84b86fe65544305842eb6b3bccd58d926f0043ae25ecb"
+    },
+    "semantics/hospital_1f.risk_zones.json": {
+      "sha256": "20d57f60bdebdb6a0da45a174a0947b8be3f4bf0daf8922b9516ec75719f810f"
+    },
+    "semantics/safe_stops.json": {
+      "sha256": "9eedfe6289fa2c5ba1aca2523a9fbe3eda1d9e8d5824f5f4c16bad4c28582e47"
+    },
+    "semantics/task_destinations.json": {
+      "sha256": "129f968e092c36bdcf1ffe0cd522cd7f8fd2fc27e21198279a818cf028ce6fbb"
+    }
+  },
+  "review": {
+    "status": "pending",
+    "reviewers": [],
+    "warning_count": 452,
+    "note": "Static topology is valid; manual node, edge, accessibility, width, and risk-zone review remains."
+  }
+}

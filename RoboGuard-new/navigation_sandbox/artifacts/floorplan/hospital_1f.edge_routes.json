@@ -1,0 +1,373 @@
+{
+  "schema_version": "2.0.0",
+  "map_id": "hospital_1f",
+  "coordinate_frame": "hospital_1f_floorplan_source_pixels",
+  "source_image_size_px": [
+    6709,
+    6702
+  ],
+  "generation_method": "A* on OpenUSD static collision grid, then collision-checked line-of-sight simplification",
+  "verification_status": "mixed_openusd_verified_and_operator_task_routes_provisional",
+  "robot_radius_m": 0.0,
+  "grid_resolution_m": 0.15,
+  "no_through_zones_file": "../../maps/hospital_1f.no_through_zones.json",
+  "collision_height_band_m": [
+    0.12,
+    1.85
+  ],
+  "limitations": [
+    "Door leaf meshes are treated as open; door state is not modeled.",
+    "The navigation model is a mathematical point and does not provide robot-body clearance.",
+    "Floor-plan pixels use the existing wall-bound affine registration to USD world coordinates."
+  ],
+  "edge_routes": {
+    "E201": [],
+    "E201-S02": [],
+    "E202": [],
+    "E203": [],
+    "E203-S02": [],
+    "E204": [],
+    "E204-S02": [],
+    "E205": [],
+    "E205-S02": [],
+    "E206": [],
+    "E207": [],
+    "E208": [],
+    "E208-S02": [],
+    "E209": [],
+    "E210": [
+      [
+        4347,
+        1054
+      ],
+      [
+        4330,
+        881
+      ]
+    ],
+    "E211": [
+      [
+        3587,
+        1054
+      ]
+    ],
+    "E211-S02": [
+      [
+        3759,
+        1054
+      ],
+      [
+        3759,
+        967
+      ],
+      [
+        3880,
+        967
+      ]
+    ],
+    "E211-S03": [
+      [
+        3880,
+        1054
+      ]
+    ],
+    "E212": [],
+    "E213": [],
+    "E214": [],
+    "E214-S02": [],
+    "E215": [
+      [
+        4261,
+        1105
+      ]
+    ],
+    "E215-S02": [],
+    "E216": [],
+    "E216-S02": [],
+    "E217": [],
+    "E217-S02": [],
+    "E218": [],
+    "E218-S02": [],
+    "E219": [],
+    "E220": [],
+    "E220-S02": [],
+    "E220-S03": [],
+    "E220-S04": [],
+    "E221": [],
+    "E221-S02": [],
+    "E222": [],
+    "E223": [],
+    "E223-S02": [],
+    "E224": [],
+    "E224-S02": [],
+    "E225": [],
+    "E225-S02": [],
+    "E226": [],
+    "E226-S02": [],
+    "E227": [],
+    "E228": [],
+    "E228-S02": [],
+    "E228-S03": [],
+    "E228-S04": [],
+    "E229": [
+      [
+        1080,
+        2533
+      ]
+    ],
+    "E229-S02": [
+      [
+        924,
+        2619
+      ]
+    ],
+    "E229-S03": [],
+    "E230": [],
+    "E230-S02": [
+      [
+        924,
+        4203
+      ]
+    ],
+    "E230-S03": [],
+    "E231": [],
+    "E231-S02": [],
+    "E232": [],
+    "E232-S02": [],
+    "E232-S03": [],
+    "E232-S04": [],
+    "E232-S05": [],
+    "E232-S06": [],
+    "E232-S07": [],
+    "E233": [],
+    "E234": [],
+    "E234-S02": [],
+    "E234-S03": [],
+    "E234-S04": [],
+    "E235": [],
+    "E235-S02": [],
+    "E236": [],
+    "E236-S02": [],
+    "E237": [],
+    "E237-S02": [],
+    "E237-S03": [],
+    "E238": [],
+    "E238-S02": [],
+    "E238-S03": [],
+    "E239": [],
+    "E239-S02": [],
+    "E240": [],
+    "E240-S02": [],
+    "E240-S03": [],
+    "E240-S04": [],
+    "E241": [],
+    "E241-S02": [],
+    "E241-S03": [],
+    "E241-S04": [],
+    "E242": [],
+    "E242-S02": [],
+    "E243": [],
+    "E243-S02": [
+      [
+        5679,
+        4667
+      ],
+      [
+        5748,
+        4684
+      ]
+    ],
+    "E244": [],
+    "E244-S02": [],
+    "E245": [],
+    "E246": [],
+    "E247": [],
+    "E248": [],
+    "E249": [],
+    "E249-S02": [],
+    "E250": [],
+    "E251": [],
+    "E252": [],
+    "E253": [],
+    "E254": [],
+    "E255": [
+      [
+        2791,
+        4684
+      ],
+      [
+        2791,
+        4753
+      ]
+    ],
+    "E256": [
+      [
+        5385,
+        4684
+      ]
+    ],
+    "E257": [],
+    "E258": [
+      [
+        1875,
+        4237
+      ]
+    ],
+    "E258-S02": [
+      [
+        1875,
+        3480
+      ]
+    ],
+    "E260": [],
+    "E261": [],
+    "E262": [],
+    "E263": [],
+    "E264": [],
+    "E265": [],
+    "E266": [],
+    "E267": [],
+    "E267-S02": [],
+    "E268": [],
+    "E269": [
+      [
+        1080,
+        2533
+      ]
+    ],
+    "E269-S02": [
+      [
+        924,
+        2619
+      ]
+    ],
+    "E270": [],
+    "E271": [],
+    "E272": [
+      [
+        5851,
+        434
+      ]
+    ],
+    "E273": [],
+    "E274": [],
+    "E275": [],
+    "E276": [
+      [
+        5748,
+        5493
+      ],
+      [
+        5679,
+        5493
+      ]
+    ],
+    "E277": [],
+    "E278": [],
+    "E279": [],
+    "E280": [],
+    "E283": [],
+    "E284": [],
+    "E286": [],
+    "E287": [
+      [
+        3638,
+        1587
+      ],
+      [
+        3535,
+        1639
+      ]
+    ],
+    "E287-S02": [],
+    "E288": [],
+    "E289": [],
+    "E290": [],
+    "E290-S02": [],
+    "E291": [],
+    "E292": [],
+    "E292-S02": [],
+    "E293": [],
+    "E294": [],
+    "E294-S02": [],
+    "E295": [],
+    "E295-S02": [],
+    "E296": [
+      [
+        5194,
+        3686
+      ]
+    ],
+    "E296-S02": [
+      [
+        4849,
+        3979
+      ]
+    ],
+    "E297": [
+      [
+        5246,
+        4564
+      ]
+    ],
+    "E298": [],
+    "E298-S02": [],
+    "TDE301": [],
+    "TDE302": [],
+    "TDE303": [],
+    "TDE304": [],
+    "TDE305": [],
+    "TDE306": [],
+    "TDE307": [],
+    "TDE308": [],
+    "E301": [],
+    "E302": [],
+    "E259": [],
+    "E303": [],
+    "E304": [],
+    "E305": [],
+    "E306": [],
+    "E307": [],
+    "E308": [],
+    "E309": []
+  },
+  "densification": {
+    "method": "split_existing_collision_checked_structure_edge_polylines",
+    "target_node_count": 120,
+    "max_structure_edge_m": 5.6,
+    "inserted_node_count": 53,
+    "human_review_status": "pending"
+  },
+  "general_edge_8m_split": {
+    "method": "split_selected_general_edges_at_polyline_arc_length_midpoint",
+    "max_general_edge_m": 8.0,
+    "confirmed_on": "2026-10-23",
+    "parent_edge_ids": [
+      "E298",
+      "E287",
+      "E258",
+      "E296",
+      "E249",
+      "E292",
+      "E295",
+      "E269",
+      "E294",
+      "E267",
+      "E290"
+    ],
+    "inserted_node_ids": [
+      "nav-f1-waypoint-054",
+      "nav-f1-waypoint-055",
+      "nav-f1-waypoint-056",
+      "nav-f1-waypoint-057",
+      "nav-f1-waypoint-058",
+      "nav-f1-waypoint-059",
+      "nav-f1-waypoint-060",
+      "nav-f1-waypoint-061",
+      "nav-f1-waypoint-062",
+      "nav-f1-waypoint-063",
+      "nav-f1-waypoint-064"
+    ],
+    "human_review_status": "split_policy_confirmed_locations_pending"
+  }
+}

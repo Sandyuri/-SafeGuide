@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "note": "The one-way reverse case is covered by the synthetic-map unit test because the current hospital map contains no one-way edge.",
+  "cases": [
+    {
+      "name": "disconnected_jump",
+      "expected_rule": "GRAPH-004",
+      "request": {"task": {"source": "nav-f1-corridor-01", "destination": "nav-f1-corridor-03"}, "route": ["nav-f1-corridor-01", "nav-f1-corridor-03"], "map_version": "hospital_1f.v1.0", "plan_version": 1, "events": []}
+    },
+    {
+      "name": "unknown_node",
+      "expected_rule": "GRAPH-006",
+      "request": {"task": {"source": "nav-f1-corridor-01", "destination": "missing-node"}, "route": ["nav-f1-corridor-01", "missing-node"], "map_version": "hospital_1f.v1.0", "plan_version": 1, "events": []}
+    },
+    {
+      "name": "missing_clinical_permission",
+      "expected_rule": "ACCESS-001",
+      "request": {"task": {"source": "nav-f1-corridor-21", "destination": "sg-f1-emergency-room-entrance"}, "route": ["nav-f1-corridor-21", "sg-f1-emergency-room-entrance"], "map_version": "hospital_1f.v1.0", "plan_version": 1, "events": []}
+    },
+    {
+      "name": "wheelchair_uses_stairs",
+      "expected_rule": "ACCESSIBILITY-001",
+      "request": {"task": {"source": "nav-f1-spine-07", "destination": "sg-f1-stairs", "wheelchair": true}, "route": ["nav-f1-spine-07", "sg-f1-stairs"], "map_version": "hospital_1f.v1.0", "plan_version": 1, "events": []}
+    },
+    {
+      "name": "workflow_destination_skipped",
+      "expected_rule": "WORKFLOW-002",
+      "request": {"task": {"source": "nav-f1-corridor-01", "ordered_destinations": ["sg-f1-registration-payment-counter", "nav-f1-corridor-02"]}, "route": ["nav-f1-corridor-01", "nav-f1-waypoint-001", "nav-f1-corridor-02"], "map_version": "hospital_1f.v1.0", "plan_version": 1, "events": []}
+    },
+    {
+      "name": "workflow_destination_order_reversed",
+      "expected_rule": "WORKFLOW-001",
+      "request": {"task": {"source": "nav-f1-corridor-01", "ordered_destinations": ["nav-f1-corridor-02", "nav-f1-waypoint-001"]}, "route": ["nav-f1-corridor-01", "nav-f1-waypoint-001", "nav-f1-corridor-02", "nav-f1-waypoint-001"], "map_version": "hospital_1f.v1.0", "plan_version": 1, "events": []}
+    },
+    {
+      "name": "active_emergency_corridor",
+      "expected_rule": "EVENT-003",
+      "request": {"task": {"source": "nav-f1-corridor-16", "destination": "nav-f1-spine-07"}, "route": ["nav-f1-corridor-16", "nav-f1-waypoint-039", "nav-f1-spine-07"], "map_version": "hospital_1f.v1.0", "plan_version": 1, "events": [{"type": "EMERGENCY_CORRIDOR_ACTIVE", "risk_zone_id": "emergency-corridor-west"}]}
+    },
+    {
+      "name": "stale_plan_version",
+      "expected_rule": "VERSION-002",
+      "request": {"task": {"source": "nav-f1-corridor-01", "destination": "nav-f1-corridor-02"}, "route": ["nav-f1-corridor-01", "nav-f1-waypoint-001", "nav-f1-corridor-02"], "map_version": "hospital_1f.v1.0", "plan_version": 1, "current_plan_version": 2, "events": []}
+    },
+    {
+      "name": "distance_underreported",
+      "expected_rule": "METRIC-001",
+      "request": {"task": {"source": "nav-f1-corridor-01", "destination": "nav-f1-corridor-02"}, "route": ["nav-f1-corridor-01", "nav-f1-waypoint-001", "nav-f1-corridor-02"], "map_version": "hospital_1f.v1.0", "plan_version": 1, "events": [], "planner_reported": {"distance_m": 1}}
+    },
+    {
+      "name": "risk_underreported",
+      "expected_rule": "RISK-001",
+      "request": {"task": {"source": "nav-f1-corridor-16", "destination": "nav-f1-spine-07"}, "route": ["nav-f1-corridor-16", "nav-f1-waypoint-039", "nav-f1-spine-07"], "map_version": "hospital_1f.v1.0", "plan_version": 1, "events": [], "planner_reported": {"risk_score": 0}}
+    },
+    {
+      "name": "dynamic_node_closed",
+      "expected_rule": "EVENT-001",
+      "request": {"task": {"source": "nav-f1-corridor-01", "destination": "nav-f1-corridor-02"}, "route": ["nav-f1-corridor-01", "nav-f1-waypoint-001", "nav-f1-corridor-02"], "map_version": "hospital_1f.v1.0", "plan_version": 1, "events": [{"type": "NODE_CLOSED", "node_id": "nav-f1-waypoint-001"}]}
+    },
+    {
+      "name": "dynamic_edge_closed",
+      "expected_rule": "EVENT-002",
+      "request": {"task": {"source": "nav-f1-corridor-01", "destination": "nav-f1-corridor-02"}, "route": ["nav-f1-corridor-01", "nav-f1-waypoint-001", "nav-f1-corridor-02"], "map_version": "hospital_1f.v1.0", "plan_version": 1, "events": [{"type": "EDGE_CLOSED", "edge_id": "E201"}]}
+    },
+    {
+      "name": "empty_route",
+      "expected_rule": "GRAPH-001",
+      "request": {"task": {"source": "nav-f1-corridor-01", "destination": "nav-f1-corridor-02"}, "route": [], "map_version": "hospital_1f.v1.0", "plan_version": 1, "events": []}
+    },
+    {
+      "name": "destination_only_used_as_transit",
+      "expected_rule": "ACCESS-003",
+      "request": {"task": {"source": "nav-f1-corridor-21", "destination": "nav-f1-corridor-21", "permissions": ["ENTER_CLINICAL_AREA"]}, "route": ["nav-f1-corridor-21", "sg-f1-emergency-room-entrance", "nav-f1-corridor-21"], "map_version": "hospital_1f.v1.0", "plan_version": 1, "events": []}
+    },
+    {
+      "name": "map_version_mismatch",
+      "expected_rule": "VERSION-001",
+      "request": {"task": {"source": "nav-f1-corridor-01", "destination": "nav-f1-corridor-02"}, "route": ["nav-f1-corridor-01", "nav-f1-waypoint-001", "nav-f1-corridor-02"], "map_version": "hospital_1f.v0.9", "plan_version": 1, "events": []}
+    }
+  ]
+}

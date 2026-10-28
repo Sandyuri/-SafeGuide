@@ -1,0 +1,11 @@
+torch==2.11.0
+transformers==4.57.6
+peft==0.21.2
+safetensors==0.8.0
+jsonschema==4.26.0
+openai==3.6.0
+httpx==0.28.1
+socksio==1.0.0
+numpy==2.2.6
+huggingface-hub==0.36.2
+pytest==9.1.1

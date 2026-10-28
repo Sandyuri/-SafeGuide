@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0.0",
+  "map_id": "hospital_1f",
+  "defaults": {
+    "semantic_tags": [],
+    "route_policy": "ALLOW_TRANSIT",
+    "prohibited_cargo_kinds": []
+  },
+  "nodes": {
+    "nav-f1-spine-07": {
+      "semantic_tags": [
+        "EMERGENCY_CORRIDOR"
+      ]
+    },
+    "nav-f1-corridor-16": {
+      "semantic_tags": [
+        "EMERGENCY_CORRIDOR"
+      ]
+    },
+    "nav-f1-corridor-11": {
+      "semantic_tags": [
+        "EMERGENCY_CORRIDOR"
+      ]
+    },
+    "nav-f1-corridor-21": {
+      "semantic_tags": [
+        "EMERGENCY_CORRIDOR"
+      ]
+    },
+    "sg-f1-emergency-room-entrance": {
+      "semantic_tags": [
+        "EMERGENCY_CORRIDOR",
+        "CRITICAL_ACCESS",
+        "NO_STOPPING"
+      ],
+      "route_policy": "DESTINATION_ONLY"
+    },
+    "sg-f1-pharmacy": {
+      "semantic_tags": [
+        "PHARMACY",
+        "PATIENT_MEDICATION_PICKUP"
+      ],
+      "route_policy": "DESTINATION_ONLY"
+    },
+    "sg-f1-outpatient-waiting": {
+      "semantic_tags": [
+        "WAITING_AREA"
+      ]
+    },
+    "sg-f1-functional-exam-waiting": {
+      "semantic_tags": [
+        "WAITING_AREA"
+      ]
+    },
+    "sg-f1-functional-exam-waiting-east": {
+      "semantic_tags": [
+        "WAITING_AREA"
+      ]
+    },
+    "nav-f1-waypoint-039": {
+      "semantic_tags": [
+        "EMERGENCY_CORRIDOR"
+      ]
+    },
+    "nav-f1-waypoint-053": {
+      "semantic_tags": [
+        "EMERGENCY_CORRIDOR"
+      ]
+    },
+    "task-f1-pharmacy-medication-delivery": {
+      "semantic_tags": [
+        "PHARMACY",
+        "CONTROLLED_RESOURCE_AREA",
+        "MEDICATION_DELIVERY_PICKUP",
+        "TASK_ONLY_DESTINATION"
+      ],
+      "route_policy": "MEDICATION_DELIVERY_ONLY"
+    },
+    "task-f1-pharmacy-delivery-north-gate": {
+      "semantic_tags": [
+        "PHARMACY",
+        "CONTROLLED_RESOURCE_AREA",
+        "MEDICATION_DELIVERY_ROUTE",
+        "TASK_ONLY_ROUTE_NODE"
+      ],
+      "route_policy": "MEDICATION_DELIVERY_ONLY"
+    },
+    "task-f1-pharmacy-delivery-junction": {
+      "semantic_tags": [
+        "PHARMACY",
+        "CONTROLLED_RESOURCE_AREA",
+        "MEDICATION_DELIVERY_ROUTE",
+        "TASK_ONLY_ROUTE_NODE"
+      ],
+      "route_policy": "MEDICATION_DELIVERY_ONLY"
+    },
+    "task-f1-pharmacy-delivery-south-gate": {
+      "semantic_tags": [
+        "PHARMACY",
+        "CONTROLLED_RESOURCE_AREA",
+        "MEDICATION_DELIVERY_ROUTE",
+        "TASK_ONLY_ROUTE_NODE"
+      ],
+      "route_policy": "MEDICATION_DELIVERY_ONLY"
+    }
+  }
+}

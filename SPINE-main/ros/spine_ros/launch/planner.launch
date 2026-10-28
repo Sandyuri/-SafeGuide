@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <arg name="ns" default="/"/>
+
+    <arg name="graph" default="$(find spine_ros)/../../data/empty.json"/>
+    <arg name="full_graph" default="$(find spine_ros)/../../data/empty.json"/>
+    <arg name="init_location" default="region_1"/>
+
+    <arg name="robot_frame" default="body"/>
+    <arg name="world_frame" default="map"/>
+
+    <arg name="use_sim_perception" default="false"/>
+
+    <arg name="viz_scale" default="0.5"/>
+    <arg name="min_obstacle_height" default="0.4"/>
+
+    <arg name="max_goal_dist_m" default="5"/>
+
+    <!-- for costmap filtering and region adding  -->
+    <arg name="min_new_region_dist" default="3"/>
+
+    <!-- Below this is considered freespace -->
+    <arg name="costmap_filter_thresh" default="1"/>
+
+    <!-- Run smoothing filter of this size -->
+    <arg name="costmap_filter_n_cells" default="3"/>
+
+    <arg name="should_classify_scene" default="true"/>
+
+    <arg name="label_srv" default="/grounding_dino_ros/set_labels"/>
+    <arg name="use_open_vocab_detection" default="False"/>
+    <arg name="scene_description" default="outdoors"/>
+
+    <arg name="goal_reached_lin_tol" default="15"/>
+    <arg name="goal_timeout" default="10"/>
+
+    <group ns="$(arg ns)">
+
+    <node pkg="spine_ros" type="graph_nav_node.py" name="graph_nav_node" output="screen">
+        <param name="ns" value="$(arg ns)"/>
+        <param name="graph" value="$(arg full_graph)"/>
+        <param name="world_frame" value="$(arg world_frame)"/>
+        <param name="robot_frame" value="$(arg robot_frame)"/>
+        <param name="min_obstacle_height" value="$(arg min_obstacle_height)"/>
+        <param name="max_goal_dist_m" value="$(arg max_goal_dist_m)"/>
+        <param name="goal_reached_lin_tol" value="$(arg goal_reached_lin_tol)"/>
+	<param name="timeout_s" value="$(arg goal_timeout)"/>
+    </node>
+
+    <node pkg="spine_ros" type="spine_node.py" name="spine_node" output="screen">
+        <param name="ns" value="$(arg ns)"/>
+        <param name="init_graph" value="$(arg graph)"/>
+        <param name="full_graph" value="$(arg full_graph)"/>
+        <param name="init_location" value="$(arg init_location)"/>
+        <param name="sim_perception" value="$(arg use_sim_perception)"/>
+        <param name="world_frame" value="$(arg world_frame)"/>
+        <param name="viz_scale" value="$(arg viz_scale)"/>
+        <param name="min_new_region_dist" value="$(arg min_new_region_dist)"/>
+        <param name="costmap_filter_thresh" value="$(arg costmap_filter_thresh)"/>
+        <param name="costmap_filter_n_cells" value="$(arg costmap_filter_n_cells)"/>
+        <param name="should_classify_scene" value="$(arg should_classify_scene)"/>
+        <param name="set_labels_srv" value="$(arg label_srv)"/>
+
+        <param name="use_open_vocab_detection" value="$(arg use_open_vocab_detection)"/>
+        <param name="scene_description" value="$(arg scene_description)"/>
+    </node>
+
+    </group>
+</launch>

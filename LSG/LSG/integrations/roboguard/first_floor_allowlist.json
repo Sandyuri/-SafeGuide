@@ -1,0 +1,166 @@
+{
+  "schema_version": "0.3",
+  "context_id": "ctx-first-floor-navigation-allowlist",
+  "issued_at": "2026-10-07T00:00:00Z",
+  "provenance": [
+    {
+      "source_system": "safegate-first-floor-navigation-list",
+      "evidence_id": "operator-provided-first-floor-allowlist-2026-10-05",
+      "observed_at": "2026-10-05T00:00:00Z"
+    },
+    {
+      "source_system": "sandbox-policy-update",
+      "evidence_id": "user-directed-ultrasound-to-functional-waiting-and-infusion-2026-10-07",
+      "observed_at": "2026-10-07T00:00:00Z"
+    },
+    {
+      "source_system": "sandbox-policy-update",
+      "evidence_id": "user-directed-remove-specific-consulting-rooms-add-functional-areas-2026-10-07",
+      "observed_at": "2026-10-07T00:00:00Z"
+    },
+    {
+      "source_system": "sandbox-policy-update",
+      "evidence_id": "user-directed-blood-urine-sampling-to-functional-exam-waiting-2026-10-08",
+      "observed_at": "2026-10-08T00:00:00Z"
+    },
+    {
+      "source_system": "sandbox-policy-update",
+      "evidence_id": "user-directed-functional-exam-triage-ultrasound-tcd-ecg-to-waiting-2026-10-08",
+      "observed_at": "2026-10-08T00:00:00Z"
+    }
+  ],
+  "reference_resolution": {
+    "patient_aliases": {},
+    "resource_aliases": {},
+    "location_aliases": {
+      "咨询处": "sg-f1-information-desk",
+      "精神心理科": "sg-f1-mental-health",
+      "职业康复科": "sg-f1-occupational-rehabilitation",
+      "神经康复科": "sg-f1-neurological-rehabilitation",
+      "心肺康复科": "sg-f1-cardiopulmonary-rehabilitation",
+      "脊髓损伤康复科": "sg-f1-spinal-cord-rehabilitation",
+      "骨科康复科": "sg-f1-orthopedic-rehabilitation",
+      "卫生间": "sg-f1-restroom",
+      "诊室": "sg-f1-consultation-rooms",
+      "取号机": "sg-f1-queue-ticket-machine",
+      "宣讲、布告栏": "sg-f1-notice-board",
+      "门诊候诊": "sg-f1-outpatient-waiting",
+      "挂号收费窗口": "sg-f1-registration-payment-counter",
+      "咨询室": "sg-f1-consultation-room",
+      "电梯厅": "sg-f1-public-elevator-hall",
+      "雾化室": "sg-f1-nebulization-room",
+      "抢救室": "sg-f1-emergency-room-entrance",
+      "抢救室门口": "sg-f1-emergency-room-entrance",
+      "药物咨询室": "sg-f1-medication-consultation",
+      "药房": "sg-f1-pharmacy",
+      "便民服务中心（预检、导诊）": "sg-f1-patient-service-center",
+      "自助挂号收费机": "sg-f1-self-service-registration-payment",
+      "扶梯": "sg-f1-escalator",
+      "无障碍卫生间": "sg-f1-accessible-restroom",
+      "心电": "sg-f1-functional-exam-waiting",
+      "功能检查科候诊": "sg-f1-functional-exam-waiting",
+      "楼梯": "sg-f1-stairs",
+      "B超室": "sg-f1-functional-exam-waiting",
+      "b超室": "sg-f1-functional-exam-waiting",
+      "B超": "sg-f1-functional-exam-waiting",
+      "b超": "sg-f1-functional-exam-waiting",
+      "输液室": "sg-f1-infusion-room",
+      "输液": "sg-f1-infusion-room",
+      "静脉输液室": "sg-f1-infusion-room",
+      "功能检查分诊": "sg-f1-functional-exam-waiting",
+      "功能检查等候区": "sg-f1-functional-exam-waiting-east",
+      "采血区": "sg-f1-functional-exam-waiting-east",
+      "采血": "sg-f1-functional-exam-waiting-east",
+      "血采样": "sg-f1-functional-exam-waiting-east",
+      "血采集": "sg-f1-functional-exam-waiting-east",
+      "尿采样": "sg-f1-functional-exam-waiting-east",
+      "功能检查候诊": "sg-f1-functional-exam-waiting",
+      "功能检查等候": "sg-f1-functional-exam-waiting",
+      "功能检查分诊台": "sg-f1-functional-exam-waiting",
+      "分诊": "sg-f1-functional-exam-waiting",
+      "做B超": "sg-f1-functional-exam-waiting",
+      "做b超": "sg-f1-functional-exam-waiting",
+      "TCD": "sg-f1-functional-exam-waiting",
+      "tcd": "sg-f1-functional-exam-waiting",
+      "TCD检查": "sg-f1-functional-exam-waiting",
+      "tcd检查": "sg-f1-functional-exam-waiting",
+      "做TCD": "sg-f1-functional-exam-waiting",
+      "做tcd": "sg-f1-functional-exam-waiting",
+      "心电检查": "sg-f1-functional-exam-waiting",
+      "做心电": "sg-f1-functional-exam-waiting"
+    }
+  },
+  "requester": {
+    "id": "navigation-test-requester",
+    "identity_status": "UNKNOWN",
+    "verified_role": null,
+    "role_verification_status": "UNKNOWN",
+    "permissions": [],
+    "relationship_to_patient": "UNKNOWN"
+  },
+  "patient": null,
+  "authorization": {
+    "patient_data_access": "NOT_APPLICABLE",
+    "authorization_scope": [],
+    "prescription_status": "NOT_APPLICABLE",
+    "medical_order_status": "NOT_APPLICABLE",
+    "sensitive_material_access": "NOT_APPLICABLE",
+    "sensitive_material_transport": "NOT_APPLICABLE",
+    "recipient_access": "NOT_APPLICABLE",
+    "patient_data_scope_match_status": "NOT_APPLICABLE"
+  },
+  "environment": {
+    "target_location_id": null,
+    "target_location_resolution": "UNKNOWN",
+    "target_area_type": "UNKNOWN",
+    "target_area_access": "UNKNOWN"
+  },
+  "robot": {
+    "capabilities": [
+      "GUIDED_NAVIGATION"
+    ]
+  },
+  "medication": null,
+  "delivery": null,
+  "public_information": null,
+  "navigation_destination_resolution": {
+    "policy": {
+      "strategy": "nearest_reachable_graph_path",
+      "cost_field": "distance_m",
+      "selection_rule": "从当前定位节点到每个候选节点计算可通行图路径；选择累计 distance_m 最小者。不可达、权限不足或 navigation_status 非 open 的候选节点不得参与比较。",
+      "tie_break_rule": "路径长度相同，按 candidate_node_ids 的书写顺序选择。",
+      "fallback_rule": "全部候选不可达时返回 NO_REACHABLE_DESTINATION，不得回退到 legacy_default_node_id。"
+    },
+    "nearest_candidate_groups": {
+      "卫生间": {
+        "candidate_node_ids": [
+          "sg-f1-restroom",
+          "sg-f1-restroom-lower-left"
+        ],
+        "legacy_default_node_id": "sg-f1-restroom"
+      },
+      "无障碍卫生间": {
+        "candidate_node_ids": [
+          "sg-f1-accessible-restroom",
+          "sg-f1-accessible-restroom-lower-left",
+          "sg-f1-accessible-restroom-lower-right"
+        ],
+        "legacy_default_node_id": "sg-f1-accessible-restroom"
+      },
+      "自助挂号收费机": {
+        "candidate_node_ids": [
+          "sg-f1-self-service-registration-payment",
+          "sg-f1-self-service-registration-payment-south"
+        ],
+        "legacy_default_node_id": "sg-f1-self-service-registration-payment"
+      },
+      "楼梯": {
+        "candidate_node_ids": [
+          "sg-f1-stairs",
+          "sg-f1-stairs-lower-right"
+        ],
+        "legacy_default_node_id": "sg-f1-stairs"
+      }
+    }
+  }
+}

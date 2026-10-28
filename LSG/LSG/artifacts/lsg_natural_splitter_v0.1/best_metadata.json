@@ -1,0 +1,67 @@
+{
+  "seed": 20261025,
+  "epoch": 5,
+  "selection_key": [
+    0,
+    2,
+    -0.9853412734768666,
+    -1.0,
+    -10,
+    -65
+  ],
+  "dev": {
+    "protocol_valid": 68,
+    "protocol_valid_rate": 1.0,
+    "count_accuracy": 0.9852941176470589,
+    "count_macro_f1": 0.9853412734768666,
+    "count_confusion_matrix": [
+      [
+        29,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        18,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        20,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "count_confusion_labels": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "count_recall": {
+      "1": 0.9666666666666667,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "complete_proxy": 65,
+    "omitted_by_count_lower_bound": 0,
+    "added_by_count_lower_bound": 1,
+    "duplicate_pairs": 0,
+    "shared_literal_all": 10,
+    "shared_cases": 10,
+    "answer_suspected_cases": 2,
+    "risk_change_suspected_cases": 0,
+    "answer_confirmed_cases": null,
+    "risk_change_confirmed_cases": null,
+    "inference_seconds": 326.1374122099951,
+    "peak_gpu_allocated_mib_so_far": 1844.0498046875
+  }
+}

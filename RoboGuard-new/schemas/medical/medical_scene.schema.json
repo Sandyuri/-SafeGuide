@@ -1,0 +1,367 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://roboguard.local/schemas/medical/medical_scene.schema.json",
+  "title": "RoboGuard Medical Scene",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "scene_id", "snapshot", "source", "provenance", "current_time",
+    "facility", "staff", "patients", "medications", "medication_orders",
+    "delivery_items", "regions", "access_zones", "robot_state"
+  ],
+  "properties": {
+    "schema_version": {"const": "0.2"},
+    "scene_id": {"type": "string", "minLength": 1},
+    "snapshot": {"$ref": "#/$defs/snapshot"},
+    "source": {"$ref": "#/$defs/source"},
+    "provenance": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/provenance_item"}
+    },
+    "current_time": {"type": "string", "format": "date-time"},
+    "facility": {"$ref": "#/$defs/facility"},
+    "staff": {"$ref": "#/$defs/staff_collection"},
+    "patients": {"$ref": "#/$defs/patients"},
+    "medications": {"$ref": "#/$defs/medications"},
+    "medication_orders": {"$ref": "#/$defs/orders"},
+    "documents": {"$ref": "#/$defs/documents"},
+    "delivery_items": {"$ref": "#/$defs/delivery_items"},
+    "regions": {"$ref": "#/$defs/regions"},
+    "access_zones": {"$ref": "#/$defs/access_zones"},
+    "robot_state": {"$ref": "#/$defs/robot_state"}
+  },
+  "$defs": {
+    "string_list": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "coordinates": {
+      "type": "array",
+      "prefixItems": [{"type": "number"}, {"type": "number"}],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "version", "captured_at"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "version": {"type": "integer", "minimum": 1},
+        "captured_at": {"type": "string", "format": "date-time"}
+      }
+    },
+    "provenance_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_system", "evidence_id", "observed_at"],
+      "properties": {
+        "source_system": {"type": "string", "minLength": 1},
+        "evidence_id": {"type": "string", "minLength": 1},
+        "observed_at": {"type": "string", "format": "date-time"}
+      }
+    },
+    "facility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "human_supervision", "emergency_status", "hazards"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "human_supervision": {"enum": ["AVAILABLE", "UNAVAILABLE", "UNKNOWN"]},
+        "emergency_status": {"enum": ["NONE", "CONFIRMED", "UNKNOWN"]},
+        "hazards": {"$ref": "#/$defs/string_list"}
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "system", "retrieved_at"],
+      "properties": {
+        "type": {
+          "enum": ["SYNTHETIC", "FHIR", "PHARMACY_SYSTEM", "HOSPITAL_INTEGRATION"]
+        },
+        "system": {"type": "string", "minLength": 1},
+        "retrieved_at": {"type": "string", "format": "date-time"},
+        "expires_at": {"type": ["string", "null"], "format": "date-time"}
+      }
+    },
+    "clinical_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["allergies", "precautions", "restrictions"],
+      "properties": {
+        "allergies": {"$ref": "#/$defs/string_list"},
+        "precautions": {"$ref": "#/$defs/string_list"},
+        "restrictions": {"$ref": "#/$defs/string_list"}
+      }
+    },
+    "staff": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "identity_status", "verified_role", "role_verification_status",
+        "permissions", "assigned_patient_ids", "authorization_scope"
+      ],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "identity_status": {"enum": ["VERIFIED", "UNVERIFIED", "UNKNOWN"]},
+        "verified_role": {"type": ["string", "null"], "minLength": 1},
+        "role_verification_status": {"enum": ["VERIFIED", "UNVERIFIED", "UNKNOWN"]},
+        "permissions": {"$ref": "#/$defs/string_list"},
+        "assigned_patient_ids": {"$ref": "#/$defs/string_list"},
+        "authorization_scope": {"$ref": "#/$defs/string_list"}
+      }
+    },
+    "staff_collection": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {"$ref": "#/$defs/staff"}
+    },
+    "patient": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "bed_id", "region_id", "identity_status", "record_match_status",
+        "consent_status", "age", "age_group", "weight", "pregnancy_status",
+        "pregnancy_week", "special_population_status", "allergy_information_status",
+        "medical_history_information_status", "current_medications_information_status",
+        "clinical_context"
+      ],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "bed_id": {"type": "string", "minLength": 1},
+        "region_id": {"type": "string", "minLength": 1},
+        "identity_status": {"enum": ["VERIFIED", "UNVERIFIED", "UNKNOWN"]},
+        "record_match_status": {"enum": ["MATCHED", "MISMATCHED", "UNKNOWN", "NOT_APPLICABLE"]},
+        "consent_status": {"enum": ["GRANTED", "DENIED", "UNKNOWN", "NOT_APPLICABLE"]},
+        "age": {"type": ["integer", "null"], "minimum": 0, "maximum": 130},
+        "age_group": {"enum": ["CHILD", "ADULT", "OLDER_ADULT", "UNKNOWN", "NOT_APPLICABLE"]},
+        "weight": {
+          "oneOf": [
+            {"type": "null"},
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["value", "unit"],
+              "properties": {
+                "value": {"type": "number", "exclusiveMinimum": 0},
+                "unit": {"const": "kg"}
+              }
+            }
+          ]
+        },
+        "pregnancy_status": {"enum": ["PREGNANT", "NOT_PREGNANT", "UNKNOWN", "NOT_APPLICABLE"]},
+        "pregnancy_week": {"type": ["integer", "null"], "minimum": 0, "maximum": 45},
+        "special_population_status": {"enum": ["COMPLETE", "INCOMPLETE", "UNKNOWN", "NOT_APPLICABLE"]},
+        "allergy_information_status": {"enum": ["COMPLETE", "INCOMPLETE", "UNKNOWN", "NOT_APPLICABLE"]},
+        "medical_history_information_status": {"enum": ["COMPLETE", "INCOMPLETE", "UNKNOWN", "NOT_APPLICABLE"]},
+        "current_medications_information_status": {"enum": ["COMPLETE", "INCOMPLETE", "UNKNOWN", "NOT_APPLICABLE"]},
+        "clinical_context": {"$ref": "#/$defs/clinical_context"}
+      }
+    },
+    "patients": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {"$ref": "#/$defs/patient"}
+    },
+    "medication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "storage_region_id", "status", "expires_at", "requires_cold_chain",
+        "name_status", "classification", "specification_status"
+      ],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "storage_region_id": {"type": "string", "minLength": 1},
+        "status": {"enum": ["AVAILABLE", "RESERVED", "DISPENSED", "EXPIRED", "RECALLED"]},
+        "expires_at": {"type": "string", "format": "date-time"},
+        "requires_cold_chain": {"type": "boolean"}
+        ,"name_status": {"enum": ["VERIFIED", "UNVERIFIED", "UNKNOWN"]}
+        ,"classification": {"enum": ["OTC", "PRESCRIPTION", "UNKNOWN"]}
+        ,"specification_status": {"enum": ["VERIFIED", "UNVERIFIED", "UNKNOWN"]}
+      }
+    },
+    "medications": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {"$ref": "#/$defs/medication"}
+    },
+    "delivery_window": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "end"],
+      "properties": {
+        "start": {"type": "string", "format": "date-time"},
+        "end": {"type": "string", "format": "date-time"}
+      }
+    },
+    "order": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "patient_id", "medication_id", "status", "verification_status", "dose", "route", "delivery_window"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "patient_id": {"type": "string", "minLength": 1},
+        "medication_id": {"type": "string", "minLength": 1},
+        "status": {"enum": ["ACTIVE", "ON_HOLD", "CANCELLED", "DELIVERED"]},
+        "verification_status": {"enum": ["VERIFIED", "UNVERIFIED", "UNKNOWN"]},
+        "dose": {"type": "string", "minLength": 1},
+        "route": {"type": "string", "minLength": 1},
+        "delivery_window": {"$ref": "#/$defs/delivery_window"}
+      }
+    },
+    "orders": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {"$ref": "#/$defs/order"}
+    },
+    "document": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "title_status", "sensitivity", "verification_status",
+        "transport_permission", "recipient_access"
+      ],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "title_status": {"enum": ["VERIFIED", "UNVERIFIED", "UNKNOWN"]},
+        "sensitivity": {"enum": ["PUBLIC", "SENSITIVE_PATIENT_DATA", "UNKNOWN"]},
+        "verification_status": {"enum": ["VERIFIED", "UNVERIFIED", "UNKNOWN"]},
+        "transport_permission": {"enum": ["GRANTED", "DENIED", "UNKNOWN", "NOT_APPLICABLE"]},
+        "recipient_access": {"enum": ["GRANTED", "DENIED", "UNKNOWN", "NOT_APPLICABLE"]}
+      }
+    },
+    "documents": {
+      "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/document"}
+    },
+    "medication_delivery_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "kind", "medication_order_id", "medication_id",
+        "current_region_id", "holder_robot_id", "status", "verification_status"
+      ],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "kind": {"const": "MEDICATION_PACKAGE"},
+        "medication_order_id": {"type": "string", "minLength": 1},
+        "medication_id": {"type": "string", "minLength": 1},
+        "current_region_id": {"type": ["string", "null"], "minLength": 1},
+        "holder_robot_id": {"type": ["string", "null"], "minLength": 1},
+        "status": {
+          "enum": ["READY_FOR_PICKUP", "IN_TRANSIT", "DELIVERED", "UNAVAILABLE"]
+        },
+        "verification_status": {"enum": ["VERIFIED", "UNVERIFIED", "UNKNOWN"]}
+        ,"condition_status": {"enum": ["INTACT", "DAMAGED", "UNKNOWN"]}
+      }
+    },
+    "document_delivery_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "kind", "document_id", "recipient_id", "destination_region_id",
+        "current_region_id", "holder_robot_id", "status", "verification_status"
+      ],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "kind": {"const": "DOCUMENT_PACKAGE"},
+        "document_id": {"type": "string", "minLength": 1},
+        "recipient_id": {"type": "string", "minLength": 1},
+        "destination_region_id": {"type": "string", "minLength": 1},
+        "current_region_id": {"type": ["string", "null"], "minLength": 1},
+        "holder_robot_id": {"type": ["string", "null"], "minLength": 1},
+        "status": {"enum": ["READY_FOR_PICKUP", "IN_TRANSIT", "DELIVERED", "UNAVAILABLE"]},
+        "verification_status": {"enum": ["VERIFIED", "UNVERIFIED", "UNKNOWN"]},
+        "condition_status": {"enum": ["INTACT", "DAMAGED", "UNKNOWN"]}
+      }
+    },
+    "delivery_item": {
+      "oneOf": [
+        {"$ref": "#/$defs/medication_delivery_item"},
+        {"$ref": "#/$defs/document_delivery_item"}
+      ]
+    },
+    "delivery_items": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {"$ref": "#/$defs/delivery_item"}
+    },
+    "region": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "coords", "connections", "access_zone_id"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "display_name": {"type": "string", "minLength": 1},
+        "type": {"type": "string", "minLength": 1},
+        "coords": {"$ref": "#/$defs/coordinates"},
+        "connections": {"$ref": "#/$defs/string_list"},
+        "connection_costs": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          }
+        },
+        "connection_risk_rates": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        },
+        "access_zone_id": {"type": "string", "minLength": 1},
+        "navigation_status": {"enum": ["OPEN", "BLOCKED", "UNKNOWN", "CONFLICTED"]},
+        "navigation_status_valid_until": {"type": ["string", "null"], "format": "date-time"},
+        "prohibited_cargo_kinds": {"$ref": "#/$defs/string_list"},
+        "semantic_tags": {"$ref": "#/$defs/string_list"},
+        "route_policy": {
+          "enum": ["ALLOW_TRANSIT", "DESTINATION_ONLY", "FORBID", "EMERGENCY_ONLY_ACTIVE", "MEDICATION_DELIVERY_ONLY"]
+        },
+        "safe_stop": {"type": "boolean"}
+      }
+    },
+    "regions": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {"$ref": "#/$defs/region"}
+    },
+    "access_zone": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "area_type", "required_permissions"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "area_type": {"enum": ["NORMAL", "RESTRICTED", "UNKNOWN"]},
+        "required_permissions": {"$ref": "#/$defs/string_list"}
+      }
+    },
+    "access_zones": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {"$ref": "#/$defs/access_zone"}
+    },
+    "robot_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "current_region_id", "capabilities", "access_permissions", "operational_status"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "current_region_id": {"type": "string", "minLength": 1},
+        "capabilities": {"$ref": "#/$defs/string_list"},
+        "access_permissions": {"$ref": "#/$defs/string_list"},
+        "roles": {"$ref": "#/$defs/string_list"},
+        "operational_status": {"enum": ["READY", "DEGRADED", "UNAVAILABLE"]},
+        "active_task_request_id": {"type": ["string", "null"], "minLength": 1}
+      }
+    }
+  }
+}

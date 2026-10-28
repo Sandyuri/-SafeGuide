@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "plan_version": 2,
+  "events": [
+    {
+      "id": "closure-demo-001",
+      "type": "NODE_CLOSED",
+      "region_id": "nav-f1-corridor-08",
+      "reason": "临时清洁封路"
+    },
+    {
+      "id": "crowding-demo-001",
+      "type": "CONGESTION",
+      "region_id": "nav-f1-spine-02",
+      "severity": 0.8,
+      "reason": "候诊人流增加"
+    }
+  ]
+}

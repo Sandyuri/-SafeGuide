@@ -1,0 +1,448 @@
+{
+  "schema_version": "0.2",
+  "scene_id": "hospital-1f-aa-robot-20261004",
+  "snapshot": {
+    "id": "snapshot-hospital-1f-aa-robot-20261004-v1",
+    "version": 1,
+    "captured_at": "2026-10-05T08:00:00Z"
+  },
+  "source": {
+    "type": "SYNTHETIC",
+    "system": "isaac-sim-usd-offline-extraction",
+    "retrieved_at": "2026-10-05T07:55:00Z",
+    "expires_at": null
+  },
+  "provenance": [
+    {
+      "source_system": "aa_hospital_realism_v1.usda",
+      "evidence_id": "hospital-scene-hospital_realism_v1",
+      "observed_at": "2026-10-05T07:55:00Z"
+    },
+    {
+      "source_system": "hospital-1f-floor-plan",
+      "evidence_id": "outpatient-building-1f-layout",
+      "observed_at": "2026-10-05T07:56:00Z"
+    },
+    {
+      "source_system": "semantic-topology-authoring",
+      "evidence_id": "hospital-1f-topology-v1",
+      "observed_at": "2026-10-05T08:00:00Z"
+    }
+  ],
+  "current_time": "2026-10-05T08:00:00Z",
+  "facility": {
+    "id": "hospital-outpatient-building-1f",
+    "human_supervision": "AVAILABLE",
+    "emergency_status": "NONE",
+    "hazards": []
+  },
+  "staff": {
+    "nurse-demo-001": {
+      "id": "nurse-demo-001",
+      "identity_status": "VERIFIED",
+      "verified_role": "NURSE",
+      "role_verification_status": "VERIFIED",
+      "permissions": [
+        "REQUEST_MEDICATION_DELIVERY",
+        "REQUEST_GUIDED_NAVIGATION",
+        "REQUEST_DOCUMENT_DELIVERY"
+      ],
+      "assigned_patient_ids": ["patient-demo-001"],
+      "authorization_scope": [
+        "DELIVER_MEDICATION",
+        "NAVIGATE_TO_LOCATION",
+        "DELIVER_DOCUMENT",
+        "HOSPITAL_1F"
+      ]
+    }
+  },
+  "patients": {
+    "patient-demo-001": {
+      "id": "patient-demo-001",
+      "bed_id": "outpatient-observation-seat-001",
+      "region_id": "clinic-room-west-1",
+      "identity_status": "VERIFIED",
+      "record_match_status": "MATCHED",
+      "consent_status": "GRANTED",
+      "age": null,
+      "age_group": "UNKNOWN",
+      "weight": null,
+      "pregnancy_status": "UNKNOWN",
+      "pregnancy_week": null,
+      "special_population_status": "UNKNOWN",
+      "allergy_information_status": "COMPLETE",
+      "medical_history_information_status": "UNKNOWN",
+      "current_medications_information_status": "UNKNOWN",
+      "clinical_context": {
+        "allergies": [],
+        "precautions": [],
+        "restrictions": []
+      }
+    }
+  },
+  "medications": {
+    "medication-demo-001": {
+      "id": "medication-demo-001",
+      "storage_region_id": "pharmacy-counter",
+      "status": "RESERVED",
+      "expires_at": "2027-12-31T23:59:59Z",
+      "requires_cold_chain": false,
+      "name_status": "VERIFIED",
+      "classification": "PRESCRIPTION",
+      "specification_status": "VERIFIED"
+    }
+  },
+  "medication_orders": {
+    "med-order-demo-001": {
+      "id": "med-order-demo-001",
+      "patient_id": "patient-demo-001",
+      "medication_id": "medication-demo-001",
+      "status": "ACTIVE",
+      "verification_status": "VERIFIED",
+      "dose": "SYNTHETIC-DEMO-DOSE",
+      "route": "SECURE_HANDOFF_ONLY",
+      "delivery_window": {
+        "start": "2026-10-05T07:30:00Z",
+        "end": "2026-10-05T10:00:00Z"
+      }
+    }
+  },
+  "documents": {
+    "outpatient-guide-001": {
+      "id": "outpatient-guide-001",
+      "title_status": "VERIFIED",
+      "sensitivity": "PUBLIC",
+      "verification_status": "VERIFIED",
+      "transport_permission": "NOT_APPLICABLE",
+      "recipient_access": "NOT_APPLICABLE"
+    }
+  },
+  "delivery_items": {
+    "med-package-demo-001": {
+      "id": "med-package-demo-001",
+      "kind": "MEDICATION_PACKAGE",
+      "medication_order_id": "med-order-demo-001",
+      "medication_id": "medication-demo-001",
+      "current_region_id": "pharmacy-counter",
+      "holder_robot_id": null,
+      "status": "READY_FOR_PICKUP",
+      "verification_status": "VERIFIED",
+      "condition_status": "INTACT"
+    },
+    "document-package-demo-001": {
+      "id": "document-package-demo-001",
+      "kind": "DOCUMENT_PACKAGE",
+      "document_id": "outpatient-guide-001",
+      "recipient_id": "nurse-demo-001",
+      "destination_region_id": "volunteer-office",
+      "current_region_id": "service-center",
+      "holder_robot_id": null,
+      "status": "READY_FOR_PICKUP",
+      "verification_status": "VERIFIED",
+      "condition_status": "INTACT"
+    }
+  },
+  "regions": {
+    "outpatient-entrance": {
+      "id": "outpatient-entrance",
+      "display_name": "门诊一楼主入口",
+      "type": "ENTRANCE",
+      "coords": [-6.0, 16.0],
+      "connections": ["main-lobby"],
+      "access_zone_id": "public-area",
+      "navigation_status": "OPEN"
+    },
+    "main-lobby": {
+      "id": "main-lobby",
+      "display_name": "门诊大厅",
+      "type": "LOBBY",
+      "coords": [-5.8644, 12.3637],
+      "connections": ["outpatient-entrance", "main-junction", "service-center", "pharmacy-entrance"],
+      "access_zone_id": "public-area",
+      "navigation_status": "OPEN"
+    },
+    "main-junction": {
+      "id": "main-junction",
+      "display_name": "门诊大厅中央通道",
+      "type": "CORRIDOR",
+      "coords": [0.0, 8.0],
+      "connections": ["main-lobby", "main-waiting-area", "registration-area", "west-corridor"],
+      "access_zone_id": "public-area",
+      "navigation_status": "OPEN"
+    },
+    "main-waiting-area": {
+      "id": "main-waiting-area",
+      "display_name": "门诊候诊区",
+      "type": "WAITING_AREA",
+      "coords": [0.0, 2.0],
+      "connections": ["main-junction", "north-clinic-corridor"],
+      "access_zone_id": "public-area",
+      "navigation_status": "OPEN"
+    },
+    "registration-area": {
+      "id": "registration-area",
+      "display_name": "挂号收费区",
+      "type": "SERVICE_COUNTER",
+      "coords": [12.0, 8.0],
+      "connections": ["main-junction", "volunteer-office", "east-waiting-area"],
+      "access_zone_id": "public-area",
+      "navigation_status": "OPEN"
+    },
+    "volunteer-office": {
+      "id": "volunteer-office",
+      "display_name": "志愿者办公室",
+      "type": "OFFICE",
+      "coords": [15.0, 7.0],
+      "connections": ["registration-area"],
+      "access_zone_id": "staff-only",
+      "navigation_status": "OPEN"
+    },
+    "east-waiting-area": {
+      "id": "east-waiting-area",
+      "display_name": "东侧候诊与轮椅停放区",
+      "type": "WAITING_AREA",
+      "coords": [17.541, 9.3051],
+      "connections": ["registration-area", "east-stair-hall"],
+      "access_zone_id": "public-area",
+      "navigation_status": "OPEN"
+    },
+    "east-stair-hall": {
+      "id": "east-stair-hall",
+      "display_name": "东侧楼梯厅",
+      "type": "STAIR_HALL",
+      "coords": [22.0, 9.0],
+      "connections": ["east-waiting-area"],
+      "access_zone_id": "public-area",
+      "navigation_status": "OPEN"
+    },
+    "service-center": {
+      "id": "service-center",
+      "display_name": "便民服务中心",
+      "type": "SERVICE_CENTER",
+      "coords": [6.0, 12.0],
+      "connections": ["main-lobby", "south-corridor"],
+      "access_zone_id": "public-area",
+      "navigation_status": "OPEN"
+    },
+    "west-corridor": {
+      "id": "west-corridor",
+      "display_name": "西侧诊室走廊",
+      "type": "CORRIDOR",
+      "coords": [-10.0, 5.0],
+      "connections": ["main-junction", "staff-changing-area", "clinic-room-west-1", "west-elevator-hall"],
+      "access_zone_id": "clinical-general",
+      "navigation_status": "OPEN"
+    },
+    "staff-changing-area": {
+      "id": "staff-changing-area",
+      "display_name": "员工更衣区",
+      "type": "STAFF_AREA",
+      "coords": [-16.0, 5.0],
+      "connections": ["west-corridor"],
+      "access_zone_id": "staff-only",
+      "navigation_status": "OPEN"
+    },
+    "clinic-room-west-1": {
+      "id": "clinic-room-west-1",
+      "display_name": "西侧诊室一",
+      "type": "CLINIC_ROOM",
+      "coords": [-12.0, 1.0],
+      "connections": ["west-corridor"],
+      "access_zone_id": "clinical-restricted",
+      "navigation_status": "OPEN"
+    },
+    "west-elevator-hall": {
+      "id": "west-elevator-hall",
+      "display_name": "西侧电梯厅",
+      "type": "ELEVATOR_HALL",
+      "coords": [-20.0, 2.0],
+      "connections": ["west-corridor", "pharmacy-entrance", "west-stair-hall"],
+      "access_zone_id": "public-area",
+      "navigation_status": "OPEN"
+    },
+    "west-stair-hall": {
+      "id": "west-stair-hall",
+      "display_name": "西侧楼梯厅",
+      "type": "STAIR_HALL",
+      "coords": [-23.0, -8.0],
+      "connections": ["west-elevator-hall", "south-clinic-corridor", "transfer-bed-anchor"],
+      "access_zone_id": "public-area",
+      "navigation_status": "OPEN"
+    },
+    "north-clinic-corridor": {
+      "id": "north-clinic-corridor",
+      "display_name": "北侧康复诊室走廊",
+      "type": "CORRIDOR",
+      "coords": [0.0, -5.0],
+      "connections": ["main-waiting-area", "rehabilitation-area", "doctor-passage"],
+      "access_zone_id": "clinical-general",
+      "navigation_status": "OPEN"
+    },
+    "rehabilitation-area": {
+      "id": "rehabilitation-area",
+      "display_name": "康复诊疗区",
+      "type": "CLINIC_AREA",
+      "coords": [5.0, -8.0],
+      "connections": ["north-clinic-corridor"],
+      "access_zone_id": "clinical-restricted",
+      "navigation_status": "OPEN"
+    },
+    "doctor-passage": {
+      "id": "doctor-passage",
+      "display_name": "医生通道",
+      "type": "CORRIDOR",
+      "coords": [10.0, -6.0],
+      "connections": ["north-clinic-corridor"],
+      "access_zone_id": "staff-only",
+      "navigation_status": "OPEN"
+    },
+    "pharmacy-entrance": {
+      "id": "pharmacy-entrance",
+      "display_name": "药房入口",
+      "type": "CORRIDOR",
+      "coords": [-12.0, 12.0],
+      "connections": ["main-lobby", "west-elevator-hall", "pharmacy-counter"],
+      "access_zone_id": "public-area",
+      "navigation_status": "OPEN"
+    },
+    "pharmacy-counter": {
+      "id": "pharmacy-counter",
+      "display_name": "药房取药窗口",
+      "type": "PHARMACY",
+      "coords": [-14.0, 9.0],
+      "connections": ["pharmacy-entrance", "pharmacy-interior"],
+      "access_zone_id": "pharmacy-counter-zone",
+      "navigation_status": "OPEN"
+    },
+    "pharmacy-interior": {
+      "id": "pharmacy-interior",
+      "display_name": "药房内部与自动分药机",
+      "type": "PHARMACY_STORAGE",
+      "coords": [-14.0, 5.0],
+      "connections": ["pharmacy-counter", "medicine-cold-storage"],
+      "access_zone_id": "pharmacy-controlled",
+      "navigation_status": "OPEN"
+    },
+    "medicine-cold-storage": {
+      "id": "medicine-cold-storage",
+      "display_name": "中西药低温库",
+      "type": "MEDICATION_STORAGE",
+      "coords": [-18.0, 5.0],
+      "connections": ["pharmacy-interior"],
+      "access_zone_id": "pharmacy-controlled",
+      "navigation_status": "OPEN"
+    },
+    "south-corridor": {
+      "id": "south-corridor",
+      "display_name": "南侧公共通道",
+      "type": "CORRIDOR",
+      "coords": [5.0, 17.0],
+      "connections": ["service-center", "exam-waiting-area", "laboratory-area", "south-clinic-corridor"],
+      "access_zone_id": "public-area",
+      "navigation_status": "OPEN"
+    },
+    "exam-waiting-area": {
+      "id": "exam-waiting-area",
+      "display_name": "功能检查科候诊区",
+      "type": "WAITING_AREA",
+      "coords": [-5.0, 20.0],
+      "connections": ["south-corridor"],
+      "access_zone_id": "public-area",
+      "navigation_status": "OPEN"
+    },
+    "laboratory-area": {
+      "id": "laboratory-area",
+      "display_name": "检验科与采血区",
+      "type": "LABORATORY",
+      "coords": [12.0, 20.0],
+      "connections": ["south-corridor"],
+      "access_zone_id": "clinical-restricted",
+      "navigation_status": "OPEN"
+    },
+    "south-clinic-corridor": {
+      "id": "south-clinic-corridor",
+      "display_name": "南侧诊室走廊",
+      "type": "CORRIDOR",
+      "coords": [0.0, 24.0],
+      "connections": ["south-corridor", "west-stair-hall", "clinic-room-south-1", "clinic-room-south-2"],
+      "access_zone_id": "clinical-general",
+      "navigation_status": "OPEN"
+    },
+    "clinic-room-south-1": {
+      "id": "clinic-room-south-1",
+      "display_name": "南侧诊室一",
+      "type": "CLINIC_ROOM",
+      "coords": [-5.0, 27.0],
+      "connections": ["south-clinic-corridor"],
+      "access_zone_id": "clinical-restricted",
+      "navigation_status": "OPEN"
+    },
+    "clinic-room-south-2": {
+      "id": "clinic-room-south-2",
+      "display_name": "南侧诊室二",
+      "type": "CLINIC_ROOM",
+      "coords": [6.0, 27.0],
+      "connections": ["south-clinic-corridor"],
+      "access_zone_id": "clinical-restricted",
+      "navigation_status": "OPEN"
+    },
+    "transfer-bed-anchor": {
+      "id": "transfer-bed-anchor",
+      "display_name": "病房一入口转运床位",
+      "type": "EQUIPMENT_ANCHOR",
+      "coords": [-20.0305, -6.8614],
+      "connections": ["west-stair-hall"],
+      "access_zone_id": "clinical-general",
+      "navigation_status": "OPEN"
+    }
+  },
+  "access_zones": {
+    "public-area": {
+      "id": "public-area",
+      "area_type": "NORMAL",
+      "required_permissions": []
+    },
+    "clinical-general": {
+      "id": "clinical-general",
+      "area_type": "NORMAL",
+      "required_permissions": ["ENTER_CLINICAL_AREA"]
+    },
+    "clinical-restricted": {
+      "id": "clinical-restricted",
+      "area_type": "RESTRICTED",
+      "required_permissions": ["ENTER_RESTRICTED_CLINICAL_AREA"]
+    },
+    "pharmacy-counter-zone": {
+      "id": "pharmacy-counter-zone",
+      "area_type": "NORMAL",
+      "required_permissions": []
+    },
+    "pharmacy-controlled": {
+      "id": "pharmacy-controlled",
+      "area_type": "RESTRICTED",
+      "required_permissions": ["ENTER_PHARMACY_CONTROLLED_AREA"]
+    },
+    "staff-only": {
+      "id": "staff-only",
+      "area_type": "RESTRICTED",
+      "required_permissions": ["ENTER_STAFF_ONLY_AREA"]
+    }
+  },
+  "robot_state": {
+    "id": "aa-robot-01",
+    "current_region_id": "main-lobby",
+    "capabilities": [
+      "SECURE_ITEM_DELIVERY",
+      "IDENTITY_VERIFICATION",
+      "GUIDED_NAVIGATION"
+    ],
+    "access_permissions": [
+      "ENTER_CLINICAL_AREA",
+      "ENTER_RESTRICTED_CLINICAL_AREA"
+    ],
+    "roles": [
+      "AUTHORIZED_ROBOT"
+    ],
+    "operational_status": "READY"
+  }
+}

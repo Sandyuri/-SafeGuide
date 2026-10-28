@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "cases": [
+    {
+      "name": "public_corridor_route",
+      "request": {
+        "task": {
+          "source": "nav-f1-corridor-01",
+          "destination": "nav-f1-corridor-02"
+        },
+        "route": [
+          "nav-f1-corridor-01",
+          "nav-f1-waypoint-001",
+          "nav-f1-corridor-02"
+        ],
+        "map_version": "hospital_1f.v1.0",
+        "plan_version": 1,
+        "events": [],
+        "planner_reported": {
+          "distance_m": 6.603,
+          "travel_time_s": 5.5025,
+          "risk_score": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,363 @@
+{
+  "schema_version": "2.0.0",
+  "map_id": "hospital_1f",
+  "robot_footprint": {
+    "shape": "point",
+    "radius_m": 0.0,
+    "required_margin_m": 0.0
+  },
+  "stops": [
+    {
+      "id": "S001",
+      "node_id": "sg-f1-information-desk",
+      "name_zh": "咨询处停靠点",
+      "usd_xyz_m": [
+        -10.65,
+        23.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    },
+    {
+      "id": "S002",
+      "node_id": "sg-f1-mental-health",
+      "name_zh": "精神心理科停靠点",
+      "usd_xyz_m": [
+        -7.2,
+        23.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    },
+    {
+      "id": "S003",
+      "node_id": "sg-f1-occupational-rehabilitation",
+      "name_zh": "职业康复科停靠点",
+      "usd_xyz_m": [
+        -3.75,
+        23.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    },
+    {
+      "id": "S004",
+      "node_id": "sg-f1-neurological-rehabilitation",
+      "name_zh": "神经康复科停靠点",
+      "usd_xyz_m": [
+        -0.45,
+        23.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    },
+    {
+      "id": "S005",
+      "node_id": "sg-f1-cardiopulmonary-rehabilitation",
+      "name_zh": "心肺康复科停靠点",
+      "usd_xyz_m": [
+        3.0,
+        23.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    },
+    {
+      "id": "S006",
+      "node_id": "sg-f1-spinal-cord-rehabilitation",
+      "name_zh": "脊髓损伤康复科（西入口）停靠点",
+      "usd_xyz_m": [
+        6.45,
+        23.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    },
+    {
+      "id": "S028",
+      "node_id": "sg-f1-spinal-cord-rehabilitation-east",
+      "name_zh": "脊髓损伤康复科（东入口）停靠点",
+      "usd_xyz_m": [
+        9.75,
+        23.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    },
+    {
+      "id": "S007",
+      "node_id": "sg-f1-orthopedic-rehabilitation",
+      "name_zh": "骨科康复科停靠点",
+      "usd_xyz_m": [
+        12.45,
+        23.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    },
+    {
+      "id": "S008",
+      "node_id": "sg-f1-restroom",
+      "name_zh": "卫生间停靠点",
+      "usd_xyz_m": [
+        15.3,
+        26.85,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    },
+    {
+      "id": "S009",
+      "node_id": "sg-f1-consultation-rooms",
+      "name_zh": "诊室区入口停靠点",
+      "usd_xyz_m": [
+        -15.0,
+        17.4,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    },
+    {
+      "id": "S011",
+      "node_id": "sg-f1-outpatient-waiting",
+      "name_zh": "门诊候诊停靠点",
+      "usd_xyz_m": [
+        -8.4,
+        17.4,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "pending_openusd_recheck_after_operator_colocation"
+    },
+    {
+      "id": "S012",
+      "node_id": "sg-f1-registration-payment-counter",
+      "name_zh": "挂号收费窗口停靠点",
+      "usd_xyz_m": [
+        9.6,
+        12.3,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    },
+    {
+      "id": "S013",
+      "node_id": "sg-f1-consultation-room",
+      "name_zh": "咨询室停靠点",
+      "usd_xyz_m": [
+        13.05,
+        10.95,
+        0.0
+      ],
+      "yaw_deg": 180.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    },
+    {
+      "id": "S014",
+      "node_id": "sg-f1-nebulization-room",
+      "name_zh": "雾化室停靠点",
+      "usd_xyz_m": [
+        -20.85,
+        -6.75,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    },
+    {
+      "id": "S015",
+      "node_id": "sg-f1-emergency-room-entrance",
+      "name_zh": "抢救室门口停靠点",
+      "usd_xyz_m": [
+        -19.8,
+        8.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    },
+    {
+      "id": "S016",
+      "node_id": "sg-f1-medication-consultation",
+      "name_zh": "药物咨询室停靠点",
+      "usd_xyz_m": [
+        -3.400697,
+        -3.298646,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "pending_openusd_recheck_after_human_review"
+    },
+    {
+      "id": "S017",
+      "node_id": "sg-f1-pharmacy",
+      "name_zh": "药房取药显示屏停靠点",
+      "usd_xyz_m": [
+        -1.283696,
+        1.417263,
+        0.0
+      ],
+      "yaw_deg": 180.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "pending_openusd_recheck_after_operator_move"
+    },
+    {
+      "id": "S018",
+      "node_id": "sg-f1-patient-service-center",
+      "name_zh": "便民服务中心（预检、导诊）停靠点",
+      "usd_xyz_m": [
+        10.5,
+        1.8,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    },
+    {
+      "id": "S019",
+      "node_id": "sg-f1-accessible-restroom",
+      "name_zh": "无障碍卫生间停靠点",
+      "usd_xyz_m": [
+        15.3,
+        21.6,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    },
+    {
+      "id": "S021",
+      "node_id": "sg-f1-functional-exam-waiting",
+      "name_zh": "功能检查候诊停靠点",
+      "usd_xyz_m": [
+        -15.859772,
+        -14.247226,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "pending_openusd_recheck_after_operator_adjustment"
+    },
+    {
+      "id": "S026",
+      "node_id": "nav-f1-safe-stop-west",
+      "name_zh": "西侧安全停靠点停靠点",
+      "usd_xyz_m": [
+        -7.2,
+        10.65,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    },
+    {
+      "id": "S027",
+      "node_id": "nav-f1-safe-stop-east",
+      "name_zh": "东侧安全停靠点停靠点",
+      "usd_xyz_m": [
+        4.95,
+        10.65,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    },
+    {
+      "id": "S036",
+      "node_id": "sg-f1-functional-exam-waiting-east",
+      "name_zh": "功能检查等候区停靠点",
+      "usd_xyz_m": [
+        12.75,
+        -12.15,
+        0.0
+      ],
+      "yaw_deg": 180.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    },
+    {
+      "id": "S037",
+      "node_id": "sg-f1-restroom-lower-left",
+      "name_zh": "左下卫生间停靠点",
+      "usd_xyz_m": [
+        -27.59872,
+        -21.900771,
+        0.0
+      ],
+      "yaw_deg": 180.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "pending_openusd_recheck_after_human_review"
+    },
+    {
+      "id": "S038",
+      "node_id": "sg-f1-accessible-restroom-lower-left",
+      "name_zh": "左下无障碍卫生间停靠点",
+      "usd_xyz_m": [
+        -27.6,
+        -21.9,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    },
+    {
+      "id": "S039",
+      "node_id": "sg-f1-accessible-restroom-lower-right",
+      "name_zh": "右下无障碍卫生间停靠点",
+      "usd_xyz_m": [
+        15.3,
+        -25.65,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    },
+    {
+      "id": "S045",
+      "node_id": "sg-f1-infusion-room",
+      "name_zh": "输液室停靠点",
+      "usd_xyz_m": [
+        -18.6,
+        1.2,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "obstacle_check": "openusd_static_collision_point_verified"
+    }
+  ],
+  "safe_stops": []
+}

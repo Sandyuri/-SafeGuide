@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "map_id": "hospital_1f",
+  "status": "provisional_pending_human_geometry_review",
+  "risk_zones": [
+    {
+      "risk_zone_id": "emergency-corridor-west",
+      "type": "EMERGENCY_CORRIDOR",
+      "geometry": {
+        "type": "edge_corridor",
+        "coordinate_frame": "hospital_1f_floorplan_source_pixels",
+        "centerline_edge_ids": [
+          "E236",
+          "E236-S02",
+          "E244",
+          "E244-S02"
+        ],
+        "buffer_width_m": null,
+        "geometry_status": "pending_on_site_width_review"
+      },
+      "base_risk_per_meter": 2.0,
+      "hard_constraint_when_active": true,
+      "affected_edges": [
+        "E236",
+        "E236-S02",
+        "E244",
+        "E244-S02"
+      ],
+      "affected_nodes": [
+        "nav-f1-corridor-16",
+        "nav-f1-waypoint-039",
+        "nav-f1-spine-07",
+        "nav-f1-waypoint-053",
+        "nav-f1-corridor-19"
+      ],
+      "verification": {
+        "status": "provisional",
+        "method": "existing_emergency_edge_semantics",
+        "reviewer": null,
+        "reviewed_at": null,
+        "note": "Centerline membership is inherited from E236/E244; corridor width and polygon still require review."
+      }
+    },
+    {
+      "risk_zone_id": "emergency-room-controlled-approach",
+      "type": "CRITICAL_ACCESS",
+      "geometry": {
+        "type": "edge_corridor",
+        "coordinate_frame": "hospital_1f_floorplan_source_pixels",
+        "centerline_edge_ids": [
+          "E253"
+        ],
+        "buffer_width_m": null,
+        "geometry_status": "pending_on_site_width_review"
+      },
+      "base_risk_per_meter": 3.0,
+      "hard_constraint_when_active": true,
+      "affected_edges": [
+        "E253"
+      ],
+      "affected_nodes": [
+        "nav-f1-corridor-21",
+        "sg-f1-emergency-room-entrance"
+      ],
+      "verification": {
+        "status": "provisional",
+        "method": "existing_emergency_room_access_semantics",
+        "reviewer": null,
+        "reviewed_at": null,
+        "note": "The controlled approach is known, but its physical risk boundary still requires review."
+      }
+    }
+  ]
+}

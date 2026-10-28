@@ -1,0 +1,90 @@
+{
+  "schema_version": "0.2",
+  "context_id": "ctx-verification-batch-02-public-care-available",
+  "issued_at": "2026-10-01T09:00:00Z",
+  "provenance": [
+    {
+      "source_system": "synthetic-verification-fixture",
+      "evidence_id": "fixture-public-care-available",
+      "observed_at": "2026-10-01T09:00:00Z"
+    }
+  ],
+  "reference_resolution": {
+    "patient_aliases": {
+      "302床": "patient-302",
+      "302号床": "patient-302"
+    },
+    "resource_aliases": {
+      "789号药品订单": "order-789",
+      "已核对好的药": "order-789"
+    },
+    "location_aliases": {
+      "302床": "ward-a-bed-302"
+    }
+  },
+  "requester": {
+    "id": "nurse-007",
+    "identity_status": "VERIFIED",
+    "verified_role": "NURSE",
+    "role_verification_status": "VERIFIED",
+    "permissions": [
+      "REQUEST_MEDICATION_DELIVERY"
+    ],
+    "relationship_to_patient": "ASSIGNED"
+  },
+  "patient": {
+    "id": "patient-302",
+    "identity_status": "VERIFIED",
+    "record_match_status": "MATCHED",
+    "consent_status": "NOT_APPLICABLE",
+    "age": null,
+    "age_group": "UNKNOWN",
+    "weight": null,
+    "pregnancy_status": "UNKNOWN",
+    "pregnancy_week": null,
+    "special_population_status": "UNKNOWN",
+    "allergy_information_status": "UNKNOWN",
+    "medical_history_information_status": "UNKNOWN",
+    "current_medications_information_status": "UNKNOWN"
+  },
+  "authorization": {
+    "patient_data_access": "NOT_APPLICABLE",
+    "authorization_scope": [
+      "DELIVER_MEDICATION",
+      "WARD_A"
+    ],
+    "prescription_status": "NOT_APPLICABLE",
+    "medical_order_status": "VERIFIED",
+    "sensitive_material_access": "NOT_APPLICABLE",
+    "sensitive_material_transport": "NOT_APPLICABLE",
+    "recipient_access": "GRANTED",
+    "patient_data_scope_match_status": "NOT_APPLICABLE"
+  },
+  "environment": {
+    "target_location_id": "ward-a-bed-302",
+    "target_location_resolution": "RESOLVED",
+    "target_area_type": "NORMAL",
+    "target_area_access": "GRANTED"
+  },
+  "robot": {
+    "capabilities": [
+      "SECURE_ITEM_DELIVERY",
+      "IDENTITY_VERIFICATION"
+    ]
+  },
+  "medication": {
+    "id": "medication-789",
+    "name_status": "VERIFIED",
+    "classification": "PRESCRIPTION",
+    "specification_status": "VERIFIED"
+  },
+  "delivery": {
+    "source_status": "VERIFIED",
+    "recipient_status": "VERIFIED",
+    "resource_sensitivity": "MEDICATION"
+  },
+  "public_information": {
+    "subject_resolution": "RESOLVED",
+    "source_status": "AVAILABLE"
+  }
+}

@@ -1,0 +1,25 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# 虚拟环境
+.venv/
+venv/
+
+# 编辑器 / 系统文件
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# 日志与临时文件
+*.log
+*.tmp
+
+# 保险丝：Isaac Sim 场景资产（约 200MB，不随仓库上传）
+医院一楼_AA机器人_20261004/
+
+# hospital 1F floorplan original + rendered overlays (local only, never commit)
+RoboGuard-new/navigation_sandbox/artifacts/floorplan/source/*.jpg
+*.e2e-*.svg

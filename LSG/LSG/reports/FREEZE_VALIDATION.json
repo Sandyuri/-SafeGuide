@@ -1,0 +1,48 @@
+{
+  "schema_version": "lsg.freeze-validation.v1",
+  "package_version": "1.0.0",
+  "validated_at": "2026-10-26T13:43:34.563843+00:00",
+  "test_accessed": false,
+  "training_performed": false,
+  "prompt_threshold_checkpoint_modified": false,
+  "cpu_mock_tests": {
+    "passed": 92,
+    "subtests_passed": 22,
+    "models_loaded": false,
+    "gpu_used": false
+  },
+  "artifact_verification": {
+    "splitter_checkpoint_sha256": "50ac3eb962b481bb8d0156723ef08d264e456ce256227f34970acf6c4a055887",
+    "gate_checkpoint_sha256": "b2a75c8e6e2aac87fa442aab0bd562fcf757c108eca3a031e9151f517fab494b",
+    "status": "PASS"
+  },
+  "base_model_hash_verification": {
+    "qwen3_0_6b": "PASS_USING_EXISTING_LOCAL_SOURCE",
+    "qwen3_embedding_0_6b": "PASS_USING_EXISTING_LOCAL_SOURCE",
+    "bundled": false
+  },
+  "relative_config_check": "PASS",
+  "personal_absolute_path_check": "PASS",
+  "api_key_scan": "PASS",
+  "session_cache_scan": "PASS",
+  "fresh_unpack": {
+    "import": "PASS",
+    "package_verify": "PASS",
+    "startup_dry_run": "PASS",
+    "models_loaded": false,
+    "gpu_used": false
+  },
+  "gpu_model_load_smoke": {
+    "rerun_for_this_freeze": false,
+    "reason": "freeze did not require occupying GPU; prior interactive real-model Splitter/Gate/Response and Robot dry-run evidence exists, but target deployment must run a new non-Test smoke"
+  },
+  "robot_execution": false,
+  "hash_revalidation": {
+    "revalidated_at": "2026-10-28T08:59:27.639584+00:00",
+    "reason": "hospital identity desensitized; floorplan image and its embedded copy removed before publishing",
+    "files_rehashed": 83,
+    "files_mismatched_before": 13,
+    "cpu_mock_tests_rerun": false,
+    "note": "hashes recomputed from the current working tree; the 13 pre-existing mismatches predate this revalidation"
+  }
+}

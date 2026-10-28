@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "lsg_version",
+    "session_id",
+    "raw_input",
+    "splitter_raw_output",
+    "parsed_intents",
+    "per_intent_predictions",
+    "authorizations",
+    "aggregate_decision",
+    "aggregate_rule",
+    "provenance",
+    "context_snapshot_hash",
+    "dispatch_plan",
+    "response_results",
+    "final_response_text",
+    "fail_closed_reason",
+    "runtime_candidates",
+    "location_resolutions"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "lsg.orchestration.v0.1"
+    },
+    "lsg_version": {
+      "const": "0.1"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "raw_input": {
+      "type": "string"
+    },
+    "splitter_raw_output": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "splitter_output_source": {
+      "enum": ["MODEL_SINGLE_CALL", "PER_INTENT_REAL_MODEL_CALLS"]
+    },
+    "splitter_component_raw_outputs": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {"type": "object"}
+    },
+    "splitter_normalization": {
+      "enum": ["none", "verified_prompt_echo_removed"]
+    },
+    "parsed_intents": {
+      "type": "array",
+      "maxItems": 3
+    },
+    "gate_inputs": {
+      "type": "array"
+    },
+    "per_intent_predictions": {
+      "type": "array"
+    },
+    "authorizations": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "aggregate_decision": {
+      "enum": [
+        "AUTHORIZE",
+        "DEFER",
+        "REJECT"
+      ]
+    },
+    "aggregate_rule": {
+      "const": "REJECT > DEFER > AUTHORIZE"
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "context_snapshot_hash": {
+      "type": "string"
+    },
+    "dispatch_plan": {
+      "type": "object"
+    },
+    "response_results": {
+      "type": "array"
+    },
+    "final_response_text": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fail_closed_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "runtime_candidates": {
+      "type": "array"
+    },
+    "location_resolutions": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": [
+          "object",
+          "null"
+        ]
+      }
+    }
+  }
+}

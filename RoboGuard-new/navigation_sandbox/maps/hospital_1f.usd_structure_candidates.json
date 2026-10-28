@@ -1,0 +1,829 @@
+{
+  "schema_version": "2.0.0",
+  "map_id": "hospital_1f",
+  "source_usd": "/mnt/c/Users/10597/Desktop/vscode/RoboGuard-main/RoboGuard-new/navigation_sandbox/scene/roboguard_hospital_sandbox.usda",
+  "source_navigation": "/mnt/c/Users/10597/Desktop/vscode/RoboGuard-main/RoboGuard-new/navigation_sandbox/maps/hospital_1f.navigation.json",
+  "units": "meters",
+  "robot_radius_m": 0.0,
+  "grid_resolution_m": 0.15,
+  "collision_height_band_m": [
+    0.12,
+    1.85
+  ],
+  "usd_collision_meshes_used": 1080,
+  "usd_triangles_processed": 994706,
+  "nodes": [
+    {
+      "id": "nav-f1-spine-01",
+      "name_zh": "北侧候诊通道西节点",
+      "usd_xyz_m": [
+        -8.4,
+        23.25,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        3120,
+        800
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-spine-02",
+      "name_zh": "北侧候诊通道东节点",
+      "usd_xyz_m": [
+        1.35,
+        23.25,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        4240,
+        800
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-spine-03",
+      "name_zh": "东侧主通道节点",
+      "usd_xyz_m": [
+        1.35,
+        10.8,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        4240,
+        2220
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-spine-04",
+      "name_zh": "门诊大厅中央通道",
+      "usd_xyz_m": [
+        -8.4,
+        10.8,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        3120,
+        2220
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-spine-05",
+      "name_zh": "西侧主通道节点",
+      "usd_xyz_m": [
+        -30.3,
+        10.8,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        600,
+        2220
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-spine-06",
+      "name_zh": "南侧功能检查通道节点",
+      "usd_xyz_m": [
+        1.35,
+        -7.5,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        4240,
+        4320
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-spine-07",
+      "name_zh": "南侧西端通道节点",
+      "usd_xyz_m": [
+        -30.3,
+        -7.5,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        600,
+        4320
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-spine-08",
+      "name_zh": "东侧门诊连接节点",
+      "usd_xyz_m": [
+        15.15,
+        10.8,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        5840,
+        2220
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-01",
+      "name_zh": "北侧康复走廊西接近点",
+      "usd_xyz_m": [
+        -12.0,
+        23.55,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        2700,
+        760
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-02",
+      "name_zh": "北侧康复走廊中西接近点",
+      "usd_xyz_m": [
+        -5.4,
+        23.55,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        3460,
+        760
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-03",
+      "name_zh": "北侧康复走廊中央接近点",
+      "usd_xyz_m": [
+        0.45,
+        23.55,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        4140,
+        760
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-04",
+      "name_zh": "北侧康复走廊中东接近点",
+      "usd_xyz_m": [
+        8.4,
+        23.55,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        5050,
+        760
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-05",
+      "name_zh": "北侧康复走廊东接近点",
+      "usd_xyz_m": [
+        13.95,
+        23.55,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        5700,
+        760
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-06",
+      "name_zh": "大厅西北通道节点",
+      "usd_xyz_m": [
+        -11.1,
+        17.4,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        2800,
+        1466
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-07",
+      "name_zh": "大厅北部中央通道节点",
+      "usd_xyz_m": [
+        -8.1,
+        20.4,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        3150,
+        1120
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-08",
+      "name_zh": "大厅东北通道节点",
+      "usd_xyz_m": [
+        1.8,
+        21.0,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        4300,
+        1040
+      ],
+      "seed_displacement_m": 0.15,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-09",
+      "name_zh": "挂号收费南侧通道节点",
+      "usd_xyz_m": [
+        9.6,
+        10.8,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        5200,
+        2220
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-11",
+      "name_zh": "西侧中部路口",
+      "usd_xyz_m": [
+        -22.5,
+        8.7,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        1500,
+        2460
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-12",
+      "name_zh": "药房北侧接近节点",
+      "usd_xyz_m": [
+        -11.55,
+        8.7,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        2760,
+        2460
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-13",
+      "name_zh": "电梯厅西侧绕行节点",
+      "usd_xyz_m": [
+        -28.8,
+        0.15,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        760,
+        3450
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-14",
+      "name_zh": "药房东侧通道节点",
+      "usd_xyz_m": [
+        -0.45,
+        0.15,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        4040,
+        3450
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-15",
+      "name_zh": "东侧中部通道节点",
+      "usd_xyz_m": [
+        15.15,
+        0.15,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        5840,
+        3450
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-16",
+      "name_zh": "南侧西部路口",
+      "usd_xyz_m": [
+        -22.5,
+        -7.5,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        1500,
+        4320
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-17",
+      "name_zh": "功能检查西接近节点",
+      "usd_xyz_m": [
+        -10.65,
+        -10.35,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        2860,
+        4650
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-18",
+      "name_zh": "功能检查东接近节点",
+      "usd_xyz_m": [
+        8.4,
+        -10.35,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        5050,
+        4650
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-19",
+      "name_zh": "左下设施接近节点",
+      "usd_xyz_m": [
+        -27.6,
+        -16.95,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        900,
+        5400
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-20",
+      "name_zh": "右下设施接近节点",
+      "usd_xyz_m": [
+        15.15,
+        -14.7,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        5840,
+        5150
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-21",
+      "name_zh": "抢救室门口上方接近节点",
+      "usd_xyz_m": [
+        -19.8,
+        8.7,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        1806,
+        2465
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-22",
+      "name_zh": "药房东南侧绕行节点",
+      "usd_xyz_m": [
+        -0.45,
+        -7.5,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        4040,
+        4320
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-23",
+      "name_zh": "候诊区横向通道交汇节点",
+      "usd_xyz_m": [
+        -8.4,
+        17.4,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        3120,
+        1475
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    },
+    {
+      "id": "nav-f1-corridor-24",
+      "name_zh": "服务中心至功能检查绕行节点",
+      "usd_xyz_m": [
+        6.6,
+        -8.1,
+        0.0
+      ],
+      "seed_floorplan_pixel_xy": [
+        4849,
+        4392
+      ],
+      "seed_displacement_m": 0.0,
+      "derivation": "openusd_static_collision_connected_free_space_snap",
+      "node_kind": "corridor_structure"
+    }
+  ],
+  "edges": [
+    {
+      "id": "E201",
+      "from": "nav-f1-corridor-01",
+      "to": "nav-f1-corridor-02",
+      "distance_m": 6.6,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E202",
+      "from": "nav-f1-corridor-01",
+      "to": "nav-f1-spine-01",
+      "distance_m": 3.612,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E203",
+      "from": "nav-f1-corridor-01",
+      "to": "nav-f1-corridor-06",
+      "distance_m": 6.216,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E204",
+      "from": "nav-f1-corridor-02",
+      "to": "nav-f1-corridor-03",
+      "distance_m": 5.85,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E205",
+      "from": "nav-f1-corridor-03",
+      "to": "nav-f1-corridor-04",
+      "distance_m": 7.95,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E206",
+      "from": "nav-f1-corridor-04",
+      "to": "nav-f1-corridor-05",
+      "distance_m": 5.55,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E207",
+      "from": "nav-f1-corridor-03",
+      "to": "nav-f1-spine-02",
+      "distance_m": 0.949,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E208",
+      "from": "nav-f1-spine-01",
+      "to": "nav-f1-corridor-06",
+      "distance_m": 6.443,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E209",
+      "from": "nav-f1-spine-01",
+      "to": "nav-f1-corridor-07",
+      "distance_m": 2.866,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E210",
+      "from": "nav-f1-spine-02",
+      "to": "nav-f1-corridor-08",
+      "distance_m": 3.018,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E211",
+      "from": "nav-f1-corridor-07",
+      "to": "nav-f1-corridor-08",
+      "distance_m": 11.448,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E212",
+      "from": "nav-f1-corridor-06",
+      "to": "nav-f1-corridor-23",
+      "distance_m": 2.7,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E213",
+      "from": "nav-f1-corridor-07",
+      "to": "nav-f1-corridor-23",
+      "distance_m": 3.015,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E214",
+      "from": "nav-f1-corridor-23",
+      "to": "nav-f1-spine-04",
+      "distance_m": 6.6,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E215",
+      "from": "nav-f1-corridor-08",
+      "to": "nav-f1-spine-03",
+      "distance_m": 10.292,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E216",
+      "from": "nav-f1-spine-04",
+      "to": "nav-f1-spine-03",
+      "distance_m": 9.75,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E217",
+      "from": "nav-f1-spine-03",
+      "to": "nav-f1-corridor-09",
+      "distance_m": 8.25,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E218",
+      "from": "nav-f1-corridor-09",
+      "to": "nav-f1-spine-08",
+      "distance_m": 5.55,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E219",
+      "from": "nav-f1-spine-04",
+      "to": "nav-f1-corridor-12",
+      "distance_m": 3.786,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E220",
+      "from": "nav-f1-spine-04",
+      "to": "nav-f1-spine-05",
+      "distance_m": 21.9,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E221",
+      "from": "nav-f1-spine-05",
+      "to": "nav-f1-corridor-11",
+      "distance_m": 8.078,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E222",
+      "from": "nav-f1-corridor-11",
+      "to": "nav-f1-corridor-21",
+      "distance_m": 2.7,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E223",
+      "from": "nav-f1-corridor-21",
+      "to": "nav-f1-corridor-12",
+      "distance_m": 8.25,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E224",
+      "from": "nav-f1-corridor-14",
+      "to": "nav-f1-spine-03",
+      "distance_m": 10.801,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E225",
+      "from": "nav-f1-corridor-14",
+      "to": "nav-f1-corridor-22",
+      "distance_m": 7.65,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E226",
+      "from": "nav-f1-corridor-22",
+      "to": "nav-f1-corridor-18",
+      "distance_m": 9.298,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E227",
+      "from": "nav-f1-corridor-22",
+      "to": "nav-f1-spine-06",
+      "distance_m": 1.8,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E228",
+      "from": "nav-f1-corridor-16",
+      "to": "nav-f1-corridor-22",
+      "distance_m": 22.05,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E229",
+      "from": "nav-f1-corridor-11",
+      "to": "nav-f1-corridor-13",
+      "distance_m": 12.519,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E230",
+      "from": "nav-f1-corridor-13",
+      "to": "nav-f1-corridor-16",
+      "distance_m": 11.797,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E231",
+      "from": "nav-f1-corridor-13",
+      "to": "nav-f1-spine-07",
+      "distance_m": 7.796,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E232",
+      "from": "nav-f1-corridor-24",
+      "to": "nav-f1-spine-07",
+      "distance_m": 36.905,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E233",
+      "from": "nav-f1-corridor-24",
+      "to": "nav-f1-spine-06",
+      "distance_m": 5.284,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E234",
+      "from": "nav-f1-corridor-24",
+      "to": "nav-f1-corridor-17",
+      "distance_m": 17.396,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E235",
+      "from": "nav-f1-corridor-24",
+      "to": "nav-f1-corridor-22",
+      "distance_m": 7.075,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E236",
+      "from": "nav-f1-corridor-16",
+      "to": "nav-f1-spine-07",
+      "distance_m": 7.8,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E237",
+      "from": "nav-f1-corridor-16",
+      "to": "nav-f1-corridor-17",
+      "distance_m": 12.188,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E238",
+      "from": "nav-f1-corridor-17",
+      "to": "nav-f1-spine-06",
+      "distance_m": 12.334,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E239",
+      "from": "nav-f1-spine-06",
+      "to": "nav-f1-corridor-18",
+      "distance_m": 7.604,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E240",
+      "from": "nav-f1-corridor-17",
+      "to": "nav-f1-corridor-18",
+      "distance_m": 19.05,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E241",
+      "from": "nav-f1-spine-03",
+      "to": "nav-f1-spine-06",
+      "distance_m": 18.3,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E242",
+      "from": "nav-f1-spine-08",
+      "to": "nav-f1-corridor-15",
+      "distance_m": 10.65,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E243",
+      "from": "nav-f1-corridor-18",
+      "to": "nav-f1-corridor-20",
+      "distance_m": 10.139,
+      "verification": "openusd_point_collision_free_polyline"
+    },
+    {
+      "id": "E244",
+      "from": "nav-f1-spine-07",
+      "to": "nav-f1-corridor-19",
+      "distance_m": 9.828,
+      "verification": "openusd_point_collision_free_polyline"
+    }
+  ],
+  "verification_status": "openusd_static_collision_point_verified",
+  "limitations": [
+    "Door leaf meshes are treated as open; door state is not modeled.",
+    "The navigation model is a mathematical point and does not provide robot-body clearance.",
+    "Floor-plan pixels use the existing wall-bound affine registration to USD world coordinates."
+  ]
+}

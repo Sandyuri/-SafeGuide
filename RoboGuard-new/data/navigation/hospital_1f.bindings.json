@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "patient_regions": {
+    "patient-demo-001": "sg-f1-consultation-rooms"
+  },
+  "medication_storage_regions": {
+    "medication-demo-001": "task-f1-pharmacy-medication-delivery"
+  },
+  "delivery_item_locations": {
+    "med-package-demo-001": {
+      "current_region_id": "task-f1-pharmacy-medication-delivery"
+    },
+    "document-package-demo-001": {
+      "current_region_id": "nav-f1-spine-04",
+      "destination_region_id": "nav-f1-spine-02"
+    }
+  },
+  "robot_current_region_id": "nav-f1-spine-04",
+  "zone_permissions": {
+    "public": [],
+    "staff_interface": [],
+    "clinical_controlled": [
+      "ENTER_CLINICAL_AREA"
+    ],
+    "clinical_restricted": [
+      "ENTER_PHARMACY_CONTROLLED_AREA"
+    ],
+    "emergency_only": [
+      "ENTER_EMERGENCY_AREA"
+    ],
+    "staff_only": [
+      "ENTER_STAFF_ONLY_AREA"
+    ]
+  }
+}

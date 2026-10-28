@@ -1,0 +1,1229 @@
+#usda 1.0
+(
+    metersPerUnit = 1
+    upAxis = "Z"
+    subLayers = [@../../../../同济医院一楼/同济医院一楼/同济医院一楼.usd@]
+)
+def Xform "RoboGuardNavigation"
+{
+    custom string mapId = "hospital_1f"
+    custom string navigationModel = "point_robot_openusd_static_collision"
+    def Scope "NavigationNodes"
+    {
+        def Sphere "N001"
+        {
+            custom string nodeId = "sg-f1-information-desk"
+            custom string nameZh = "咨询处"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (-10.650000, 23.550000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N002"
+        {
+            custom string nodeId = "sg-f1-mental-health"
+            custom string nameZh = "精神心理科"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (-7.200000, 23.550000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N003"
+        {
+            custom string nodeId = "sg-f1-occupational-rehabilitation"
+            custom string nameZh = "职业康复科"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (-3.750000, 23.550000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N004"
+        {
+            custom string nodeId = "sg-f1-neurological-rehabilitation"
+            custom string nameZh = "神经康复科"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (-0.450000, 23.550000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N005"
+        {
+            custom string nodeId = "sg-f1-cardiopulmonary-rehabilitation"
+            custom string nameZh = "心肺康复科"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (3.000000, 23.550000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N006"
+        {
+            custom string nodeId = "sg-f1-spinal-cord-rehabilitation"
+            custom string nameZh = "脊髓损伤康复科（西入口）"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (6.450000, 23.550000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N007"
+        {
+            custom string nodeId = "sg-f1-spinal-cord-rehabilitation-east"
+            custom string nameZh = "脊髓损伤康复科（东入口）"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (9.750000, 23.550000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N008"
+        {
+            custom string nodeId = "sg-f1-orthopedic-rehabilitation"
+            custom string nameZh = "骨科康复科"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (12.450000, 23.550000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N009"
+        {
+            custom string nodeId = "sg-f1-restroom"
+            custom string nameZh = "卫生间"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (15.300000, 26.850000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N010"
+        {
+            custom string nodeId = "sg-f1-consultation-rooms"
+            custom string nameZh = "诊室区入口"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (-15.000000, 17.400000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N011"
+        {
+            custom string nodeId = "sg-f1-queue-ticket-machine"
+            custom string nameZh = "取号机"
+            color3f[] primvars:displayColor = [(0.95, 0.55, 0.10)]
+            double radius = 0.2
+            double3 xformOp:translate = (-9.300000, 21.150000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N012"
+        {
+            custom string nodeId = "sg-f1-notice-board"
+            custom string nameZh = "宣讲、布告栏"
+            color3f[] primvars:displayColor = [(0.95, 0.55, 0.10)]
+            double radius = 0.2
+            double3 xformOp:translate = (-13.950000, 12.450000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N013"
+        {
+            custom string nodeId = "sg-f1-outpatient-waiting"
+            custom string nameZh = "门诊候诊"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (-8.400000, 17.400000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N014"
+        {
+            custom string nodeId = "sg-f1-registration-payment-counter"
+            custom string nameZh = "挂号收费窗口"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (9.600000, 12.300000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N015"
+        {
+            custom string nodeId = "sg-f1-consultation-room"
+            custom string nameZh = "咨询室"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (13.050000, 10.950000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N016"
+        {
+            custom string nodeId = "sg-f1-public-elevator-hall"
+            custom string nameZh = "电梯厅"
+            color3f[] primvars:displayColor = [(0.95, 0.55, 0.10)]
+            double radius = 0.2
+            double3 xformOp:translate = (-28.050000, 2.700000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N017"
+        {
+            custom string nodeId = "sg-f1-nebulization-room"
+            custom string nameZh = "雾化室"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (-20.850000, -6.750000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N018"
+        {
+            custom string nodeId = "sg-f1-emergency-room-entrance"
+            custom string nameZh = "抢救室门口"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (-19.800000, 8.550000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N019"
+        {
+            custom string nodeId = "sg-f1-medication-consultation"
+            custom string nameZh = "药物咨询室"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (-3.400697, -3.298646, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N020"
+        {
+            custom string nodeId = "sg-f1-pharmacy"
+            custom string nameZh = "药房取药显示屏"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (-1.283696, 1.417263, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N021"
+        {
+            custom string nodeId = "sg-f1-patient-service-center"
+            custom string nameZh = "便民服务中心（预检、导诊）"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (10.500000, 1.800000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N022"
+        {
+            custom string nodeId = "sg-f1-self-service-registration-payment"
+            custom string nameZh = "自助挂号收费机（北侧）"
+            color3f[] primvars:displayColor = [(0.95, 0.55, 0.10)]
+            double radius = 0.2
+            double3 xformOp:translate = (21.000000, 4.800000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N023"
+        {
+            custom string nodeId = "sg-f1-self-service-registration-payment-south"
+            custom string nameZh = "自助挂号收费机（南侧）"
+            color3f[] primvars:displayColor = [(0.95, 0.55, 0.10)]
+            double radius = 0.2
+            double3 xformOp:translate = (-32.700000, -9.900000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N024"
+        {
+            custom string nodeId = "sg-f1-self-service-report-machine"
+            custom string nameZh = "自助取报告机"
+            color3f[] primvars:displayColor = [(0.95, 0.55, 0.10)]
+            double radius = 0.2
+            double3 xformOp:translate = (13.049446, -18.300641, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N025"
+        {
+            custom string nodeId = "sg-f1-escalator"
+            custom string nameZh = "扶梯"
+            color3f[] primvars:displayColor = [(0.95, 0.55, 0.10)]
+            double radius = 0.2
+            double3 xformOp:translate = (14.400000, -3.300000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N026"
+        {
+            custom string nodeId = "sg-f1-accessible-restroom"
+            custom string nameZh = "无障碍卫生间"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (15.300000, 21.600000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N027"
+        {
+            custom string nodeId = "sg-f1-functional-exam-waiting"
+            custom string nameZh = "功能检查候诊"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (-15.859772, -14.247226, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N028"
+        {
+            custom string nodeId = "sg-f1-stairs"
+            custom string nameZh = "楼梯"
+            color3f[] primvars:displayColor = [(0.95, 0.55, 0.10)]
+            double radius = 0.2
+            double3 xformOp:translate = (-32.700000, -9.900000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N029"
+        {
+            custom string nodeId = "nav-f1-safe-stop-west"
+            custom string nameZh = "西侧安全停靠点"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (-7.200000, 10.650000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N030"
+        {
+            custom string nodeId = "nav-f1-safe-stop-east"
+            custom string nameZh = "东侧安全停靠点"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (4.950000, 10.650000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N031"
+        {
+            custom string nodeId = "sg-f1-functional-exam-waiting-east"
+            custom string nameZh = "功能检查等候区"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (12.750000, -12.150000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N032"
+        {
+            custom string nodeId = "sg-f1-stairs-lower-right"
+            custom string nameZh = "右下楼梯"
+            color3f[] primvars:displayColor = [(0.95, 0.55, 0.10)]
+            double radius = 0.2
+            double3 xformOp:translate = (15.150000, -18.300000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N033"
+        {
+            custom string nodeId = "sg-f1-restroom-lower-left"
+            custom string nameZh = "左下卫生间"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (-27.598720, -21.900771, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N034"
+        {
+            custom string nodeId = "sg-f1-accessible-restroom-lower-left"
+            custom string nameZh = "左下无障碍卫生间"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (-27.600000, -21.900000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N035"
+        {
+            custom string nodeId = "sg-f1-accessible-restroom-lower-right"
+            custom string nameZh = "右下无障碍卫生间"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (15.300000, -25.650000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N036"
+        {
+            custom string nodeId = "sg-f1-infusion-room"
+            custom string nameZh = "输液室"
+            color3f[] primvars:displayColor = [(0.10, 0.65, 0.32)]
+            double radius = 0.22
+            double3 xformOp:translate = (-18.600000, 1.200000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N037"
+        {
+            custom string nodeId = "nav-f1-spine-01"
+            custom string nameZh = "北侧候诊通道西节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-8.400000, 23.250000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N038"
+        {
+            custom string nodeId = "nav-f1-spine-02"
+            custom string nameZh = "北侧候诊通道东节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (1.350000, 23.250000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N039"
+        {
+            custom string nodeId = "nav-f1-spine-03"
+            custom string nameZh = "东侧主通道节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (1.350000, 10.800000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N040"
+        {
+            custom string nodeId = "nav-f1-spine-04"
+            custom string nameZh = "门诊大厅中央通道"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-8.400000, 10.800000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N041"
+        {
+            custom string nodeId = "nav-f1-spine-05"
+            custom string nameZh = "西侧主通道节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-30.300000, 10.800000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N042"
+        {
+            custom string nodeId = "nav-f1-spine-06"
+            custom string nameZh = "南侧功能检查通道节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (1.350000, -7.500000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N043"
+        {
+            custom string nodeId = "nav-f1-spine-07"
+            custom string nameZh = "南侧西端通道节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-29.550873, -7.500250, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N044"
+        {
+            custom string nodeId = "nav-f1-spine-08"
+            custom string nameZh = "东侧门诊连接节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (15.150000, 10.800000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N045"
+        {
+            custom string nodeId = "nav-f1-corridor-01"
+            custom string nameZh = "北侧康复走廊西接近点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-12.000000, 23.550000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N046"
+        {
+            custom string nodeId = "nav-f1-corridor-02"
+            custom string nameZh = "北侧康复走廊中西接近点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-5.400000, 23.550000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N047"
+        {
+            custom string nodeId = "nav-f1-corridor-03"
+            custom string nameZh = "北侧康复走廊中央接近点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (0.450000, 23.550000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N048"
+        {
+            custom string nodeId = "nav-f1-corridor-04"
+            custom string nameZh = "北侧康复走廊中东接近点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (8.400000, 23.550000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N049"
+        {
+            custom string nodeId = "nav-f1-corridor-05"
+            custom string nameZh = "北侧康复走廊东接近点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (15.296591, 24.220993, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N050"
+        {
+            custom string nodeId = "nav-f1-corridor-06"
+            custom string nameZh = "大厅西北通道节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-11.100000, 17.400000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N051"
+        {
+            custom string nodeId = "nav-f1-corridor-07"
+            custom string nameZh = "大厅北部中央通道节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-8.100000, 20.400000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N052"
+        {
+            custom string nodeId = "nav-f1-corridor-08"
+            custom string nameZh = "大厅东北通道节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (1.800000, 21.000000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N053"
+        {
+            custom string nodeId = "nav-f1-corridor-09"
+            custom string nameZh = "挂号收费南侧通道节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (9.600000, 10.800000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N054"
+        {
+            custom string nodeId = "nav-f1-corridor-11"
+            custom string nameZh = "西侧中部路口"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-22.500000, 8.700000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N055"
+        {
+            custom string nodeId = "nav-f1-corridor-12"
+            custom string nameZh = "药房北侧接近节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-11.550000, 8.700000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N056"
+        {
+            custom string nodeId = "nav-f1-corridor-13"
+            custom string nameZh = "电梯厅西侧绕行节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-28.800000, 0.150000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N057"
+        {
+            custom string nodeId = "nav-f1-corridor-14"
+            custom string nameZh = "药房东侧通道节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-0.450000, 0.150000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N058"
+        {
+            custom string nodeId = "nav-f1-corridor-15"
+            custom string nameZh = "东侧中部通道节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (15.150000, 0.150000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N059"
+        {
+            custom string nodeId = "nav-f1-corridor-16"
+            custom string nameZh = "南侧西部路口"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-22.500000, -7.500000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N060"
+        {
+            custom string nodeId = "nav-f1-corridor-17"
+            custom string nameZh = "功能检查西接近节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-10.650000, -10.350000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N061"
+        {
+            custom string nodeId = "nav-f1-corridor-18"
+            custom string nameZh = "功能检查东接近节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (8.400000, -10.350000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N062"
+        {
+            custom string nodeId = "nav-f1-corridor-19"
+            custom string nameZh = "左下设施接近节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-27.600000, -16.950000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N063"
+        {
+            custom string nodeId = "nav-f1-corridor-20"
+            custom string nameZh = "右下设施接近节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (15.150000, -14.700000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N064"
+        {
+            custom string nodeId = "nav-f1-corridor-21"
+            custom string nameZh = "抢救室门口上方接近节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-19.800000, 8.700000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N065"
+        {
+            custom string nodeId = "nav-f1-corridor-22"
+            custom string nameZh = "药房东南侧绕行节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-0.450000, -7.500000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N066"
+        {
+            custom string nodeId = "nav-f1-corridor-23"
+            custom string nameZh = "候诊区横向通道交汇节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-8.400000, 17.400000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N067"
+        {
+            custom string nodeId = "nav-f1-corridor-24"
+            custom string nameZh = "服务中心至功能检查绕行节点"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (6.600000, -8.100000, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N068"
+        {
+            custom string nodeId = "nav-f1-waypoint-001"
+            custom string nameZh = "走廊细分点001"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-8.693201, 23.549782, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N069"
+        {
+            custom string nodeId = "nav-f1-waypoint-002"
+            custom string nameZh = "走廊细分点002"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-11.547683, 20.472673, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N070"
+        {
+            custom string nodeId = "nav-f1-waypoint-003"
+            custom string nameZh = "走廊细分点003"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-2.472340, 23.549782, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N071"
+        {
+            custom string nodeId = "nav-f1-waypoint-004"
+            custom string nameZh = "走廊细分点004"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (4.425268, 23.549782, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N072"
+        {
+            custom string nodeId = "nav-f1-waypoint-005"
+            custom string nameZh = "走廊细分点005"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-9.751702, 20.333201, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N073"
+        {
+            custom string nodeId = "nav-f1-waypoint-006"
+            custom string nameZh = "走廊细分点006"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-4.329055, 20.995695, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N074"
+        {
+            custom string nodeId = "nav-f1-waypoint-007"
+            custom string nameZh = "走廊细分点007"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-1.804270, 21.213620, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N075"
+        {
+            custom string nodeId = "nav-f1-waypoint-008"
+            custom string nameZh = "走廊细分点008"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-8.398209, 14.100530, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N076"
+        {
+            custom string nodeId = "nav-f1-waypoint-009"
+            custom string nameZh = "走廊细分点009"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (1.431966, 15.939822, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N077"
+        {
+            custom string nodeId = "nav-f1-waypoint-010"
+            custom string nameZh = "走廊细分点010"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-3.522165, 10.796779, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N078"
+        {
+            custom string nodeId = "nav-f1-waypoint-011"
+            custom string nameZh = "走廊细分点011"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (5.475092, 10.796779, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N079"
+        {
+            custom string nodeId = "nav-f1-waypoint-012"
+            custom string nameZh = "走廊细分点012"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (12.372700, 10.796779, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N080"
+        {
+            custom string nodeId = "nav-f1-waypoint-013"
+            custom string nameZh = "走廊细分点013"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-13.872914, 10.796779, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N081"
+        {
+            custom string nodeId = "nav-f1-waypoint-014"
+            custom string nameZh = "走廊细分点014"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-19.347619, 10.796779, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N082"
+        {
+            custom string nodeId = "nav-f1-waypoint-015"
+            custom string nameZh = "走廊细分点015"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-24.822324, 10.796779, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N083"
+        {
+            custom string nodeId = "nav-f1-waypoint-016"
+            custom string nameZh = "走廊细分点016"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-26.392723, 9.750736, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N084"
+        {
+            custom string nodeId = "nav-f1-waypoint-017"
+            custom string nameZh = "走廊细分点017"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-15.668895, 8.695977, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N085"
+        {
+            custom string nodeId = "nav-f1-waypoint-018"
+            custom string nameZh = "走廊细分点018"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (0.451551, 5.479395, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N086"
+        {
+            custom string nodeId = "nav-f1-waypoint-019"
+            custom string nameZh = "走廊细分点019"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-0.450777, -3.673478, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N087"
+        {
+            custom string nodeId = "nav-f1-waypoint-020"
+            custom string nameZh = "走廊细分点020"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (3.974103, -8.921125, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N088"
+        {
+            custom string nodeId = "nav-f1-waypoint-021"
+            custom string nameZh = "走廊细分点021"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-16.987683, -7.500250, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N089"
+        {
+            custom string nodeId = "nav-f1-waypoint-022"
+            custom string nameZh = "走廊细分点022"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-11.469597, -7.500250, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N090"
+        {
+            custom string nodeId = "nav-f1-waypoint-023"
+            custom string nameZh = "走廊细分点023"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-5.960187, -7.500250, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N091"
+        {
+            custom string nodeId = "nav-f1-waypoint-024"
+            custom string nameZh = "走廊细分点024"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-26.557572, 7.850425, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N092"
+        {
+            custom string nodeId = "nav-f1-waypoint-025"
+            custom string nameZh = "走廊细分点025"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-28.032532, 4.259012, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N093"
+        {
+            custom string nodeId = "nav-f1-waypoint-026"
+            custom string nameZh = "走廊细分点026"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-28.015179, -3.699629, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N094"
+        {
+            custom string nodeId = "nav-f1-waypoint-027"
+            custom string nameZh = "走廊细分点027"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-26.349342, -6.689567, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N095"
+        {
+            custom string nodeId = "nav-f1-waypoint-028"
+            custom string nameZh = "走廊细分点028"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-29.550873, -3.673478, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N096"
+        {
+            custom string nodeId = "nav-f1-waypoint-029"
+            custom string nameZh = "走廊细分点029"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (1.327851, -8.014555, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N097"
+        {
+            custom string nodeId = "nav-f1-waypoint-030"
+            custom string nameZh = "走廊细分点030"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-3.938624, -7.927385, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N098"
+        {
+            custom string nodeId = "nav-f1-waypoint-031"
+            custom string nameZh = "走廊细分点031"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-9.213776, -7.840214, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N099"
+        {
+            custom string nodeId = "nav-f1-waypoint-032"
+            custom string nameZh = "走廊细分点032"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-14.480251, -7.761761, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N100"
+        {
+            custom string nodeId = "nav-f1-waypoint-033"
+            custom string nameZh = "走廊细分点033"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-19.755402, -7.674591, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N101"
+        {
+            custom string nodeId = "nav-f1-waypoint-034"
+            custom string nameZh = "走廊细分点034"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-25.021878, -7.587421, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N102"
+        {
+            custom string nodeId = "nav-f1-waypoint-035"
+            custom string nameZh = "走廊细分点035"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (2.290914, -8.659614, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N103"
+        {
+            custom string nodeId = "nav-f1-waypoint-036"
+            custom string nameZh = "走廊细分点036"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-2.029852, -9.226221, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N104"
+        {
+            custom string nodeId = "nav-f1-waypoint-037"
+            custom string nameZh = "走廊细分点037"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-6.341941, -9.792827, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N105"
+        {
+            custom string nodeId = "nav-f1-waypoint-038"
+            custom string nameZh = "走廊细分点038"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (3.071775, -7.805346, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N106"
+        {
+            custom string nodeId = "nav-f1-waypoint-039"
+            custom string nameZh = "走廊细分点039"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-26.392723, -7.500250, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N107"
+        {
+            custom string nodeId = "nav-f1-waypoint-040"
+            custom string nameZh = "走廊细分点040"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-18.549406, -8.450406, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N108"
+        {
+            custom string nodeId = "nav-f1-waypoint-041"
+            custom string nameZh = "走廊细分点041"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-14.601718, -9.400561, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N109"
+        {
+            custom string nodeId = "nav-f1-waypoint-042"
+            custom string nameZh = "走廊细分点042"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-6.654286, -9.400561, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N110"
+        {
+            custom string nodeId = "nav-f1-waypoint-043"
+            custom string nameZh = "走廊细分点043"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-2.645865, -8.450406, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N111"
+        {
+            custom string nodeId = "nav-f1-waypoint-044"
+            custom string nameZh = "走廊细分点044"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (4.876432, -8.921125, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N112"
+        {
+            custom string nodeId = "nav-f1-waypoint-045"
+            custom string nameZh = "走廊细分点045"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-5.890777, -10.350717, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N113"
+        {
+            custom string nodeId = "nav-f1-waypoint-046"
+            custom string nameZh = "走廊细分点046"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-1.127524, -10.350717, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N114"
+        {
+            custom string nodeId = "nav-f1-waypoint-047"
+            custom string nameZh = "走廊细分点047"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (3.635730, -10.350717, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N115"
+        {
+            custom string nodeId = "nav-f1-waypoint-048"
+            custom string nameZh = "走廊细分点048"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (1.353880, 6.220342, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N116"
+        {
+            custom string nodeId = "nav-f1-waypoint-049"
+            custom string nameZh = "走廊细分点049"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (1.353880, 1.643906, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N117"
+        {
+            custom string nodeId = "nav-f1-waypoint-050"
+            custom string nameZh = "走廊细分点050"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (1.353880, -2.923814, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N118"
+        {
+            custom string nodeId = "nav-f1-waypoint-051"
+            custom string nameZh = "走廊细分点051"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (15.149095, 5.479395, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N119"
+        {
+            custom string nodeId = "nav-f1-waypoint-052"
+            custom string nameZh = "走廊细分点052"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (13.465906, -10.490189, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N120"
+        {
+            custom string nodeId = "nav-f1-waypoint-053"
+            custom string nameZh = "走廊细分点053"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-28.943536, -12.224876, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N121"
+        {
+            custom string nodeId = "task-f1-pharmacy-medication-delivery"
+            custom string nameZh = "药房送药服务点"
+            color3f[] primvars:displayColor = [(0.58, 0.27, 0.78)]
+            double radius = 0.23
+            double3 xformOp:translate = (-9.092308, 1.504433, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N122"
+        {
+            custom string nodeId = "task-f1-pharmacy-delivery-north-gate"
+            custom string nameZh = "药房送药北侧任务门点"
+            color3f[] primvars:displayColor = [(0.58, 0.27, 0.78)]
+            double radius = 0.23
+            double3 xformOp:translate = (-14.992149, 9.001072, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N123"
+        {
+            custom string nodeId = "task-f1-pharmacy-delivery-junction"
+            custom string nameZh = "药房送药内部汇合点"
+            color3f[] primvars:displayColor = [(0.58, 0.27, 0.78)]
+            double radius = 0.23
+            double3 xformOp:translate = (-14.862005, 1.286508, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N124"
+        {
+            custom string nodeId = "task-f1-pharmacy-delivery-south-gate"
+            custom string nameZh = "药房送药南侧任务门点"
+            color3f[] primvars:displayColor = [(0.58, 0.27, 0.78)]
+            double radius = 0.23
+            double3 xformOp:translate = (-15.122292, -7.997121, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N125"
+        {
+            custom string nodeId = "nav-f1-waypoint-054"
+            custom string nameZh = "长边细分点054"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (15.218505, -20.174801, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N126"
+        {
+            custom string nodeId = "nav-f1-waypoint-055"
+            custom string nameZh = "长边细分点055"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-19.200123, -4.405708, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N127"
+        {
+            custom string nodeId = "nav-f1-waypoint-056"
+            custom string nameZh = "长边细分点056"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (10.047469, 6.298795, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N128"
+        {
+            custom string nodeId = "nav-f1-waypoint-057"
+            custom string nameZh = "长边细分点057"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-27.234318, 7.475593, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N129"
+        {
+            custom string nodeId = "nav-f1-waypoint-058"
+            custom string nameZh = "长边细分点058"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-4.979772, 15.643443, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N130"
+        {
+            custom string nodeId = "nav-f1-waypoint-059"
+            custom string nameZh = "长边细分点059"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (18.072987, 7.798123, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N131"
+        {
+            custom string nodeId = "nav-f1-waypoint-060"
+            custom string nameZh = "长边细分点060"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (15.747756, 3.300140, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N132"
+        {
+            custom string nodeId = "nav-f1-waypoint-061"
+            custom string nameZh = "长边细分点061"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (11.774040, 6.377249, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N133"
+        {
+            custom string nodeId = "nav-f1-waypoint-062"
+            custom string nameZh = "长边细分点062"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-15.755658, -8.555010, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N134"
+        {
+            custom string nodeId = "nav-f1-waypoint-063"
+            custom string nameZh = "长边细分点063"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (8.199430, -3.141739, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Sphere "N135"
+        {
+            custom string nodeId = "nav-f1-waypoint-064"
+            custom string nameZh = "长边细分点064"
+            color3f[] primvars:displayColor = [(0.08, 0.45, 0.75)]
+            double radius = 0.18
+            double3 xformOp:translate = (-28.943536, -14.700511, 0.08)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+    }
+}

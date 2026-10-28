@@ -1,0 +1,11 @@
+{
+  "manual_complete": 65,
+  "total": 68,
+  "failed_1_based": [
+    24,
+    27,
+    43
+  ],
+  "selected_seed": 20261025,
+  "selected_epoch": 5
+}

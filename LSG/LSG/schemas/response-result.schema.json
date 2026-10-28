@@ -1,0 +1,6 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "type":"object",
+  "required":["status","text"],
+  "properties":{"status":{"type":"string"},"text":{"type":["string","null"]},"failure_reason":{"type":["string","null"]}}
+}

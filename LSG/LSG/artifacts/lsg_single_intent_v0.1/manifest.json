@@ -1,0 +1,30 @@
+{
+  "schema_version": "lsg.artifact.v1",
+  "name": "lsg_single_intent_v0.1",
+  "status": "FROZEN",
+  "seed": 20261023,
+  "epoch": 8,
+  "base_model_key": "qwen3_embedding_0_6b",
+  "input_format_version": "candidates_v1",
+  "max_length": 256,
+  "checkpoint": "model.pt",
+  "checkpoint_sha256": "b2a75c8e6e2aac87fa442aab0bd562fcf757c108eca3a031e9151f517fab494b",
+  "labels": "labels.json",
+  "training_config": "training_config.json",
+  "source_manifest_sha256": "f87911d1e2dffd2552aa2ee1eba7b9a3e4a7ca1325d1e4d4bf7dfa10ea675dd8",
+  "source_training_config_sha256": "e7be9e020b6ef985f2eeb63520b6f734605d7f89ac818c4710cf174a6cff4c2b",
+  "dev_summary": {
+    "decision_accuracy": 0.9625,
+    "decision_macro_f1": 0.9569358178053831,
+    "complete_label_accuracy": 0.95,
+    "reject_to_authorize": {
+      "count": 0,
+      "denominator": 28
+    },
+    "defer_to_authorize": {
+      "count": 1,
+      "denominator": 17
+    }
+  },
+  "test_accessed": false
+}

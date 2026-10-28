@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "nominal_speed_mps": 1.2,
+  "metric_tolerance": {
+    "distance_m": 0.001,
+    "travel_time_s": 0.01,
+    "risk_score": 0.001
+  },
+  "risk": {
+    "edge_risk_per_meter": {
+      "EMERGENCY_CORRIDOR": 2.0,
+      "CRITICAL_ACCESS": 3.0
+    },
+    "fixed_node_risk": {
+      "NO_STOPPING": 5.0,
+      "CONTROLLED_RESOURCE_AREA": 4.0
+    },
+    "CONGESTION_MULTIPLIER": 10.0
+  },
+  "accessibility": {
+    "unknown_width_policy": "allow",
+    "default_min_width_m": 0.9
+  },
+  "open_statuses": [
+    "open",
+    "open_with_authorization"
+  ],
+  "task_only_statuses": [
+    "task_only"
+  ]
+}

@@ -1,0 +1,1698 @@
+{
+  "schema_version": "1.0",
+  "description": "Deterministic offline comparison; no LLM/API calls.",
+  "counts": {
+    "normal": 40,
+    "accessible": 20,
+    "multistage": 20,
+    "permission": 20,
+    "dynamic": 20
+  },
+  "scenarios": [
+    {
+      "id": "normal-001",
+      "category": "normal",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-08"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-002",
+      "category": "normal",
+      "source": "nav-f1-corridor-02",
+      "ordered_destinations": [
+        "nav-f1-corridor-09"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-003",
+      "category": "normal",
+      "source": "nav-f1-corridor-03",
+      "ordered_destinations": [
+        "nav-f1-corridor-11"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-004",
+      "category": "normal",
+      "source": "nav-f1-corridor-04",
+      "ordered_destinations": [
+        "nav-f1-corridor-12"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-005",
+      "category": "normal",
+      "source": "nav-f1-corridor-05",
+      "ordered_destinations": [
+        "nav-f1-corridor-13"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-006",
+      "category": "normal",
+      "source": "nav-f1-corridor-06",
+      "ordered_destinations": [
+        "nav-f1-corridor-14"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-007",
+      "category": "normal",
+      "source": "nav-f1-corridor-07",
+      "ordered_destinations": [
+        "nav-f1-corridor-15"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-008",
+      "category": "normal",
+      "source": "nav-f1-corridor-08",
+      "ordered_destinations": [
+        "nav-f1-corridor-16"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-009",
+      "category": "normal",
+      "source": "nav-f1-corridor-09",
+      "ordered_destinations": [
+        "nav-f1-corridor-17"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-010",
+      "category": "normal",
+      "source": "nav-f1-corridor-11",
+      "ordered_destinations": [
+        "nav-f1-corridor-18"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-011",
+      "category": "normal",
+      "source": "nav-f1-corridor-12",
+      "ordered_destinations": [
+        "nav-f1-corridor-19"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-012",
+      "category": "normal",
+      "source": "nav-f1-corridor-13",
+      "ordered_destinations": [
+        "nav-f1-corridor-20"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-013",
+      "category": "normal",
+      "source": "nav-f1-corridor-14",
+      "ordered_destinations": [
+        "nav-f1-corridor-21"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-014",
+      "category": "normal",
+      "source": "nav-f1-corridor-15",
+      "ordered_destinations": [
+        "nav-f1-corridor-22"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-015",
+      "category": "normal",
+      "source": "nav-f1-corridor-16",
+      "ordered_destinations": [
+        "nav-f1-corridor-23"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-016",
+      "category": "normal",
+      "source": "nav-f1-corridor-17",
+      "ordered_destinations": [
+        "nav-f1-corridor-24"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-017",
+      "category": "normal",
+      "source": "nav-f1-corridor-18",
+      "ordered_destinations": [
+        "nav-f1-safe-stop-east"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-018",
+      "category": "normal",
+      "source": "nav-f1-corridor-19",
+      "ordered_destinations": [
+        "nav-f1-safe-stop-west"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-019",
+      "category": "normal",
+      "source": "nav-f1-corridor-20",
+      "ordered_destinations": [
+        "nav-f1-spine-01"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-020",
+      "category": "normal",
+      "source": "nav-f1-corridor-21",
+      "ordered_destinations": [
+        "nav-f1-spine-02"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-021",
+      "category": "normal",
+      "source": "nav-f1-corridor-22",
+      "ordered_destinations": [
+        "nav-f1-spine-03"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-022",
+      "category": "normal",
+      "source": "nav-f1-corridor-23",
+      "ordered_destinations": [
+        "nav-f1-spine-04"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-023",
+      "category": "normal",
+      "source": "nav-f1-corridor-24",
+      "ordered_destinations": [
+        "nav-f1-spine-05"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-024",
+      "category": "normal",
+      "source": "nav-f1-safe-stop-east",
+      "ordered_destinations": [
+        "nav-f1-spine-06"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-025",
+      "category": "normal",
+      "source": "nav-f1-safe-stop-west",
+      "ordered_destinations": [
+        "nav-f1-spine-07"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-026",
+      "category": "normal",
+      "source": "nav-f1-spine-01",
+      "ordered_destinations": [
+        "nav-f1-spine-08"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-027",
+      "category": "normal",
+      "source": "nav-f1-spine-02",
+      "ordered_destinations": [
+        "sg-f1-accessible-restroom"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-028",
+      "category": "normal",
+      "source": "nav-f1-spine-03",
+      "ordered_destinations": [
+        "sg-f1-accessible-restroom-lower-left"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-029",
+      "category": "normal",
+      "source": "nav-f1-spine-04",
+      "ordered_destinations": [
+        "sg-f1-accessible-restroom-lower-right"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-030",
+      "category": "normal",
+      "source": "nav-f1-spine-05",
+      "ordered_destinations": [
+        "sg-f1-escalator"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-031",
+      "category": "normal",
+      "source": "nav-f1-spine-06",
+      "ordered_destinations": [
+        "sg-f1-functional-exam-waiting"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-032",
+      "category": "normal",
+      "source": "nav-f1-spine-07",
+      "ordered_destinations": [
+        "sg-f1-functional-exam-waiting-east"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-033",
+      "category": "normal",
+      "source": "nav-f1-spine-08",
+      "ordered_destinations": [
+        "sg-f1-information-desk"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-034",
+      "category": "normal",
+      "source": "sg-f1-accessible-restroom",
+      "ordered_destinations": [
+        "sg-f1-medication-consultation"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-035",
+      "category": "normal",
+      "source": "sg-f1-accessible-restroom-lower-left",
+      "ordered_destinations": [
+        "sg-f1-notice-board"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-036",
+      "category": "normal",
+      "source": "sg-f1-accessible-restroom-lower-right",
+      "ordered_destinations": [
+        "sg-f1-outpatient-waiting"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-037",
+      "category": "normal",
+      "source": "sg-f1-escalator",
+      "ordered_destinations": [
+        "sg-f1-patient-service-center"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-038",
+      "category": "normal",
+      "source": "sg-f1-functional-exam-waiting",
+      "ordered_destinations": [
+        "sg-f1-pharmacy"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-039",
+      "category": "normal",
+      "source": "sg-f1-functional-exam-waiting-east",
+      "ordered_destinations": [
+        "sg-f1-public-elevator-hall"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "normal-040",
+      "category": "normal",
+      "source": "sg-f1-information-desk",
+      "ordered_destinations": [
+        "sg-f1-queue-ticket-machine"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "accessible-001",
+      "category": "accessible",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-13"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR_ACCESSIBLE",
+        "STEP_FREE"
+      ],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "accessible-002",
+      "category": "accessible",
+      "source": "nav-f1-corridor-02",
+      "ordered_destinations": [
+        "nav-f1-corridor-14"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR_ACCESSIBLE",
+        "STEP_FREE"
+      ],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "accessible-003",
+      "category": "accessible",
+      "source": "nav-f1-corridor-03",
+      "ordered_destinations": [
+        "nav-f1-corridor-15"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR_ACCESSIBLE",
+        "STEP_FREE"
+      ],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "accessible-004",
+      "category": "accessible",
+      "source": "nav-f1-corridor-04",
+      "ordered_destinations": [
+        "nav-f1-corridor-16"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR_ACCESSIBLE",
+        "STEP_FREE"
+      ],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "accessible-005",
+      "category": "accessible",
+      "source": "nav-f1-corridor-05",
+      "ordered_destinations": [
+        "nav-f1-corridor-17"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR_ACCESSIBLE",
+        "STEP_FREE"
+      ],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "accessible-006",
+      "category": "accessible",
+      "source": "nav-f1-corridor-06",
+      "ordered_destinations": [
+        "nav-f1-corridor-18"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR_ACCESSIBLE",
+        "STEP_FREE"
+      ],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "accessible-007",
+      "category": "accessible",
+      "source": "nav-f1-corridor-07",
+      "ordered_destinations": [
+        "nav-f1-corridor-19"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR_ACCESSIBLE",
+        "STEP_FREE"
+      ],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "accessible-008",
+      "category": "accessible",
+      "source": "nav-f1-corridor-08",
+      "ordered_destinations": [
+        "nav-f1-corridor-20"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR_ACCESSIBLE",
+        "STEP_FREE"
+      ],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "accessible-009",
+      "category": "accessible",
+      "source": "nav-f1-corridor-09",
+      "ordered_destinations": [
+        "nav-f1-corridor-21"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR_ACCESSIBLE",
+        "STEP_FREE"
+      ],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "accessible-010",
+      "category": "accessible",
+      "source": "nav-f1-corridor-11",
+      "ordered_destinations": [
+        "nav-f1-corridor-22"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR_ACCESSIBLE",
+        "STEP_FREE"
+      ],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "accessible-011",
+      "category": "accessible",
+      "source": "nav-f1-corridor-12",
+      "ordered_destinations": [
+        "nav-f1-corridor-23"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR_ACCESSIBLE",
+        "STEP_FREE"
+      ],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "accessible-012",
+      "category": "accessible",
+      "source": "nav-f1-corridor-13",
+      "ordered_destinations": [
+        "nav-f1-corridor-24"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR_ACCESSIBLE",
+        "STEP_FREE"
+      ],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "accessible-013",
+      "category": "accessible",
+      "source": "nav-f1-corridor-14",
+      "ordered_destinations": [
+        "nav-f1-safe-stop-east"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR_ACCESSIBLE",
+        "STEP_FREE"
+      ],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "accessible-014",
+      "category": "accessible",
+      "source": "nav-f1-corridor-15",
+      "ordered_destinations": [
+        "nav-f1-safe-stop-west"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR_ACCESSIBLE",
+        "STEP_FREE"
+      ],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "accessible-015",
+      "category": "accessible",
+      "source": "nav-f1-corridor-16",
+      "ordered_destinations": [
+        "nav-f1-spine-01"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR_ACCESSIBLE",
+        "STEP_FREE"
+      ],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "accessible-016",
+      "category": "accessible",
+      "source": "nav-f1-corridor-17",
+      "ordered_destinations": [
+        "nav-f1-spine-02"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR_ACCESSIBLE",
+        "STEP_FREE"
+      ],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "accessible-017",
+      "category": "accessible",
+      "source": "nav-f1-corridor-18",
+      "ordered_destinations": [
+        "nav-f1-spine-03"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR_ACCESSIBLE",
+        "STEP_FREE"
+      ],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "accessible-018",
+      "category": "accessible",
+      "source": "nav-f1-corridor-19",
+      "ordered_destinations": [
+        "nav-f1-spine-04"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR_ACCESSIBLE",
+        "STEP_FREE"
+      ],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "accessible-019",
+      "category": "accessible",
+      "source": "nav-f1-corridor-20",
+      "ordered_destinations": [
+        "nav-f1-spine-05"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR_ACCESSIBLE",
+        "STEP_FREE"
+      ],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "accessible-020",
+      "category": "accessible",
+      "source": "nav-f1-corridor-21",
+      "ordered_destinations": [
+        "nav-f1-spine-06"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR_ACCESSIBLE",
+        "STEP_FREE"
+      ],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "multistage-001",
+      "category": "multistage",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-06",
+        "nav-f1-corridor-15"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "multistage-002",
+      "category": "multistage",
+      "source": "nav-f1-corridor-02",
+      "ordered_destinations": [
+        "nav-f1-corridor-07",
+        "nav-f1-corridor-16"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "multistage-003",
+      "category": "multistage",
+      "source": "nav-f1-corridor-03",
+      "ordered_destinations": [
+        "nav-f1-corridor-08",
+        "nav-f1-corridor-17"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "multistage-004",
+      "category": "multistage",
+      "source": "nav-f1-corridor-04",
+      "ordered_destinations": [
+        "nav-f1-corridor-09",
+        "nav-f1-corridor-18"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "multistage-005",
+      "category": "multistage",
+      "source": "nav-f1-corridor-05",
+      "ordered_destinations": [
+        "nav-f1-corridor-11",
+        "nav-f1-corridor-19"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "multistage-006",
+      "category": "multistage",
+      "source": "nav-f1-corridor-06",
+      "ordered_destinations": [
+        "nav-f1-corridor-12",
+        "nav-f1-corridor-20"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "multistage-007",
+      "category": "multistage",
+      "source": "nav-f1-corridor-07",
+      "ordered_destinations": [
+        "nav-f1-corridor-13",
+        "nav-f1-corridor-21"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "multistage-008",
+      "category": "multistage",
+      "source": "nav-f1-corridor-08",
+      "ordered_destinations": [
+        "nav-f1-corridor-14",
+        "nav-f1-corridor-22"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "multistage-009",
+      "category": "multistage",
+      "source": "nav-f1-corridor-09",
+      "ordered_destinations": [
+        "nav-f1-corridor-15",
+        "nav-f1-corridor-23"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "multistage-010",
+      "category": "multistage",
+      "source": "nav-f1-corridor-11",
+      "ordered_destinations": [
+        "nav-f1-corridor-16",
+        "nav-f1-corridor-24"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "multistage-011",
+      "category": "multistage",
+      "source": "nav-f1-corridor-12",
+      "ordered_destinations": [
+        "nav-f1-corridor-17",
+        "nav-f1-safe-stop-east"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "multistage-012",
+      "category": "multistage",
+      "source": "nav-f1-corridor-13",
+      "ordered_destinations": [
+        "nav-f1-corridor-18",
+        "nav-f1-safe-stop-west"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "multistage-013",
+      "category": "multistage",
+      "source": "nav-f1-corridor-14",
+      "ordered_destinations": [
+        "nav-f1-corridor-19",
+        "nav-f1-spine-01"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "multistage-014",
+      "category": "multistage",
+      "source": "nav-f1-corridor-15",
+      "ordered_destinations": [
+        "nav-f1-corridor-20",
+        "nav-f1-spine-02"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "multistage-015",
+      "category": "multistage",
+      "source": "nav-f1-corridor-16",
+      "ordered_destinations": [
+        "nav-f1-corridor-21",
+        "nav-f1-spine-03"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "multistage-016",
+      "category": "multistage",
+      "source": "nav-f1-corridor-17",
+      "ordered_destinations": [
+        "nav-f1-corridor-22",
+        "nav-f1-spine-04"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "multistage-017",
+      "category": "multistage",
+      "source": "nav-f1-corridor-18",
+      "ordered_destinations": [
+        "nav-f1-corridor-23",
+        "nav-f1-spine-05"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "multistage-018",
+      "category": "multistage",
+      "source": "nav-f1-corridor-19",
+      "ordered_destinations": [
+        "nav-f1-corridor-24",
+        "nav-f1-spine-06"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "multistage-019",
+      "category": "multistage",
+      "source": "nav-f1-corridor-20",
+      "ordered_destinations": [
+        "nav-f1-safe-stop-east",
+        "nav-f1-spine-07"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "multistage-020",
+      "category": "multistage",
+      "source": "nav-f1-corridor-21",
+      "ordered_destinations": [
+        "nav-f1-safe-stop-west",
+        "nav-f1-spine-08"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "permission-001",
+      "category": "permission",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "sg-f1-cardiopulmonary-rehabilitation"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [
+        "ENTER_CLINICAL_AREA"
+      ],
+      "events": [],
+      "expected_decision": "REJECT"
+    },
+    {
+      "id": "permission-002",
+      "category": "permission",
+      "source": "nav-f1-corridor-03",
+      "ordered_destinations": [
+        "sg-f1-consultation-room"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [
+        "ENTER_CLINICAL_AREA"
+      ],
+      "events": [],
+      "expected_decision": "REJECT"
+    },
+    {
+      "id": "permission-003",
+      "category": "permission",
+      "source": "nav-f1-corridor-05",
+      "ordered_destinations": [
+        "sg-f1-consultation-rooms"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [
+        "ENTER_CLINICAL_AREA"
+      ],
+      "events": [],
+      "expected_decision": "REJECT"
+    },
+    {
+      "id": "permission-004",
+      "category": "permission",
+      "source": "nav-f1-corridor-07",
+      "ordered_destinations": [
+        "sg-f1-emergency-room-entrance"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [
+        "ENTER_CLINICAL_AREA"
+      ],
+      "events": [],
+      "expected_decision": "REJECT"
+    },
+    {
+      "id": "permission-005",
+      "category": "permission",
+      "source": "nav-f1-corridor-09",
+      "ordered_destinations": [
+        "sg-f1-infusion-room"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [
+        "ENTER_CLINICAL_AREA"
+      ],
+      "events": [],
+      "expected_decision": "REJECT"
+    },
+    {
+      "id": "permission-006",
+      "category": "permission",
+      "source": "nav-f1-corridor-12",
+      "ordered_destinations": [
+        "sg-f1-mental-health"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [
+        "ENTER_CLINICAL_AREA"
+      ],
+      "events": [],
+      "expected_decision": "REJECT"
+    },
+    {
+      "id": "permission-007",
+      "category": "permission",
+      "source": "nav-f1-corridor-14",
+      "ordered_destinations": [
+        "sg-f1-nebulization-room"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [
+        "ENTER_CLINICAL_AREA"
+      ],
+      "events": [],
+      "expected_decision": "REJECT"
+    },
+    {
+      "id": "permission-008",
+      "category": "permission",
+      "source": "nav-f1-corridor-16",
+      "ordered_destinations": [
+        "sg-f1-neurological-rehabilitation"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [
+        "ENTER_CLINICAL_AREA"
+      ],
+      "events": [],
+      "expected_decision": "REJECT"
+    },
+    {
+      "id": "permission-009",
+      "category": "permission",
+      "source": "nav-f1-corridor-18",
+      "ordered_destinations": [
+        "sg-f1-occupational-rehabilitation"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [
+        "ENTER_CLINICAL_AREA"
+      ],
+      "events": [],
+      "expected_decision": "REJECT"
+    },
+    {
+      "id": "permission-010",
+      "category": "permission",
+      "source": "nav-f1-corridor-20",
+      "ordered_destinations": [
+        "sg-f1-orthopedic-rehabilitation"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [
+        "ENTER_CLINICAL_AREA"
+      ],
+      "events": [],
+      "expected_decision": "REJECT"
+    },
+    {
+      "id": "permission-011",
+      "category": "permission",
+      "source": "nav-f1-corridor-22",
+      "ordered_destinations": [
+        "sg-f1-spinal-cord-rehabilitation"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [
+        "ENTER_CLINICAL_AREA"
+      ],
+      "events": [],
+      "expected_decision": "REJECT"
+    },
+    {
+      "id": "permission-012",
+      "category": "permission",
+      "source": "nav-f1-corridor-24",
+      "ordered_destinations": [
+        "sg-f1-spinal-cord-rehabilitation-east"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [
+        "ENTER_CLINICAL_AREA"
+      ],
+      "events": [],
+      "expected_decision": "REJECT"
+    },
+    {
+      "id": "permission-013",
+      "category": "permission",
+      "source": "nav-f1-safe-stop-west",
+      "ordered_destinations": [
+        "sg-f1-cardiopulmonary-rehabilitation"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [
+        "ENTER_CLINICAL_AREA"
+      ],
+      "events": [],
+      "expected_decision": "REJECT"
+    },
+    {
+      "id": "permission-014",
+      "category": "permission",
+      "source": "nav-f1-spine-02",
+      "ordered_destinations": [
+        "sg-f1-consultation-room"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [
+        "ENTER_CLINICAL_AREA"
+      ],
+      "events": [],
+      "expected_decision": "REJECT"
+    },
+    {
+      "id": "permission-015",
+      "category": "permission",
+      "source": "nav-f1-spine-04",
+      "ordered_destinations": [
+        "sg-f1-consultation-rooms"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [
+        "ENTER_CLINICAL_AREA"
+      ],
+      "events": [],
+      "expected_decision": "REJECT"
+    },
+    {
+      "id": "permission-016",
+      "category": "permission",
+      "source": "nav-f1-spine-06",
+      "ordered_destinations": [
+        "sg-f1-emergency-room-entrance"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [
+        "ENTER_CLINICAL_AREA"
+      ],
+      "events": [],
+      "expected_decision": "REJECT"
+    },
+    {
+      "id": "permission-017",
+      "category": "permission",
+      "source": "nav-f1-spine-08",
+      "ordered_destinations": [
+        "sg-f1-infusion-room"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [
+        "ENTER_CLINICAL_AREA"
+      ],
+      "events": [],
+      "expected_decision": "REJECT"
+    },
+    {
+      "id": "permission-018",
+      "category": "permission",
+      "source": "sg-f1-accessible-restroom-lower-left",
+      "ordered_destinations": [
+        "sg-f1-mental-health"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [
+        "ENTER_CLINICAL_AREA"
+      ],
+      "events": [],
+      "expected_decision": "REJECT"
+    },
+    {
+      "id": "permission-019",
+      "category": "permission",
+      "source": "sg-f1-escalator",
+      "ordered_destinations": [
+        "sg-f1-nebulization-room"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [
+        "ENTER_CLINICAL_AREA"
+      ],
+      "events": [],
+      "expected_decision": "REJECT"
+    },
+    {
+      "id": "permission-020",
+      "category": "permission",
+      "source": "sg-f1-functional-exam-waiting-east",
+      "ordered_destinations": [
+        "sg-f1-neurological-rehabilitation"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [
+        "ENTER_CLINICAL_AREA"
+      ],
+      "events": [],
+      "expected_decision": "REJECT"
+    },
+    {
+      "id": "dynamic-001",
+      "category": "dynamic",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-03"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [
+        {
+          "id": "dynamic-event-001",
+          "type": "NODE_CLOSED",
+          "region_id": "nav-f1-corridor-02"
+        }
+      ],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "dynamic-002",
+      "category": "dynamic",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-04"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [
+        {
+          "id": "dynamic-event-002",
+          "type": "NODE_CLOSED",
+          "region_id": "nav-f1-corridor-02"
+        }
+      ],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "dynamic-003",
+      "category": "dynamic",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-05"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [
+        {
+          "id": "dynamic-event-003",
+          "type": "NODE_CLOSED",
+          "region_id": "nav-f1-corridor-02"
+        }
+      ],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "dynamic-004",
+      "category": "dynamic",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-07"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [
+        {
+          "id": "dynamic-event-004",
+          "type": "NODE_CLOSED",
+          "region_id": "nav-f1-spine-01"
+        }
+      ],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "dynamic-005",
+      "category": "dynamic",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-08"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [
+        {
+          "id": "dynamic-event-005",
+          "type": "NODE_CLOSED",
+          "region_id": "nav-f1-corridor-02"
+        }
+      ],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "dynamic-006",
+      "category": "dynamic",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-03"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [
+        {
+          "id": "dynamic-event-006",
+          "type": "CONGESTION",
+          "region_id": "nav-f1-corridor-02",
+          "severity": 0.8
+        }
+      ],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "dynamic-007",
+      "category": "dynamic",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-04"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [
+        {
+          "id": "dynamic-event-007",
+          "type": "CONGESTION",
+          "region_id": "nav-f1-corridor-02",
+          "severity": 0.8
+        }
+      ],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "dynamic-008",
+      "category": "dynamic",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-05"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [
+        {
+          "id": "dynamic-event-008",
+          "type": "CONGESTION",
+          "region_id": "nav-f1-corridor-02",
+          "severity": 0.8
+        }
+      ],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "dynamic-009",
+      "category": "dynamic",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-07"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [
+        {
+          "id": "dynamic-event-009",
+          "type": "CONGESTION",
+          "region_id": "nav-f1-spine-01",
+          "severity": 0.8
+        }
+      ],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "dynamic-010",
+      "category": "dynamic",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-08"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [
+        {
+          "id": "dynamic-event-010",
+          "type": "CONGESTION",
+          "region_id": "nav-f1-corridor-02",
+          "severity": 0.8
+        }
+      ],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "dynamic-011",
+      "category": "dynamic",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-03"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [
+        {
+          "id": "dynamic-event-011",
+          "type": "STATUS_EXPIRED",
+          "region_id": "nav-f1-corridor-02"
+        }
+      ],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "dynamic-012",
+      "category": "dynamic",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-04"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [
+        {
+          "id": "dynamic-event-012",
+          "type": "STATUS_EXPIRED",
+          "region_id": "nav-f1-corridor-02"
+        }
+      ],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "dynamic-013",
+      "category": "dynamic",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-05"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [
+        {
+          "id": "dynamic-event-013",
+          "type": "STATUS_EXPIRED",
+          "region_id": "nav-f1-corridor-02"
+        }
+      ],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "dynamic-014",
+      "category": "dynamic",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-07"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [
+        {
+          "id": "dynamic-event-014",
+          "type": "STATUS_EXPIRED",
+          "region_id": "nav-f1-spine-01"
+        }
+      ],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "dynamic-015",
+      "category": "dynamic",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-08"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [
+        {
+          "id": "dynamic-event-015",
+          "type": "STATUS_EXPIRED",
+          "region_id": "nav-f1-corridor-02"
+        }
+      ],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "dynamic-016",
+      "category": "dynamic",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-11"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [
+        {
+          "id": "dynamic-event-016",
+          "type": "EMERGENCY_CORRIDOR_ACTIVE",
+          "region_id": "nav-f1-corridor-21"
+        }
+      ],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "dynamic-017",
+      "category": "dynamic",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-13"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [
+        {
+          "id": "dynamic-event-017",
+          "type": "EMERGENCY_CORRIDOR_ACTIVE",
+          "region_id": "nav-f1-corridor-21"
+        }
+      ],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "dynamic-018",
+      "category": "dynamic",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-16"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [
+        {
+          "id": "dynamic-event-018",
+          "type": "EMERGENCY_CORRIDOR_ACTIVE",
+          "region_id": "nav-f1-corridor-21"
+        }
+      ],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "dynamic-019",
+      "category": "dynamic",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-19"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [
+        {
+          "id": "dynamic-event-019",
+          "type": "EMERGENCY_CORRIDOR_ACTIVE",
+          "region_id": "nav-f1-corridor-21"
+        }
+      ],
+      "expected_decision": "ALLOW"
+    },
+    {
+      "id": "dynamic-020",
+      "category": "dynamic",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-spine-07"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [
+        {
+          "id": "dynamic-event-020",
+          "type": "EMERGENCY_CORRIDOR_ACTIVE",
+          "region_id": "nav-f1-corridor-21"
+        }
+      ],
+      "expected_decision": "ALLOW"
+    }
+  ]
+}

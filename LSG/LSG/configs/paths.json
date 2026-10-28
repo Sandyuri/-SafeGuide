@@ -1,0 +1,8 @@
+{
+  "splitter_artifact": "artifacts/lsg_natural_splitter_v0.1",
+  "gate_artifact": "artifacts/lsg_single_intent_v0.1",
+  "splitter_base_model": "models/Qwen3-0.6B",
+  "gate_base_model": "models/Qwen3-Embedding-0.6B",
+  "roboguard_adapter": "integrations/roboguard/adapter.py",
+  "roboguard_allowlist": "integrations/roboguard/first_floor_allowlist.json"
+}

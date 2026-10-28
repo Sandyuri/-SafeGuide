@@ -1,0 +1,29 @@
+{
+  "schema_version": "lsg.artifact.v1",
+  "name": "lsg_natural_splitter_v0.1",
+  "status": "FROZEN",
+  "seed": 20261025,
+  "epoch": 5,
+  "base_model_key": "qwen3_0_6b",
+  "checkpoint": "best/adapter_model.safetensors",
+  "checkpoint_sha256": "50ac3eb962b481bb8d0156723ef08d264e456ce256227f34970acf6c4a055887",
+  "prompt": "splitter_prompt.txt",
+  "generation_config": "generation_config.json",
+  "training_config": "training_config.json",
+  "source_manifest_sha256": "de58cfbca7574b6b44850dbd4b5968d3942abe51bf863b4df3c1ddae7c56409a",
+  "source_artifact_sha256": {
+    "best/adapter_config.json": "51761a6297bf2945cd632a13e53b2be3b5a0497b895a02729188c214f29f633b",
+    "best/adapter_model.safetensors": "50ac3eb962b481bb8d0156723ef08d264e456ce256227f34970acf6c4a055887",
+    "best_metadata.json": "63ee8f93e1e0459c2c1de44c917b576d9b3cb3a1e1c03e81a0c07a146cb0cac4",
+    "code/train_natural_split_lora_v01.py": "422ade9481cb8b6b62f0b1e10b642de584b2d90987be5b1f0fc122757979df5c",
+    "code/evaluate_natural_split_v02.py": "bdd591b79ac1e29525098aea96df9d0862d393d434dcfdf0cc9d80fdcdabcba3",
+    "code/splitter_adapter.py": "e7236016b9fb3e29a080c47cf2be7d096c3aadab407f0287728e448a2f146622",
+    "code/score_natural_split_v02.py": "9f2e78612df97f3d15c8875b203702b17e647f9cc7dff6371b90ff63351c7201",
+    "dev_predictions.jsonl": "210630bc05382a94acb00e3f6cfe134cdf2d546011566463c988ffe59109649a",
+    "generation_config.json": "acf5475ff122f25541dc96ad017116757c8f0a0e0e5de30f923f6210dfb21766",
+    "splitter_prompt.txt": "f5902ded4e07f751f8804efdbb004d058974cdd430f9aaedfd238305f57754e0",
+    "dev_review_summary.json": "5a95ce24a217fcb7f208e525e0be6d74e235f2685534407e9b3d08f1034c2478",
+    "training_config.json": "0c94a73bef86fb90c5b633ecafc39708af271362fc2fe138a43a5e9cd928cb90"
+  },
+  "test_accessed": false
+}

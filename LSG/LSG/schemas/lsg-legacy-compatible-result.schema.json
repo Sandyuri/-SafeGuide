@@ -1,0 +1,16 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "type":"object",
+  "required":["schema_version","decision_source","request_id","session_id","aggregate_decision","intent_results","dispatch_plan","context_snapshot_hash","splitter_version","gate_version","splitter_hash","gate_hash","fail_closed_reason"],
+  "properties":{
+    "schema_version":{"const":"lsg.legacy-compatible.v0.1"},
+    "decision_source":{"const":"LEARNED_SAFEGATE"},
+    "request_id":{"type":"string"},"session_id":{"type":"string"},
+    "aggregate_decision":{"enum":["AUTHORIZE","DEFER","REJECT"]},
+    "intent_results":{"type":"array"},"dispatch_plan":{"type":"object"},
+    "context_snapshot_hash":{"type":"string"},
+    "splitter_version":{"type":"string"},"gate_version":{"type":"string"},
+    "splitter_hash":{"type":"string"},"gate_hash":{"type":"string"},
+    "fail_closed_reason":{"type":["string","null"]}
+  },"not":{"anyOf":[{"required":["matched_rules"]},{"required":["policy_version"]}]}
+}

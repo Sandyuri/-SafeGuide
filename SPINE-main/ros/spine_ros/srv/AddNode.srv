@@ -1,0 +1,7 @@
+string node_id
+int16 x
+int16 y 
+string type 
+string[] neighbors 
+---
+bool success

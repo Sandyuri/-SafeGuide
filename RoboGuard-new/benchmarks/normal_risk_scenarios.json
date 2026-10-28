@@ -1,0 +1,5820 @@
+{
+  "schema_version": "1.0",
+  "description": "Focused paired comparison: 60 public general-navigation cases and 60 cases where the distance-shortest route has risk and a lower-risk route exists within a 1.25 distance ratio. Medication-delivery-only and non-public topology is excluded.",
+  "counts": {
+    "normal": 60,
+    "risk_detour": 60
+  },
+  "candidate_counts": {
+    "normal": 1972,
+    "risk_detour": 168
+  },
+  "scenarios": [
+    {
+      "id": "normal-focused-001",
+      "category": "normal",
+      "source": "sg-f1-accessible-restroom",
+      "ordered_destinations": [
+        "sg-f1-restroom"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 5.257,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "sg-f1-accessible-restroom",
+          "nav-f1-corridor-05",
+          "sg-f1-restroom"
+        ],
+        "lowest_risk_distance_m": 5.257,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-accessible-restroom",
+          "nav-f1-corridor-05",
+          "sg-f1-restroom"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-002",
+      "category": "normal",
+      "source": "nav-f1-spine-04",
+      "ordered_destinations": [
+        "nav-f1-corridor-23"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 6.608,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23"
+        ],
+        "lowest_risk_distance_m": 6.608,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-003",
+      "category": "normal",
+      "source": "nav-f1-corridor-22",
+      "ordered_destinations": [
+        "nav-f1-corridor-14"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 7.654,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-22",
+          "nav-f1-waypoint-019",
+          "nav-f1-corridor-14"
+        ],
+        "lowest_risk_distance_m": 7.654,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-22",
+          "nav-f1-waypoint-019",
+          "nav-f1-corridor-14"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-004",
+      "category": "normal",
+      "source": "nav-f1-corridor-22",
+      "ordered_destinations": [
+        "sg-f1-pharmacy"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 9.168,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-22",
+          "nav-f1-waypoint-019",
+          "nav-f1-corridor-14",
+          "sg-f1-pharmacy"
+        ],
+        "lowest_risk_distance_m": 9.168,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-22",
+          "nav-f1-waypoint-019",
+          "nav-f1-corridor-14",
+          "sg-f1-pharmacy"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-005",
+      "category": "normal",
+      "source": "nav-f1-corridor-18",
+      "ordered_destinations": [
+        "nav-f1-corridor-20"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 10.146,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-20"
+        ],
+        "lowest_risk_distance_m": 10.146,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-20"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-006",
+      "category": "normal",
+      "source": "sg-f1-accessible-restroom-lower-right",
+      "ordered_destinations": [
+        "nav-f1-corridor-20"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 10.95,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "sg-f1-accessible-restroom-lower-right",
+          "nav-f1-waypoint-054",
+          "nav-f1-corridor-20"
+        ],
+        "lowest_risk_distance_m": 10.95,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-accessible-restroom-lower-right",
+          "nav-f1-waypoint-054",
+          "nav-f1-corridor-20"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-007",
+      "category": "normal",
+      "source": "sg-f1-notice-board",
+      "ordered_destinations": [
+        "sg-f1-outpatient-waiting"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 12.399,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "sg-f1-notice-board",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "sg-f1-outpatient-waiting"
+        ],
+        "lowest_risk_distance_m": 12.399,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-notice-board",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "sg-f1-outpatient-waiting"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-008",
+      "category": "normal",
+      "source": "sg-f1-pharmacy",
+      "ordered_destinations": [
+        "nav-f1-safe-stop-east"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 13.413,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "sg-f1-pharmacy",
+          "nav-f1-waypoint-018",
+          "nav-f1-spine-03",
+          "nav-f1-safe-stop-east"
+        ],
+        "lowest_risk_distance_m": 13.413,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-pharmacy",
+          "nav-f1-waypoint-018",
+          "nav-f1-spine-03",
+          "nav-f1-safe-stop-east"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-009",
+      "category": "normal",
+      "source": "nav-f1-safe-stop-east",
+      "ordered_destinations": [
+        "nav-f1-corridor-14"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 14.398,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-safe-stop-east",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-018",
+          "nav-f1-corridor-14"
+        ],
+        "lowest_risk_distance_m": 14.398,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-safe-stop-east",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-018",
+          "nav-f1-corridor-14"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-010",
+      "category": "normal",
+      "source": "sg-f1-outpatient-waiting",
+      "ordered_destinations": [
+        "nav-f1-corridor-03"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 15.445,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "sg-f1-outpatient-waiting",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-07",
+          "nav-f1-spine-01",
+          "nav-f1-waypoint-001",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-03"
+        ],
+        "lowest_risk_distance_m": 15.445,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-outpatient-waiting",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-07",
+          "nav-f1-spine-01",
+          "nav-f1-waypoint-001",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-03"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-011",
+      "category": "normal",
+      "source": "nav-f1-safe-stop-west",
+      "ordered_destinations": [
+        "nav-f1-corridor-01"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 16.728,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-safe-stop-west",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-06",
+          "nav-f1-waypoint-002",
+          "nav-f1-corridor-01"
+        ],
+        "lowest_risk_distance_m": 16.728,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-safe-stop-west",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-06",
+          "nav-f1-waypoint-002",
+          "nav-f1-corridor-01"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-012",
+      "category": "normal",
+      "source": "sg-f1-registration-payment-counter",
+      "ordered_destinations": [
+        "nav-f1-corridor-15"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 17.695,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "sg-f1-registration-payment-counter",
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-012",
+          "nav-f1-spine-08",
+          "nav-f1-waypoint-051",
+          "nav-f1-corridor-15"
+        ],
+        "lowest_risk_distance_m": 17.695,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-registration-payment-counter",
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-012",
+          "nav-f1-spine-08",
+          "nav-f1-waypoint-051",
+          "nav-f1-corridor-15"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-013",
+      "category": "normal",
+      "source": "nav-f1-corridor-09",
+      "ordered_destinations": [
+        "nav-f1-corridor-08"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 18.531,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-011",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-009",
+          "nav-f1-corridor-08"
+        ],
+        "lowest_risk_distance_m": 18.531,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-011",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-009",
+          "nav-f1-corridor-08"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-014",
+      "category": "normal",
+      "source": "nav-f1-corridor-22",
+      "ordered_destinations": [
+        "nav-f1-corridor-20"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 19.443,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-22",
+          "nav-f1-waypoint-020",
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-20"
+        ],
+        "lowest_risk_distance_m": 19.443,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-22",
+          "nav-f1-waypoint-020",
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-20"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-015",
+      "category": "normal",
+      "source": "nav-f1-corridor-14",
+      "ordered_destinations": [
+        "nav-f1-spine-04"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 20.547,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-14",
+          "nav-f1-waypoint-018",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04"
+        ],
+        "lowest_risk_distance_m": 20.547,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-14",
+          "nav-f1-waypoint-018",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-016",
+      "category": "normal",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "sg-f1-notice-board"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 21.309,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-01",
+          "nav-f1-waypoint-002",
+          "nav-f1-corridor-06",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "sg-f1-notice-board"
+        ],
+        "lowest_risk_distance_m": 21.309,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-01",
+          "nav-f1-waypoint-002",
+          "nav-f1-corridor-06",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "sg-f1-notice-board"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-017",
+      "category": "normal",
+      "source": "nav-f1-spine-04",
+      "ordered_destinations": [
+        "nav-f1-corridor-03"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 22.052,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-07",
+          "nav-f1-spine-01",
+          "nav-f1-waypoint-001",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-03"
+        ],
+        "lowest_risk_distance_m": 22.052,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-07",
+          "nav-f1-spine-01",
+          "nav-f1-waypoint-001",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-03"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-018",
+      "category": "normal",
+      "source": "nav-f1-corridor-17",
+      "ordered_destinations": [
+        "sg-f1-pharmacy"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 23.309,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-042",
+          "nav-f1-waypoint-043",
+          "nav-f1-spine-06",
+          "nav-f1-corridor-22",
+          "nav-f1-waypoint-019",
+          "nav-f1-corridor-14",
+          "sg-f1-pharmacy"
+        ],
+        "lowest_risk_distance_m": 23.309,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-042",
+          "nav-f1-waypoint-043",
+          "nav-f1-spine-06",
+          "nav-f1-corridor-22",
+          "nav-f1-waypoint-019",
+          "nav-f1-corridor-14",
+          "sg-f1-pharmacy"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-019",
+      "category": "normal",
+      "source": "nav-f1-corridor-17",
+      "ordered_destinations": [
+        "nav-f1-corridor-13"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 23.986,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-041",
+          "nav-f1-waypoint-040",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-027",
+          "nav-f1-waypoint-026",
+          "nav-f1-corridor-13"
+        ],
+        "lowest_risk_distance_m": 23.986,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-041",
+          "nav-f1-waypoint-040",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-027",
+          "nav-f1-waypoint-026",
+          "nav-f1-corridor-13"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-020",
+      "category": "normal",
+      "source": "sg-f1-outpatient-waiting",
+      "ordered_destinations": [
+        "nav-f1-corridor-09"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 24.603,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "sg-f1-outpatient-waiting",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09"
+        ],
+        "lowest_risk_distance_m": 24.603,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-outpatient-waiting",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-021",
+      "category": "normal",
+      "source": "nav-f1-corridor-08",
+      "ordered_destinations": [
+        "sg-f1-notice-board"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 25.831,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-08",
+          "nav-f1-waypoint-009",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "sg-f1-notice-board"
+        ],
+        "lowest_risk_distance_m": 25.831,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-08",
+          "nav-f1-waypoint-009",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "sg-f1-notice-board"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-022",
+      "category": "normal",
+      "source": "nav-f1-corridor-09",
+      "ordered_destinations": [
+        "nav-f1-corridor-22"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 26.691,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-011",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-018",
+          "nav-f1-corridor-14",
+          "nav-f1-waypoint-019",
+          "nav-f1-corridor-22"
+        ],
+        "lowest_risk_distance_m": 26.691,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-011",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-018",
+          "nav-f1-corridor-14",
+          "nav-f1-waypoint-019",
+          "nav-f1-corridor-22"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-023",
+      "category": "normal",
+      "source": "nav-f1-corridor-13",
+      "ordered_destinations": [
+        "nav-f1-spine-04"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 27.258,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04"
+        ],
+        "lowest_risk_distance_m": 27.258,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-024",
+      "category": "normal",
+      "source": "nav-f1-safe-stop-east",
+      "ordered_destinations": [
+        "nav-f1-corridor-15"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 28.04,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-safe-stop-east",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-012",
+          "nav-f1-spine-08",
+          "nav-f1-waypoint-051",
+          "nav-f1-corridor-15"
+        ],
+        "lowest_risk_distance_m": 28.04,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-safe-stop-east",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-012",
+          "nav-f1-spine-08",
+          "nav-f1-waypoint-051",
+          "nav-f1-corridor-15"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-025",
+      "category": "normal",
+      "source": "nav-f1-corridor-08",
+      "ordered_destinations": [
+        "nav-f1-corridor-22"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 28.738,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-08",
+          "nav-f1-waypoint-009",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-018",
+          "nav-f1-corridor-14",
+          "nav-f1-waypoint-019",
+          "nav-f1-corridor-22"
+        ],
+        "lowest_risk_distance_m": 28.738,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-08",
+          "nav-f1-waypoint-009",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-018",
+          "nav-f1-corridor-14",
+          "nav-f1-waypoint-019",
+          "nav-f1-corridor-22"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-026",
+      "category": "normal",
+      "source": "sg-f1-notice-board",
+      "ordered_destinations": [
+        "nav-f1-spine-08"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 29.336,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "sg-f1-notice-board",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-012",
+          "nav-f1-spine-08"
+        ],
+        "lowest_risk_distance_m": 29.336,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-notice-board",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-012",
+          "nav-f1-spine-08"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-027",
+      "category": "normal",
+      "source": "nav-f1-corridor-21",
+      "ordered_destinations": [
+        "nav-f1-corridor-09"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 30.031,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09"
+        ],
+        "lowest_risk_distance_m": 30.031,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-028",
+      "category": "normal",
+      "source": "sg-f1-functional-exam-waiting",
+      "ordered_destinations": [
+        "sg-f1-functional-exam-waiting-east"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 30.805,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "sg-f1-functional-exam-waiting",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-045",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-047",
+          "nav-f1-corridor-18",
+          "sg-f1-functional-exam-waiting-east"
+        ],
+        "lowest_risk_distance_m": 30.805,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-functional-exam-waiting",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-045",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-047",
+          "nav-f1-corridor-18",
+          "sg-f1-functional-exam-waiting-east"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-029",
+      "category": "normal",
+      "source": "nav-f1-corridor-07",
+      "ordered_destinations": [
+        "nav-f1-spine-05"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 31.523,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-013",
+          "nav-f1-waypoint-014",
+          "nav-f1-waypoint-015",
+          "nav-f1-spine-05"
+        ],
+        "lowest_risk_distance_m": 31.523,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-013",
+          "nav-f1-waypoint-014",
+          "nav-f1-waypoint-015",
+          "nav-f1-spine-05"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-030",
+      "category": "normal",
+      "source": "nav-f1-corridor-11",
+      "ordered_destinations": [
+        "nav-f1-corridor-09"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 32.731,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09"
+        ],
+        "lowest_risk_distance_m": 32.731,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-031",
+      "category": "normal",
+      "source": "nav-f1-corridor-06",
+      "ordered_destinations": [
+        "sg-f1-accessible-restroom"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 33.507,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-06",
+          "nav-f1-waypoint-005",
+          "nav-f1-spine-01",
+          "nav-f1-waypoint-001",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-03",
+          "nav-f1-waypoint-004",
+          "nav-f1-corridor-04",
+          "nav-f1-corridor-05",
+          "sg-f1-accessible-restroom"
+        ],
+        "lowest_risk_distance_m": 33.507,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-06",
+          "nav-f1-waypoint-005",
+          "nav-f1-spine-01",
+          "nav-f1-waypoint-001",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-03",
+          "nav-f1-waypoint-004",
+          "nav-f1-corridor-04",
+          "nav-f1-corridor-05",
+          "sg-f1-accessible-restroom"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-032",
+      "category": "normal",
+      "source": "nav-f1-spine-04",
+      "ordered_destinations": [
+        "nav-f1-corridor-15"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 34.189,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-012",
+          "nav-f1-spine-08",
+          "nav-f1-waypoint-051",
+          "nav-f1-corridor-15"
+        ],
+        "lowest_risk_distance_m": 34.189,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-012",
+          "nav-f1-spine-08",
+          "nav-f1-waypoint-051",
+          "nav-f1-corridor-15"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-033",
+      "category": "normal",
+      "source": "nav-f1-corridor-20",
+      "ordered_destinations": [
+        "nav-f1-corridor-09"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 34.791,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-20",
+          "nav-f1-waypoint-052",
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-063",
+          "sg-f1-patient-service-center",
+          "nav-f1-waypoint-056",
+          "nav-f1-corridor-09"
+        ],
+        "lowest_risk_distance_m": 34.791,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-20",
+          "nav-f1-waypoint-052",
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-063",
+          "sg-f1-patient-service-center",
+          "nav-f1-waypoint-056",
+          "nav-f1-corridor-09"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-034",
+      "category": "normal",
+      "source": "nav-f1-corridor-18",
+      "ordered_destinations": [
+        "nav-f1-spine-04"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 35.648,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-044",
+          "nav-f1-spine-06",
+          "nav-f1-waypoint-050",
+          "nav-f1-waypoint-049",
+          "nav-f1-waypoint-048",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04"
+        ],
+        "lowest_risk_distance_m": 35.648,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-044",
+          "nav-f1-spine-06",
+          "nav-f1-waypoint-050",
+          "nav-f1-waypoint-049",
+          "nav-f1-waypoint-048",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-035",
+      "category": "normal",
+      "source": "sg-f1-registration-payment-counter",
+      "ordered_destinations": [
+        "sg-f1-information-desk"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 36.363,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "sg-f1-registration-payment-counter",
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-011",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-06",
+          "nav-f1-waypoint-002",
+          "nav-f1-corridor-01",
+          "sg-f1-information-desk"
+        ],
+        "lowest_risk_distance_m": 36.363,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-registration-payment-counter",
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-011",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-06",
+          "nav-f1-waypoint-002",
+          "nav-f1-corridor-01",
+          "sg-f1-information-desk"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-036",
+      "category": "normal",
+      "source": "sg-f1-self-service-report-machine",
+      "ordered_destinations": [
+        "sg-f1-functional-exam-waiting"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 36.967,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "sg-f1-self-service-report-machine",
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-047",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-045",
+          "nav-f1-corridor-17",
+          "sg-f1-functional-exam-waiting"
+        ],
+        "lowest_risk_distance_m": 36.967,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-self-service-report-machine",
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-047",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-045",
+          "nav-f1-corridor-17",
+          "sg-f1-functional-exam-waiting"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-037",
+      "category": "normal",
+      "source": "nav-f1-corridor-17",
+      "ordered_destinations": [
+        "nav-f1-corridor-09"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 37.835,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-037",
+          "nav-f1-waypoint-036",
+          "nav-f1-waypoint-035",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-063",
+          "sg-f1-patient-service-center",
+          "nav-f1-waypoint-056",
+          "nav-f1-corridor-09"
+        ],
+        "lowest_risk_distance_m": 37.835,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-037",
+          "nav-f1-waypoint-036",
+          "nav-f1-waypoint-035",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-063",
+          "sg-f1-patient-service-center",
+          "nav-f1-waypoint-056",
+          "nav-f1-corridor-09"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-038",
+      "category": "normal",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-spine-08"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 39.065,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-01",
+          "nav-f1-waypoint-002",
+          "nav-f1-corridor-06",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-012",
+          "nav-f1-spine-08"
+        ],
+        "lowest_risk_distance_m": 39.065,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-01",
+          "nav-f1-waypoint-002",
+          "nav-f1-corridor-06",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-012",
+          "nav-f1-spine-08"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-039",
+      "category": "normal",
+      "source": "nav-f1-spine-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-13"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 39.747,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-spine-01",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13"
+        ],
+        "lowest_risk_distance_m": 39.747,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-spine-01",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-040",
+      "category": "normal",
+      "source": "nav-f1-spine-01",
+      "ordered_destinations": [
+        "nav-f1-spine-06"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 40.537,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-spine-01",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-048",
+          "nav-f1-waypoint-049",
+          "nav-f1-waypoint-050",
+          "nav-f1-spine-06"
+        ],
+        "lowest_risk_distance_m": 40.537,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-spine-01",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-048",
+          "nav-f1-waypoint-049",
+          "nav-f1-waypoint-050",
+          "nav-f1-spine-06"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-041",
+      "category": "normal",
+      "source": "nav-f1-corridor-06",
+      "ordered_destinations": [
+        "sg-f1-self-service-registration-payment"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 41.23,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-06",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-012",
+          "nav-f1-spine-08",
+          "nav-f1-waypoint-059",
+          "sg-f1-self-service-registration-payment"
+        ],
+        "lowest_risk_distance_m": 41.23,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-06",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-012",
+          "nav-f1-spine-08",
+          "nav-f1-waypoint-059",
+          "sg-f1-self-service-registration-payment"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-042",
+      "category": "normal",
+      "source": "nav-f1-corridor-18",
+      "ordered_destinations": [
+        "sg-f1-outpatient-waiting"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 42.257,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-044",
+          "nav-f1-spine-06",
+          "nav-f1-waypoint-050",
+          "nav-f1-waypoint-049",
+          "nav-f1-waypoint-048",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "sg-f1-outpatient-waiting"
+        ],
+        "lowest_risk_distance_m": 42.257,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-044",
+          "nav-f1-spine-06",
+          "nav-f1-waypoint-050",
+          "nav-f1-waypoint-049",
+          "nav-f1-waypoint-048",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "sg-f1-outpatient-waiting"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-043",
+      "category": "normal",
+      "source": "sg-f1-public-elevator-hall",
+      "ordered_destinations": [
+        "sg-f1-medication-consultation"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 43.31,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "sg-f1-public-elevator-hall",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-026",
+          "nav-f1-waypoint-027",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-021",
+          "nav-f1-waypoint-022",
+          "nav-f1-waypoint-023",
+          "nav-f1-corridor-22",
+          "nav-f1-waypoint-019",
+          "sg-f1-medication-consultation"
+        ],
+        "lowest_risk_distance_m": 43.31,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-public-elevator-hall",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-026",
+          "nav-f1-waypoint-027",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-021",
+          "nav-f1-waypoint-022",
+          "nav-f1-waypoint-023",
+          "nav-f1-corridor-22",
+          "nav-f1-waypoint-019",
+          "sg-f1-medication-consultation"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-044",
+      "category": "normal",
+      "source": "sg-f1-pharmacy",
+      "ordered_destinations": [
+        "sg-f1-public-elevator-hall"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 44.188,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "sg-f1-pharmacy",
+          "nav-f1-waypoint-018",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-057",
+          "sg-f1-public-elevator-hall"
+        ],
+        "lowest_risk_distance_m": 44.188,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-pharmacy",
+          "nav-f1-waypoint-018",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-057",
+          "sg-f1-public-elevator-hall"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-045",
+      "category": "normal",
+      "source": "sg-f1-queue-ticket-machine",
+      "ordered_destinations": [
+        "nav-f1-corridor-15"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 45.227,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "sg-f1-queue-ticket-machine",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-012",
+          "nav-f1-spine-08",
+          "nav-f1-waypoint-051",
+          "nav-f1-corridor-15"
+        ],
+        "lowest_risk_distance_m": 45.227,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-queue-ticket-machine",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-012",
+          "nav-f1-spine-08",
+          "nav-f1-waypoint-051",
+          "nav-f1-corridor-15"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-046",
+      "category": "normal",
+      "source": "sg-f1-functional-exam-waiting",
+      "ordered_destinations": [
+        "nav-f1-corridor-21"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 45.973,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "sg-f1-functional-exam-waiting",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-041",
+          "nav-f1-waypoint-040",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-027",
+          "nav-f1-waypoint-026",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21"
+        ],
+        "lowest_risk_distance_m": 45.973,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-functional-exam-waiting",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-041",
+          "nav-f1-waypoint-040",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-027",
+          "nav-f1-waypoint-026",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-047",
+      "category": "normal",
+      "source": "sg-f1-outpatient-waiting",
+      "ordered_destinations": [
+        "nav-f1-corridor-17"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 46.998,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "sg-f1-outpatient-waiting",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-048",
+          "nav-f1-waypoint-049",
+          "nav-f1-waypoint-050",
+          "nav-f1-spine-06",
+          "nav-f1-waypoint-043",
+          "nav-f1-waypoint-042",
+          "nav-f1-corridor-17"
+        ],
+        "lowest_risk_distance_m": 46.998,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-outpatient-waiting",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-048",
+          "nav-f1-waypoint-049",
+          "nav-f1-waypoint-050",
+          "nav-f1-spine-06",
+          "nav-f1-waypoint-043",
+          "nav-f1-waypoint-042",
+          "nav-f1-corridor-17"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-048",
+      "category": "normal",
+      "source": "nav-f1-corridor-13",
+      "ordered_destinations": [
+        "sg-f1-functional-exam-waiting-east"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 48.025,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-026",
+          "nav-f1-waypoint-027",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-040",
+          "nav-f1-waypoint-041",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-045",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-047",
+          "nav-f1-corridor-18",
+          "sg-f1-functional-exam-waiting-east"
+        ],
+        "lowest_risk_distance_m": 48.025,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-026",
+          "nav-f1-waypoint-027",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-040",
+          "nav-f1-waypoint-041",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-045",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-047",
+          "nav-f1-corridor-18",
+          "sg-f1-functional-exam-waiting-east"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-049",
+      "category": "normal",
+      "source": "nav-f1-corridor-05",
+      "ordered_destinations": [
+        "nav-f1-corridor-21"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 48.967,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-05",
+          "nav-f1-corridor-04",
+          "nav-f1-waypoint-004",
+          "nav-f1-corridor-03",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-001",
+          "nav-f1-spine-01",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21"
+        ],
+        "lowest_risk_distance_m": 48.967,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-05",
+          "nav-f1-corridor-04",
+          "nav-f1-waypoint-004",
+          "nav-f1-corridor-03",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-001",
+          "nav-f1-spine-01",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-050",
+      "category": "normal",
+      "source": "nav-f1-corridor-18",
+      "ordered_destinations": [
+        "nav-f1-corridor-11"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 50.385,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-044",
+          "nav-f1-spine-06",
+          "nav-f1-waypoint-050",
+          "nav-f1-waypoint-049",
+          "nav-f1-waypoint-048",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11"
+        ],
+        "lowest_risk_distance_m": 50.385,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-044",
+          "nav-f1-spine-06",
+          "nav-f1-waypoint-050",
+          "nav-f1-waypoint-049",
+          "nav-f1-waypoint-048",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-051",
+      "category": "normal",
+      "source": "nav-f1-spine-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-16"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 51.553,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-spine-01",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-026",
+          "nav-f1-waypoint-027",
+          "nav-f1-corridor-16"
+        ],
+        "lowest_risk_distance_m": 51.553,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-spine-01",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-026",
+          "nav-f1-waypoint-027",
+          "nav-f1-corridor-16"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-052",
+      "category": "normal",
+      "source": "nav-f1-corridor-21",
+      "ordered_destinations": [
+        "sg-f1-functional-exam-waiting-east"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 52.672,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-048",
+          "nav-f1-waypoint-049",
+          "nav-f1-waypoint-050",
+          "nav-f1-spine-06",
+          "nav-f1-waypoint-044",
+          "nav-f1-corridor-18",
+          "sg-f1-functional-exam-waiting-east"
+        ],
+        "lowest_risk_distance_m": 52.672,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-048",
+          "nav-f1-waypoint-049",
+          "nav-f1-waypoint-050",
+          "nav-f1-spine-06",
+          "nav-f1-waypoint-044",
+          "nav-f1-corridor-18",
+          "sg-f1-functional-exam-waiting-east"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-053",
+      "category": "normal",
+      "source": "nav-f1-corridor-16",
+      "ordered_destinations": [
+        "nav-f1-corridor-01"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 54.583,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-027",
+          "nav-f1-waypoint-026",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-06",
+          "nav-f1-waypoint-002",
+          "nav-f1-corridor-01"
+        ],
+        "lowest_risk_distance_m": 54.583,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-027",
+          "nav-f1-waypoint-026",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-06",
+          "nav-f1-waypoint-002",
+          "nav-f1-corridor-01"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-054",
+      "category": "normal",
+      "source": "sg-f1-restroom-lower-left",
+      "ordered_destinations": [
+        "sg-f1-outpatient-waiting"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 56.146,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "sg-f1-outpatient-waiting"
+        ],
+        "lowest_risk_distance_m": 56.146,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "sg-f1-outpatient-waiting"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-055",
+      "category": "normal",
+      "source": "nav-f1-corridor-20",
+      "ordered_destinations": [
+        "nav-f1-corridor-21"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 57.831,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-20",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-044",
+          "nav-f1-spine-06",
+          "nav-f1-waypoint-050",
+          "nav-f1-waypoint-049",
+          "nav-f1-waypoint-048",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21"
+        ],
+        "lowest_risk_distance_m": 57.831,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-20",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-044",
+          "nav-f1-spine-06",
+          "nav-f1-waypoint-050",
+          "nav-f1-waypoint-049",
+          "nav-f1-waypoint-048",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-056",
+      "category": "normal",
+      "source": "nav-f1-spine-01",
+      "ordered_destinations": [
+        "sg-f1-self-service-report-machine"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 59.286,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-spine-01",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-048",
+          "nav-f1-waypoint-049",
+          "nav-f1-waypoint-050",
+          "nav-f1-spine-06",
+          "nav-f1-waypoint-044",
+          "nav-f1-corridor-18",
+          "sg-f1-functional-exam-waiting-east",
+          "sg-f1-self-service-report-machine"
+        ],
+        "lowest_risk_distance_m": 59.286,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-spine-01",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-048",
+          "nav-f1-waypoint-049",
+          "nav-f1-waypoint-050",
+          "nav-f1-spine-06",
+          "nav-f1-waypoint-044",
+          "nav-f1-corridor-18",
+          "sg-f1-functional-exam-waiting-east",
+          "sg-f1-self-service-report-machine"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-057",
+      "category": "normal",
+      "source": "sg-f1-self-service-registration-payment-south",
+      "ordered_destinations": [
+        "sg-f1-self-service-registration-payment"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 62.425,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "sg-f1-self-service-registration-payment-south",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-034",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-029",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-063",
+          "sg-f1-patient-service-center",
+          "nav-f1-waypoint-060",
+          "sg-f1-self-service-registration-payment"
+        ],
+        "lowest_risk_distance_m": 62.425,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-self-service-registration-payment-south",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-034",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-029",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-063",
+          "sg-f1-patient-service-center",
+          "nav-f1-waypoint-060",
+          "sg-f1-self-service-registration-payment"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-058",
+      "category": "normal",
+      "source": "sg-f1-accessible-restroom-lower-right",
+      "ordered_destinations": [
+        "nav-f1-corridor-06"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 66.052,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "sg-f1-accessible-restroom-lower-right",
+          "nav-f1-waypoint-054",
+          "nav-f1-corridor-20",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-044",
+          "nav-f1-spine-06",
+          "nav-f1-waypoint-050",
+          "nav-f1-waypoint-049",
+          "nav-f1-waypoint-048",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-06"
+        ],
+        "lowest_risk_distance_m": 66.052,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-accessible-restroom-lower-right",
+          "nav-f1-waypoint-054",
+          "nav-f1-corridor-20",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-044",
+          "nav-f1-spine-06",
+          "nav-f1-waypoint-050",
+          "nav-f1-waypoint-049",
+          "nav-f1-waypoint-048",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-06"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-059",
+      "category": "normal",
+      "source": "nav-f1-corridor-03",
+      "ordered_destinations": [
+        "sg-f1-restroom-lower-left"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 71.589,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "nav-f1-corridor-03",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-001",
+          "nav-f1-spine-01",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left"
+        ],
+        "lowest_risk_distance_m": 71.589,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-03",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-001",
+          "nav-f1-spine-01",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "normal-focused-060",
+      "category": "normal",
+      "source": "sg-f1-restroom-lower-left",
+      "ordered_destinations": [
+        "sg-f1-restroom"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 89.1,
+        "shortest_risk": 0.0,
+        "shortest_path": [
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-07",
+          "nav-f1-spine-01",
+          "nav-f1-waypoint-001",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-03",
+          "nav-f1-waypoint-004",
+          "nav-f1-corridor-04",
+          "nav-f1-corridor-05",
+          "sg-f1-restroom"
+        ],
+        "lowest_risk_distance_m": 89.1,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-07",
+          "nav-f1-spine-01",
+          "nav-f1-waypoint-001",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-03",
+          "nav-f1-waypoint-004",
+          "nav-f1-corridor-04",
+          "nav-f1-corridor-05",
+          "sg-f1-restroom"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-001",
+      "category": "risk_detour",
+      "source": "sg-f1-self-service-report-machine",
+      "ordered_destinations": [
+        "sg-f1-accessible-restroom-lower-left"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 64.061,
+        "shortest_risk": 33.46,
+        "shortest_path": [
+          "sg-f1-self-service-report-machine",
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-047",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-045",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-041",
+          "nav-f1-waypoint-040",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-039",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "lowest_risk_distance_m": 74.249,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-self-service-report-machine",
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-029",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-034",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-002",
+      "category": "risk_detour",
+      "source": "sg-f1-accessible-restroom-lower-left",
+      "ordered_destinations": [
+        "sg-f1-accessible-restroom-lower-right"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 74.008,
+        "shortest_risk": 33.46,
+        "shortest_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-039",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-040",
+          "nav-f1-waypoint-041",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-045",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-047",
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-20",
+          "nav-f1-waypoint-054",
+          "sg-f1-accessible-restroom-lower-right"
+        ],
+        "lowest_risk_distance_m": 85.92,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-034",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-029",
+          "nav-f1-corridor-24",
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-20",
+          "nav-f1-waypoint-054",
+          "sg-f1-accessible-restroom-lower-right"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-003",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-19",
+      "ordered_destinations": [
+        "sg-f1-accessible-restroom-lower-right"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 69.058,
+        "shortest_risk": 33.46,
+        "shortest_path": [
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-039",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-040",
+          "nav-f1-waypoint-041",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-045",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-047",
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-20",
+          "nav-f1-waypoint-054",
+          "sg-f1-accessible-restroom-lower-right"
+        ],
+        "lowest_risk_distance_m": 80.97,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-034",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-029",
+          "nav-f1-corridor-24",
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-20",
+          "nav-f1-waypoint-054",
+          "sg-f1-accessible-restroom-lower-right"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-004",
+      "category": "risk_detour",
+      "source": "sg-f1-functional-exam-waiting-east",
+      "ordered_destinations": [
+        "sg-f1-accessible-restroom-lower-left"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 57.899,
+        "shortest_risk": 33.46,
+        "shortest_path": [
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-047",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-045",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-041",
+          "nav-f1-waypoint-040",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-039",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "lowest_risk_distance_m": 68.087,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-029",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-034",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-005",
+      "category": "risk_detour",
+      "source": "sg-f1-accessible-restroom-lower-left",
+      "ordered_destinations": [
+        "nav-f1-corridor-20"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 63.058,
+        "shortest_risk": 33.46,
+        "shortest_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-039",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-040",
+          "nav-f1-waypoint-041",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-045",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-047",
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-20"
+        ],
+        "lowest_risk_distance_m": 74.97,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-034",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-029",
+          "nav-f1-corridor-24",
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-20"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-006",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-20",
+      "ordered_destinations": [
+        "nav-f1-corridor-19"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 58.108,
+        "shortest_risk": 33.46,
+        "shortest_path": [
+          "nav-f1-corridor-20",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-047",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-045",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-041",
+          "nav-f1-waypoint-040",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-039",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19"
+        ],
+        "lowest_risk_distance_m": 70.02,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-20",
+          "nav-f1-waypoint-052",
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-029",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-034",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-007",
+      "category": "risk_detour",
+      "source": "sg-f1-restroom",
+      "ordered_destinations": [
+        "sg-f1-accessible-restroom-lower-left"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 89.175,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "sg-f1-restroom",
+          "nav-f1-corridor-05",
+          "nav-f1-corridor-04",
+          "nav-f1-waypoint-004",
+          "nav-f1-corridor-03",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-001",
+          "nav-f1-spine-01",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "lowest_risk_distance_m": 99.001,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-restroom",
+          "nav-f1-corridor-05",
+          "nav-f1-corridor-04",
+          "nav-f1-waypoint-004",
+          "nav-f1-corridor-03",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-001",
+          "nav-f1-spine-01",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-008",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-05",
+      "ordered_destinations": [
+        "sg-f1-accessible-restroom-lower-left"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 86.542,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-05",
+          "nav-f1-corridor-04",
+          "nav-f1-waypoint-004",
+          "nav-f1-corridor-03",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-001",
+          "nav-f1-spine-01",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "lowest_risk_distance_m": 96.368,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-05",
+          "nav-f1-corridor-04",
+          "nav-f1-waypoint-004",
+          "nav-f1-corridor-03",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-001",
+          "nav-f1-spine-01",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-009",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-19",
+      "ordered_destinations": [
+        "sg-f1-restroom"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 84.225,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-07",
+          "nav-f1-spine-01",
+          "nav-f1-waypoint-001",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-03",
+          "nav-f1-waypoint-004",
+          "nav-f1-corridor-04",
+          "nav-f1-corridor-05",
+          "sg-f1-restroom"
+        ],
+        "lowest_risk_distance_m": 94.051,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-07",
+          "nav-f1-spine-01",
+          "nav-f1-waypoint-001",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-03",
+          "nav-f1-waypoint-004",
+          "nav-f1-corridor-04",
+          "nav-f1-corridor-05",
+          "sg-f1-restroom"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-010",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-19",
+      "ordered_destinations": [
+        "sg-f1-accessible-restroom"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 84.216,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-07",
+          "nav-f1-spine-01",
+          "nav-f1-waypoint-001",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-03",
+          "nav-f1-waypoint-004",
+          "nav-f1-corridor-04",
+          "nav-f1-corridor-05",
+          "sg-f1-accessible-restroom"
+        ],
+        "lowest_risk_distance_m": 94.042,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-07",
+          "nav-f1-spine-01",
+          "nav-f1-waypoint-001",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-03",
+          "nav-f1-waypoint-004",
+          "nav-f1-corridor-04",
+          "nav-f1-corridor-05",
+          "sg-f1-accessible-restroom"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-011",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-04",
+      "ordered_destinations": [
+        "sg-f1-accessible-restroom-lower-left"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 79.612,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-04",
+          "nav-f1-waypoint-004",
+          "nav-f1-corridor-03",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-001",
+          "nav-f1-spine-01",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "lowest_risk_distance_m": 89.438,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-04",
+          "nav-f1-waypoint-004",
+          "nav-f1-corridor-03",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-001",
+          "nav-f1-spine-01",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-012",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-19",
+      "ordered_destinations": [
+        "nav-f1-corridor-04"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 74.662,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-07",
+          "nav-f1-spine-01",
+          "nav-f1-waypoint-001",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-03",
+          "nav-f1-waypoint-004",
+          "nav-f1-corridor-04"
+        ],
+        "lowest_risk_distance_m": 84.488,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-07",
+          "nav-f1-spine-01",
+          "nav-f1-waypoint-001",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-03",
+          "nav-f1-waypoint-004",
+          "nav-f1-corridor-04"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-013",
+      "category": "risk_detour",
+      "source": "sg-f1-self-service-registration-payment",
+      "ordered_destinations": [
+        "sg-f1-accessible-restroom-lower-left"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 73.093,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "sg-f1-self-service-registration-payment",
+          "nav-f1-waypoint-060",
+          "sg-f1-patient-service-center",
+          "nav-f1-waypoint-063",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-029",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-034",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "lowest_risk_distance_m": 82.919,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-self-service-registration-payment",
+          "nav-f1-waypoint-060",
+          "sg-f1-patient-service-center",
+          "nav-f1-waypoint-063",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-029",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-034",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-014",
+      "category": "risk_detour",
+      "source": "sg-f1-accessible-restroom-lower-left",
+      "ordered_destinations": [
+        "nav-f1-spine-02"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 72.613,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-07",
+          "nav-f1-spine-01",
+          "nav-f1-waypoint-001",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-03",
+          "nav-f1-spine-02"
+        ],
+        "lowest_risk_distance_m": 82.439,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-07",
+          "nav-f1-spine-01",
+          "nav-f1-waypoint-001",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-03",
+          "nav-f1-spine-02"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-015",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-08",
+      "ordered_destinations": [
+        "sg-f1-accessible-restroom-lower-left"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 69.653,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-08",
+          "nav-f1-waypoint-009",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "lowest_risk_distance_m": 79.479,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-08",
+          "nav-f1-waypoint-009",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-016",
+      "category": "risk_detour",
+      "source": "sg-f1-accessible-restroom-lower-left",
+      "ordered_destinations": [
+        "sg-f1-registration-payment-counter"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 69.106,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09",
+          "sg-f1-registration-payment-counter"
+        ],
+        "lowest_risk_distance_m": 78.932,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09",
+          "sg-f1-registration-payment-counter"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-017",
+      "category": "risk_detour",
+      "source": "nav-f1-spine-08",
+      "ordered_destinations": [
+        "nav-f1-corridor-19"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 68.208,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-spine-08",
+          "nav-f1-waypoint-012",
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-011",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19"
+        ],
+        "lowest_risk_distance_m": 78.034,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-spine-08",
+          "nav-f1-waypoint-012",
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-011",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-018",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-19",
+      "ordered_destinations": [
+        "nav-f1-spine-02"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 67.663,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-07",
+          "nav-f1-spine-01",
+          "nav-f1-waypoint-001",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-03",
+          "nav-f1-spine-02"
+        ],
+        "lowest_risk_distance_m": 77.489,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-07",
+          "nav-f1-spine-01",
+          "nav-f1-waypoint-001",
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-003",
+          "nav-f1-corridor-03",
+          "nav-f1-spine-02"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-019",
+      "category": "risk_detour",
+      "source": "sg-f1-accessible-restroom-lower-left",
+      "ordered_destinations": [
+        "nav-f1-corridor-09"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 67.606,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09"
+        ],
+        "lowest_risk_distance_m": 77.432,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-011",
+          "nav-f1-corridor-09"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-020",
+      "category": "risk_detour",
+      "source": "sg-f1-accessible-restroom-lower-left",
+      "ordered_destinations": [
+        "sg-f1-information-desk"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 66.481,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-06",
+          "nav-f1-waypoint-002",
+          "nav-f1-corridor-01",
+          "sg-f1-information-desk"
+        ],
+        "lowest_risk_distance_m": 76.307,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-06",
+          "nav-f1-waypoint-002",
+          "nav-f1-corridor-01",
+          "sg-f1-information-desk"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-021",
+      "category": "risk_detour",
+      "source": "sg-f1-accessible-restroom-lower-left",
+      "ordered_destinations": [
+        "nav-f1-corridor-15"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 66.218,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-034",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-029",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-063",
+          "sg-f1-escalator",
+          "nav-f1-corridor-15"
+        ],
+        "lowest_risk_distance_m": 76.044,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-034",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-029",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-063",
+          "sg-f1-escalator",
+          "nav-f1-corridor-15"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-022",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-02",
+      "ordered_destinations": [
+        "sg-f1-accessible-restroom-lower-left"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 65.816,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-001",
+          "nav-f1-spine-01",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "lowest_risk_distance_m": 75.642,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-02",
+          "nav-f1-waypoint-001",
+          "nav-f1-spine-01",
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-023",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-08",
+      "ordered_destinations": [
+        "nav-f1-corridor-19"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 64.703,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-08",
+          "nav-f1-waypoint-009",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19"
+        ],
+        "lowest_risk_distance_m": 74.529,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-08",
+          "nav-f1-waypoint-009",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-024",
+      "category": "risk_detour",
+      "source": "sg-f1-registration-payment-counter",
+      "ordered_destinations": [
+        "nav-f1-corridor-19"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 64.156,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "sg-f1-registration-payment-counter",
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-011",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19"
+        ],
+        "lowest_risk_distance_m": 73.982,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-registration-payment-counter",
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-011",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-025",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-09",
+      "ordered_destinations": [
+        "nav-f1-corridor-19"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 62.656,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-011",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19"
+        ],
+        "lowest_risk_distance_m": 72.482,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-09",
+          "nav-f1-waypoint-011",
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-026",
+      "category": "risk_detour",
+      "source": "sg-f1-patient-service-center",
+      "ordered_destinations": [
+        "sg-f1-accessible-restroom-lower-left"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 62.175,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "sg-f1-patient-service-center",
+          "nav-f1-waypoint-063",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-029",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-034",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "lowest_risk_distance_m": 72.001,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-patient-service-center",
+          "nav-f1-waypoint-063",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-029",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-034",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-027",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-19",
+      "ordered_destinations": [
+        "sg-f1-information-desk"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 61.531,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-06",
+          "nav-f1-waypoint-002",
+          "nav-f1-corridor-01",
+          "sg-f1-information-desk"
+        ],
+        "lowest_risk_distance_m": 71.357,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-06",
+          "nav-f1-waypoint-002",
+          "nav-f1-corridor-01",
+          "sg-f1-information-desk"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-028",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-15",
+      "ordered_destinations": [
+        "nav-f1-corridor-19"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 61.268,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-15",
+          "sg-f1-escalator",
+          "nav-f1-waypoint-063",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-029",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-034",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19"
+        ],
+        "lowest_risk_distance_m": 71.094,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-15",
+          "sg-f1-escalator",
+          "nav-f1-waypoint-063",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-029",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-034",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-029",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-19",
+      "ordered_destinations": [
+        "nav-f1-corridor-02"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 60.866,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-07",
+          "nav-f1-spine-01",
+          "nav-f1-waypoint-001",
+          "nav-f1-corridor-02"
+        ],
+        "lowest_risk_distance_m": 70.692,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "nav-f1-corridor-07",
+          "nav-f1-spine-01",
+          "nav-f1-waypoint-001",
+          "nav-f1-corridor-02"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-030",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-01",
+      "ordered_destinations": [
+        "nav-f1-corridor-19"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 60.181,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-01",
+          "nav-f1-waypoint-002",
+          "nav-f1-corridor-06",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19"
+        ],
+        "lowest_risk_distance_m": 70.007,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-01",
+          "nav-f1-waypoint-002",
+          "nav-f1-corridor-06",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-031",
+      "category": "risk_detour",
+      "source": "sg-f1-accessible-restroom-lower-left",
+      "ordered_destinations": [
+        "nav-f1-spine-03"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 59.364,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03"
+        ],
+        "lowest_risk_distance_m": 69.19,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-032",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-06",
+      "ordered_destinations": [
+        "sg-f1-accessible-restroom-lower-left"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 58.92,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-06",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "lowest_risk_distance_m": 68.746,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-06",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-033",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-19",
+      "ordered_destinations": [
+        "nav-f1-safe-stop-east"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 58.017,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-safe-stop-east"
+        ],
+        "lowest_risk_distance_m": 67.843,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-03",
+          "nav-f1-safe-stop-east"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-034",
+      "category": "risk_detour",
+      "source": "sg-f1-patient-service-center",
+      "ordered_destinations": [
+        "nav-f1-corridor-19"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 57.225,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "sg-f1-patient-service-center",
+          "nav-f1-waypoint-063",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-029",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-034",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19"
+        ],
+        "lowest_risk_distance_m": 67.051,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-patient-service-center",
+          "nav-f1-waypoint-063",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-029",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-034",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-035",
+      "category": "risk_detour",
+      "source": "sg-f1-accessible-restroom-lower-left",
+      "ordered_destinations": [
+        "sg-f1-outpatient-waiting"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 56.221,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "sg-f1-outpatient-waiting"
+        ],
+        "lowest_risk_distance_m": 66.047,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "sg-f1-outpatient-waiting"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-036",
+      "category": "risk_detour",
+      "source": "sg-f1-accessible-restroom-lower-left",
+      "ordered_destinations": [
+        "nav-f1-corridor-23"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 56.22,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23"
+        ],
+        "lowest_risk_distance_m": 66.046,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-037",
+      "category": "risk_detour",
+      "source": "nav-f1-spine-03",
+      "ordered_destinations": [
+        "nav-f1-corridor-19"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 54.414,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19"
+        ],
+        "lowest_risk_distance_m": 64.24,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-spine-03",
+          "nav-f1-waypoint-010",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-038",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-07",
+      "ordered_destinations": [
+        "nav-f1-corridor-19"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 54.285,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19"
+        ],
+        "lowest_risk_distance_m": 64.111,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-07",
+          "nav-f1-corridor-23",
+          "nav-f1-waypoint-008",
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-039",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-19",
+      "ordered_destinations": [
+        "sg-f1-outpatient-waiting"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 51.271,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "sg-f1-outpatient-waiting"
+        ],
+        "lowest_risk_distance_m": 61.097,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23",
+          "sg-f1-outpatient-waiting"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-040",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-19",
+      "ordered_destinations": [
+        "nav-f1-corridor-23"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 51.27,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23"
+        ],
+        "lowest_risk_distance_m": 61.096,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-waypoint-008",
+          "nav-f1-corridor-23"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-041",
+      "category": "risk_detour",
+      "source": "sg-f1-accessible-restroom-lower-left",
+      "ordered_destinations": [
+        "nav-f1-safe-stop-west"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 50.821,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-safe-stop-west"
+        ],
+        "lowest_risk_distance_m": 60.647,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04",
+          "nav-f1-safe-stop-west"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-042",
+      "category": "risk_detour",
+      "source": "sg-f1-accessible-restroom-lower-left",
+      "ordered_destinations": [
+        "nav-f1-spine-04"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 49.612,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "nav-f1-waypoint-053",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04"
+        ],
+        "lowest_risk_distance_m": 59.438,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-accessible-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-025",
+          "nav-f1-waypoint-024",
+          "nav-f1-corridor-11",
+          "nav-f1-corridor-21",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-12",
+          "nav-f1-spine-04"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-043",
+      "category": "risk_detour",
+      "source": "sg-f1-notice-board",
+      "ordered_destinations": [
+        "sg-f1-accessible-restroom-lower-left"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 47.103,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "sg-f1-notice-board",
+          "nav-f1-waypoint-013",
+          "nav-f1-waypoint-014",
+          "nav-f1-waypoint-015",
+          "nav-f1-waypoint-016",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "lowest_risk_distance_m": 56.929,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-notice-board",
+          "nav-f1-waypoint-013",
+          "nav-f1-waypoint-014",
+          "nav-f1-waypoint-015",
+          "nav-f1-waypoint-016",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-044",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-24",
+      "ordered_destinations": [
+        "nav-f1-corridor-19"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 45.835,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-029",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-034",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19"
+        ],
+        "lowest_risk_distance_m": 55.661,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-029",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-034",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-045",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-12",
+      "ordered_destinations": [
+        "sg-f1-accessible-restroom-lower-left"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 45.826,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "lowest_risk_distance_m": 55.652,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19",
+          "sg-f1-accessible-restroom-lower-left"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-046",
+      "category": "risk_detour",
+      "source": "nav-f1-spine-04",
+      "ordered_destinations": [
+        "nav-f1-corridor-19"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 44.662,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19"
+        ],
+        "lowest_risk_distance_m": 54.488,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-spine-04",
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-047",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-12",
+      "ordered_destinations": [
+        "nav-f1-corridor-19"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 40.876,
+        "shortest_risk": 19.352,
+        "shortest_path": [
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-053",
+          "nav-f1-corridor-19"
+        ],
+        "lowest_risk_distance_m": 50.702,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-12",
+          "nav-f1-waypoint-017",
+          "nav-f1-corridor-21",
+          "nav-f1-corridor-11",
+          "nav-f1-waypoint-024",
+          "nav-f1-waypoint-025",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-028",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left",
+          "nav-f1-corridor-19"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-048",
+      "category": "risk_detour",
+      "source": "sg-f1-restroom-lower-left",
+      "ordered_destinations": [
+        "sg-f1-self-service-report-machine"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 63.986,
+        "shortest_risk": 14.108,
+        "shortest_path": [
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-039",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-040",
+          "nav-f1-waypoint-041",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-045",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-047",
+          "nav-f1-corridor-18",
+          "sg-f1-functional-exam-waiting-east",
+          "sg-f1-self-service-report-machine"
+        ],
+        "lowest_risk_distance_m": 64.348,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-034",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-029",
+          "nav-f1-corridor-24",
+          "sg-f1-functional-exam-waiting-east",
+          "sg-f1-self-service-report-machine"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-049",
+      "category": "risk_detour",
+      "source": "sg-f1-self-service-report-machine",
+      "ordered_destinations": [
+        "sg-f1-self-service-registration-payment-south"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 53.393,
+        "shortest_risk": 14.108,
+        "shortest_path": [
+          "sg-f1-self-service-report-machine",
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-047",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-045",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-041",
+          "nav-f1-waypoint-040",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-039",
+          "nav-f1-spine-07",
+          "sg-f1-self-service-registration-payment-south"
+        ],
+        "lowest_risk_distance_m": 53.755,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-self-service-report-machine",
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-029",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-034",
+          "nav-f1-spine-07",
+          "sg-f1-self-service-registration-payment-south"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-050",
+      "category": "risk_detour",
+      "source": "nav-f1-spine-07",
+      "ordered_destinations": [
+        "sg-f1-self-service-report-machine"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 49.435,
+        "shortest_risk": 14.108,
+        "shortest_path": [
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-039",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-040",
+          "nav-f1-waypoint-041",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-045",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-047",
+          "nav-f1-corridor-18",
+          "sg-f1-functional-exam-waiting-east",
+          "sg-f1-self-service-report-machine"
+        ],
+        "lowest_risk_distance_m": 49.797,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-034",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-029",
+          "nav-f1-corridor-24",
+          "sg-f1-functional-exam-waiting-east",
+          "sg-f1-self-service-report-machine"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-051",
+      "category": "risk_detour",
+      "source": "sg-f1-functional-exam-waiting-east",
+      "ordered_destinations": [
+        "nav-f1-spine-07"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 43.273,
+        "shortest_risk": 14.108,
+        "shortest_path": [
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-047",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-045",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-041",
+          "nav-f1-waypoint-040",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-039",
+          "nav-f1-spine-07"
+        ],
+        "lowest_risk_distance_m": 43.635,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-029",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-034",
+          "nav-f1-spine-07"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-052",
+      "category": "risk_detour",
+      "source": "sg-f1-accessible-restroom-lower-right",
+      "ordered_destinations": [
+        "sg-f1-restroom-lower-left"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 73.933,
+        "shortest_risk": 14.108,
+        "shortest_path": [
+          "sg-f1-accessible-restroom-lower-right",
+          "nav-f1-waypoint-054",
+          "nav-f1-corridor-20",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-047",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-045",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-041",
+          "nav-f1-waypoint-040",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-039",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left"
+        ],
+        "lowest_risk_distance_m": 76.019,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-accessible-restroom-lower-right",
+          "nav-f1-waypoint-054",
+          "nav-f1-corridor-20",
+          "nav-f1-waypoint-052",
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-029",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-034",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-053",
+      "category": "risk_detour",
+      "source": "sg-f1-self-service-registration-payment-south",
+      "ordered_destinations": [
+        "sg-f1-accessible-restroom-lower-right"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 63.34,
+        "shortest_risk": 14.108,
+        "shortest_path": [
+          "sg-f1-self-service-registration-payment-south",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-039",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-040",
+          "nav-f1-waypoint-041",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-045",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-047",
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-20",
+          "nav-f1-waypoint-054",
+          "sg-f1-accessible-restroom-lower-right"
+        ],
+        "lowest_risk_distance_m": 65.426,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-self-service-registration-payment-south",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-034",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-029",
+          "nav-f1-corridor-24",
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-20",
+          "nav-f1-waypoint-054",
+          "sg-f1-accessible-restroom-lower-right"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-054",
+      "category": "risk_detour",
+      "source": "nav-f1-spine-07",
+      "ordered_destinations": [
+        "sg-f1-accessible-restroom-lower-right"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 59.382,
+        "shortest_risk": 14.108,
+        "shortest_path": [
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-039",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-040",
+          "nav-f1-waypoint-041",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-045",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-047",
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-20",
+          "nav-f1-waypoint-054",
+          "sg-f1-accessible-restroom-lower-right"
+        ],
+        "lowest_risk_distance_m": 61.468,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-034",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-029",
+          "nav-f1-corridor-24",
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-20",
+          "nav-f1-waypoint-054",
+          "sg-f1-accessible-restroom-lower-right"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-055",
+      "category": "risk_detour",
+      "source": "sg-f1-self-service-registration-payment-south",
+      "ordered_destinations": [
+        "nav-f1-corridor-20"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 52.39,
+        "shortest_risk": 14.108,
+        "shortest_path": [
+          "sg-f1-self-service-registration-payment-south",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-039",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-040",
+          "nav-f1-waypoint-041",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-045",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-047",
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-20"
+        ],
+        "lowest_risk_distance_m": 54.476,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-self-service-registration-payment-south",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-034",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-029",
+          "nav-f1-corridor-24",
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-waypoint-052",
+          "nav-f1-corridor-20"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-056",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-18",
+      "ordered_destinations": [
+        "sg-f1-restroom-lower-left"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 52.837,
+        "shortest_risk": 14.108,
+        "shortest_path": [
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-047",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-045",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-041",
+          "nav-f1-waypoint-040",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-039",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left"
+        ],
+        "lowest_risk_distance_m": 63.173,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-18",
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-029",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-034",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-064",
+          "sg-f1-restroom-lower-left"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-057",
+      "category": "risk_detour",
+      "source": "sg-f1-restroom-lower-left",
+      "ordered_destinations": [
+        "nav-f1-spine-06"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 45.45,
+        "shortest_risk": 14.108,
+        "shortest_path": [
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-039",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-021",
+          "nav-f1-waypoint-022",
+          "nav-f1-waypoint-023",
+          "nav-f1-corridor-22",
+          "nav-f1-spine-06"
+        ],
+        "lowest_risk_distance_m": 55.994,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-034",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-029",
+          "nav-f1-corridor-24",
+          "nav-f1-spine-06"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-058",
+      "category": "risk_detour",
+      "source": "sg-f1-restroom-lower-left",
+      "ordered_destinations": [
+        "sg-f1-pharmacy"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 52.818,
+        "shortest_risk": 14.108,
+        "shortest_path": [
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-039",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-021",
+          "nav-f1-waypoint-022",
+          "nav-f1-waypoint-023",
+          "nav-f1-corridor-22",
+          "nav-f1-waypoint-019",
+          "nav-f1-corridor-14",
+          "sg-f1-pharmacy"
+        ],
+        "lowest_risk_distance_m": 65.298,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-026",
+          "nav-f1-waypoint-027",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-021",
+          "nav-f1-waypoint-022",
+          "nav-f1-waypoint-023",
+          "nav-f1-corridor-22",
+          "nav-f1-waypoint-019",
+          "nav-f1-corridor-14",
+          "sg-f1-pharmacy"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-059",
+      "category": "risk_detour",
+      "source": "nav-f1-corridor-18",
+      "ordered_destinations": [
+        "sg-f1-self-service-registration-payment-south"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 42.244,
+        "shortest_risk": 14.108,
+        "shortest_path": [
+          "nav-f1-corridor-18",
+          "nav-f1-waypoint-047",
+          "nav-f1-waypoint-046",
+          "nav-f1-waypoint-045",
+          "nav-f1-corridor-17",
+          "nav-f1-waypoint-041",
+          "nav-f1-waypoint-040",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-039",
+          "nav-f1-spine-07",
+          "sg-f1-self-service-registration-payment-south"
+        ],
+        "lowest_risk_distance_m": 52.58,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "nav-f1-corridor-18",
+          "sg-f1-functional-exam-waiting-east",
+          "nav-f1-corridor-24",
+          "nav-f1-waypoint-029",
+          "nav-f1-waypoint-030",
+          "nav-f1-waypoint-031",
+          "nav-f1-waypoint-032",
+          "nav-f1-waypoint-033",
+          "nav-f1-waypoint-034",
+          "nav-f1-spine-07",
+          "sg-f1-self-service-registration-payment-south"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    },
+    {
+      "id": "risk-detour-060",
+      "category": "risk_detour",
+      "source": "sg-f1-restroom-lower-left",
+      "ordered_destinations": [
+        "sg-f1-medication-consultation"
+      ],
+      "accessibility_needs": [],
+      "revoke_permissions": [],
+      "events": [],
+      "expected_decision": "ALLOW",
+      "reference": {
+        "shortest_distance_m": 50.451,
+        "shortest_risk": 14.108,
+        "shortest_path": [
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-039",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-021",
+          "nav-f1-waypoint-022",
+          "nav-f1-waypoint-023",
+          "nav-f1-corridor-22",
+          "nav-f1-waypoint-019",
+          "sg-f1-medication-consultation"
+        ],
+        "lowest_risk_distance_m": 62.931,
+        "lowest_risk": 0.0,
+        "lowest_risk_path": [
+          "sg-f1-restroom-lower-left",
+          "nav-f1-waypoint-064",
+          "nav-f1-spine-07",
+          "nav-f1-waypoint-028",
+          "nav-f1-corridor-13",
+          "nav-f1-waypoint-026",
+          "nav-f1-waypoint-027",
+          "nav-f1-corridor-16",
+          "nav-f1-waypoint-021",
+          "nav-f1-waypoint-022",
+          "nav-f1-waypoint-023",
+          "nav-f1-corridor-22",
+          "nav-f1-waypoint-019",
+          "sg-f1-medication-consultation"
+        ],
+        "max_distance_ratio": 1.25
+      }
+    }
+  ]
+}

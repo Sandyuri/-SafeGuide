@@ -1,0 +1,1073 @@
+{
+  "schema_version": "2.0.0",
+  "map_id": "hospital_1f",
+  "source_context_id": "ctx-first-floor-navigation-allowlist",
+  "source_evidence_id": "operator-provided-first-floor-allowlist-2026-10-05",
+  "normalization": {
+    "trim": true,
+    "casefold_ascii": false,
+    "remove_suffixes": [
+      "怎么走",
+      "在哪里",
+      "在哪儿",
+      "位置"
+    ]
+  },
+  "locations": [
+    {
+      "canonical_name": "咨询处",
+      "source_location_id": "sg-f1-information-desk",
+      "node_id": "sg-f1-information-desk",
+      "aliases": []
+    },
+    {
+      "canonical_name": "精神心理科",
+      "source_location_id": "sg-f1-mental-health",
+      "node_id": "sg-f1-mental-health",
+      "aliases": []
+    },
+    {
+      "canonical_name": "职业康复科",
+      "source_location_id": "sg-f1-occupational-rehabilitation",
+      "node_id": "sg-f1-occupational-rehabilitation",
+      "aliases": []
+    },
+    {
+      "canonical_name": "神经康复科",
+      "source_location_id": "sg-f1-neurological-rehabilitation",
+      "node_id": "sg-f1-neurological-rehabilitation",
+      "aliases": []
+    },
+    {
+      "canonical_name": "心肺康复科",
+      "source_location_id": "sg-f1-cardiopulmonary-rehabilitation",
+      "node_id": "sg-f1-cardiopulmonary-rehabilitation",
+      "aliases": []
+    },
+    {
+      "canonical_name": "脊髓损伤康复科",
+      "source_location_id": "sg-f1-spinal-cord-rehabilitation",
+      "node_id": "sg-f1-spinal-cord-rehabilitation",
+      "aliases": [
+        "脊髓损伤康复科（西入口）",
+        "脊髓损伤康复科西入口",
+        "脊髓损伤康复科西侧入口"
+      ]
+    },
+    {
+      "canonical_name": "脊髓损伤康复科（东入口）",
+      "source_location_id": "sg-f1-spinal-cord-rehabilitation-east",
+      "node_id": "sg-f1-spinal-cord-rehabilitation-east",
+      "aliases": [
+        "脊髓损伤康复科东入口",
+        "脊髓损伤康复科东侧入口"
+      ]
+    },
+    {
+      "canonical_name": "骨科康复科",
+      "source_location_id": "sg-f1-orthopedic-rehabilitation",
+      "node_id": "sg-f1-orthopedic-rehabilitation",
+      "aliases": []
+    },
+    {
+      "canonical_name": "卫生间",
+      "source_location_id": "sg-f1-restroom",
+      "node_id": "sg-f1-restroom",
+      "aliases": [],
+      "navigation_resolution": {
+        "mode": "nearest_reachable_candidate",
+        "candidate_node_ids": [
+          "sg-f1-restroom",
+          "sg-f1-restroom-lower-left"
+        ],
+        "legacy_default_node_id": "sg-f1-restroom"
+      }
+    },
+    {
+      "canonical_name": "诊室区入口",
+      "source_location_id": "sg-f1-consultation-rooms",
+      "node_id": "sg-f1-consultation-rooms",
+      "aliases": [
+        "诊室",
+        "诊室区"
+      ]
+    },
+    {
+      "canonical_name": "取号机",
+      "source_location_id": "sg-f1-queue-ticket-machine",
+      "node_id": "sg-f1-queue-ticket-machine",
+      "aliases": []
+    },
+    {
+      "canonical_name": "宣讲、布告栏",
+      "source_location_id": "sg-f1-notice-board",
+      "node_id": "sg-f1-notice-board",
+      "aliases": []
+    },
+    {
+      "canonical_name": "门诊候诊",
+      "source_location_id": "sg-f1-outpatient-waiting",
+      "node_id": "sg-f1-outpatient-waiting",
+      "aliases": []
+    },
+    {
+      "canonical_name": "挂号收费窗口",
+      "source_location_id": "sg-f1-registration-payment-counter",
+      "node_id": "sg-f1-registration-payment-counter",
+      "aliases": []
+    },
+    {
+      "canonical_name": "咨询室",
+      "source_location_id": "sg-f1-consultation-room",
+      "node_id": "sg-f1-consultation-room",
+      "aliases": []
+    },
+    {
+      "canonical_name": "电梯厅",
+      "source_location_id": "sg-f1-public-elevator-hall",
+      "node_id": "sg-f1-public-elevator-hall",
+      "aliases": []
+    },
+    {
+      "canonical_name": "雾化室",
+      "source_location_id": "sg-f1-nebulization-room",
+      "node_id": "sg-f1-nebulization-room",
+      "aliases": []
+    },
+    {
+      "canonical_name": "抢救室门口",
+      "source_location_id": "sg-f1-emergency-room-entrance",
+      "node_id": "sg-f1-emergency-room-entrance",
+      "aliases": [
+        "抢救室"
+      ]
+    },
+    {
+      "canonical_name": "药物咨询室",
+      "source_location_id": "sg-f1-medication-consultation",
+      "node_id": "sg-f1-medication-consultation",
+      "aliases": []
+    },
+    {
+      "canonical_name": "药房取药显示屏",
+      "source_location_id": "sg-f1-pharmacy",
+      "node_id": "sg-f1-pharmacy",
+      "aliases": [
+        "药房",
+        "取药",
+        "取药处",
+        "自动分药机显示屏"
+      ]
+    },
+    {
+      "canonical_name": "便民服务中心（预检、导诊）",
+      "source_location_id": "sg-f1-patient-service-center",
+      "node_id": "sg-f1-patient-service-center",
+      "aliases": []
+    },
+    {
+      "canonical_name": "自助挂号收费机",
+      "source_location_id": "sg-f1-self-service-registration-payment",
+      "node_id": "sg-f1-self-service-registration-payment",
+      "aliases": [
+        "自助挂号收费机（北侧）",
+        "北侧自助挂号收费机",
+        "自助挂号收费北侧点"
+      ],
+      "navigation_resolution": {
+        "mode": "nearest_reachable_candidate",
+        "candidate_node_ids": [
+          "sg-f1-self-service-registration-payment",
+          "sg-f1-self-service-registration-payment-south"
+        ],
+        "legacy_default_node_id": "sg-f1-self-service-registration-payment"
+      }
+    },
+    {
+      "canonical_name": "自助挂号收费机（南侧）",
+      "source_location_id": "sg-f1-self-service-registration-payment-south",
+      "node_id": "sg-f1-self-service-registration-payment-south",
+      "aliases": [
+        "南侧自助挂号收费机",
+        "自助挂号收费南侧点"
+      ]
+    },
+    {
+      "canonical_name": "自助取报告机",
+      "source_location_id": "sg-f1-self-service-report-machine",
+      "node_id": "sg-f1-self-service-report-machine",
+      "aliases": [
+        "自助取报告",
+        "取报告机"
+      ]
+    },
+    {
+      "canonical_name": "扶梯",
+      "source_location_id": "sg-f1-escalator",
+      "node_id": "sg-f1-escalator",
+      "aliases": []
+    },
+    {
+      "canonical_name": "无障碍卫生间",
+      "source_location_id": "sg-f1-accessible-restroom",
+      "node_id": "sg-f1-accessible-restroom",
+      "aliases": [],
+      "navigation_resolution": {
+        "mode": "nearest_reachable_candidate",
+        "candidate_node_ids": [
+          "sg-f1-accessible-restroom",
+          "sg-f1-accessible-restroom-lower-left",
+          "sg-f1-accessible-restroom-lower-right"
+        ],
+        "legacy_default_node_id": "sg-f1-accessible-restroom"
+      }
+    },
+    {
+      "canonical_name": "功能检查候诊",
+      "source_location_id": "sg-f1-functional-exam-waiting",
+      "node_id": "sg-f1-functional-exam-waiting",
+      "aliases": [
+        "B超室",
+        "b超室",
+        "B超",
+        "b超",
+        "心电",
+        "功能检查科候诊",
+        "功能检查等候",
+        "功能检查分诊",
+        "功能检查分诊台",
+        "分诊",
+        "做B超",
+        "做b超",
+        "TCD",
+        "tcd",
+        "TCD检查",
+        "tcd检查",
+        "做TCD",
+        "做tcd",
+        "心电检查",
+        "做心电"
+      ],
+      "navigation_resolution": {
+        "mode": "fixed_node",
+        "target_node_id": "sg-f1-functional-exam-waiting",
+        "semantic_aliases": [
+          "功能检查科候诊",
+          "功能检查等候",
+          "功能检查分诊",
+          "功能检查分诊台",
+          "分诊",
+          "B超室",
+          "b超室",
+          "B超",
+          "b超",
+          "做B超",
+          "做b超",
+          "TCD",
+          "tcd",
+          "TCD检查",
+          "tcd检查",
+          "做TCD",
+          "做tcd",
+          "心电",
+          "心电检查",
+          "做心电"
+        ],
+        "reason": "functional-exam triage, ultrasound, TCD and ECG are guided to node 28"
+      }
+    },
+    {
+      "canonical_name": "楼梯",
+      "source_location_id": "sg-f1-stairs",
+      "node_id": "sg-f1-stairs",
+      "aliases": [],
+      "navigation_resolution": {
+        "mode": "nearest_reachable_candidate",
+        "candidate_node_ids": [
+          "sg-f1-stairs",
+          "sg-f1-stairs-lower-right"
+        ],
+        "legacy_default_node_id": "sg-f1-stairs"
+      }
+    },
+    {
+      "canonical_name": "西侧安全停靠点",
+      "source_location_id": null,
+      "node_id": "nav-f1-safe-stop-west",
+      "aliases": []
+    },
+    {
+      "canonical_name": "东侧安全停靠点",
+      "source_location_id": null,
+      "node_id": "nav-f1-safe-stop-east",
+      "aliases": []
+    },
+    {
+      "canonical_name": "功能检查等候区",
+      "source_location_id": "sg-f1-functional-exam-waiting-east",
+      "node_id": "sg-f1-functional-exam-waiting-east",
+      "aliases": [
+        "等候",
+        "功能检查科等候",
+        "采血区",
+        "采血",
+        "血采样",
+        "血采集",
+        "尿采样"
+      ],
+      "navigation_resolution": {
+        "mode": "fixed_node",
+        "target_node_id": "sg-f1-functional-exam-waiting-east",
+        "semantic_aliases": [
+          "采血区",
+          "采血",
+          "血采样",
+          "血采集",
+          "尿采样"
+        ],
+        "reason": "blood and urine sample collection are guided to the functional-exam waiting area"
+      }
+    },
+    {
+      "canonical_name": "右下楼梯",
+      "source_location_id": "sg-f1-stairs-lower-right",
+      "node_id": "sg-f1-stairs-lower-right",
+      "aliases": [
+        "楼梯B",
+        "右下方楼梯"
+      ]
+    },
+    {
+      "canonical_name": "左下卫生间",
+      "source_location_id": "sg-f1-restroom-lower-left",
+      "node_id": "sg-f1-restroom-lower-left",
+      "aliases": [
+        "左下方卫生间",
+        "卫生间（左下）"
+      ]
+    },
+    {
+      "canonical_name": "左下无障碍卫生间",
+      "source_location_id": "sg-f1-accessible-restroom-lower-left",
+      "node_id": "sg-f1-accessible-restroom-lower-left",
+      "aliases": [
+        "左下方无障碍卫生间",
+        "无障碍卫生间（左下）"
+      ]
+    },
+    {
+      "canonical_name": "右下无障碍卫生间",
+      "source_location_id": "sg-f1-accessible-restroom-lower-right",
+      "node_id": "sg-f1-accessible-restroom-lower-right",
+      "aliases": [
+        "右下方无障碍卫生间",
+        "无障碍卫生间（右下）"
+      ]
+    },
+    {
+      "canonical_name": "输液室",
+      "source_location_id": "sg-f1-infusion-room",
+      "node_id": "sg-f1-infusion-room",
+      "aliases": [
+        "输液",
+        "静脉输液室"
+      ]
+    },
+    {
+      "canonical_name": "北侧候诊通道西节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-spine-01",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "北侧候诊通道东节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-spine-02",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "东侧主通道节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-spine-03",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "门诊大厅中央通道",
+      "source_location_id": null,
+      "node_id": "nav-f1-spine-04",
+      "aliases": [
+        "门诊大厅"
+      ],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "西侧主通道节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-spine-05",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "南侧功能检查通道节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-spine-06",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "南侧西端通道节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-spine-07",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "东侧门诊连接节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-spine-08",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "北侧康复走廊西接近点",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-01",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "北侧康复走廊中西接近点",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-02",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "北侧康复走廊中央接近点",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-03",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "北侧康复走廊中东接近点",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-04",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "北侧康复走廊东接近点",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-05",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "大厅西北通道节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-06",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "大厅北部中央通道节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-07",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "大厅东北通道节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-08",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "挂号收费南侧通道节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-09",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "西侧中部路口",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-11",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "药房北侧接近节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-12",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "电梯厅西侧绕行节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-13",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "药房东侧通道节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-14",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "东侧中部通道节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-15",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "南侧西部路口",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-16",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "功能检查西接近节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-17",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "功能检查东接近节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-18",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "左下设施接近节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-19",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "右下设施接近节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-20",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "抢救室门口上方接近节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-21",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "药房东南侧绕行节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-22",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "候诊区横向通道交汇节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-23",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "服务中心至功能检查绕行节点",
+      "source_location_id": null,
+      "node_id": "nav-f1-corridor-24",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点001",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-001",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点002",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-002",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点003",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-003",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点004",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-004",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点005",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-005",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点006",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-006",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点007",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-007",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点008",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-008",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点009",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-009",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点010",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-010",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点011",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-011",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点012",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-012",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点013",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-013",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点014",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-014",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点015",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-015",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点016",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-016",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点017",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-017",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点018",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-018",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点019",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-019",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点020",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-020",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点021",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-021",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点022",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-022",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点023",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-023",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点024",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-024",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点025",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-025",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点026",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-026",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点027",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-027",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点028",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-028",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点029",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-029",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点030",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-030",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点031",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-031",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点032",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-032",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点033",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-033",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点034",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-034",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点035",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-035",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点036",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-036",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点037",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-037",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点038",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-038",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点039",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-039",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点040",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-040",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点041",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-041",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点042",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-042",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点043",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-043",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点044",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-044",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点045",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-045",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点046",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-046",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点047",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-047",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点048",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-048",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点049",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-049",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点050",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-050",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点051",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-051",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点052",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-052",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "走廊细分点053",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-053",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "药房送药服务点（任务专用）",
+      "source_location_id": "task-f1-pharmacy-medication-delivery",
+      "node_id": "task-f1-pharmacy-medication-delivery",
+      "aliases": [],
+      "resolution_scope": "task_only"
+    },
+    {
+      "canonical_name": "药房送药北侧任务门点",
+      "source_location_id": "task-f1-pharmacy-delivery-north-gate",
+      "node_id": "task-f1-pharmacy-delivery-north-gate",
+      "aliases": [],
+      "resolution_scope": "task_only"
+    },
+    {
+      "canonical_name": "药房送药内部汇合点",
+      "source_location_id": "task-f1-pharmacy-delivery-junction",
+      "node_id": "task-f1-pharmacy-delivery-junction",
+      "aliases": [],
+      "resolution_scope": "task_only"
+    },
+    {
+      "canonical_name": "药房送药南侧任务门点",
+      "source_location_id": "task-f1-pharmacy-delivery-south-gate",
+      "node_id": "task-f1-pharmacy-delivery-south-gate",
+      "aliases": [],
+      "resolution_scope": "task_only"
+    },
+    {
+      "canonical_name": "长边细分点054",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-054",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "长边细分点055",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-055",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "长边细分点056",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-056",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "长边细分点057",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-057",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "长边细分点058",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-058",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "长边细分点059",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-059",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "长边细分点060",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-060",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "长边细分点061",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-061",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "长边细分点062",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-062",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "长边细分点063",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-063",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    },
+    {
+      "canonical_name": "长边细分点064",
+      "source_location_id": null,
+      "node_id": "nav-f1-waypoint-064",
+      "aliases": [],
+      "location_class": "navigation_structure"
+    }
+  ],
+  "uniqueness_rule": "each source location ID resolves to exactly one navigation node"
+}

@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+artifacts/*.svg
+artifacts/*.png
+# Reproducible all-pairs route exports
+artifacts/all_legal_routes/all_legal_routes.json
+artifacts/all_legal_routes/all_legal_routes.csv
+

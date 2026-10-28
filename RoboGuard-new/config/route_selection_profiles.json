@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "default_profile": "ROUTINE",
+  "profiles": {
+    "ROUTINE": {
+      "strategy": "risk_within_distance_ratio",
+      "max_distance_ratio": 1.25
+    },
+    "MOBILITY_ASSISTED": {
+      "strategy": "burden_within_distance_ratio",
+      "max_distance_ratio": 1.60
+    },
+    "WHEELCHAIR": {
+      "strategy": "burden_within_distance_ratio",
+      "max_distance_ratio": 1.60
+    },
+    "EMERGENCY": {
+      "strategy": "time_within_risk_limit",
+      "max_risk": 30.0
+    },
+    "CARGO": {
+      "strategy": "risk_within_distance_ratio",
+      "max_distance_ratio": 1.35
+    }
+  }
+}

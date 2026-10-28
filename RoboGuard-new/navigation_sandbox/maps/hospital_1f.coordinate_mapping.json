@@ -1,0 +1,2079 @@
+{
+  "schema_version": "2.0.0",
+  "map_id": "hospital_1f",
+  "usd_scene": "../scene/roboguard_hospital_sandbox.usda",
+  "frame": {
+    "name": "usd_world_z_up",
+    "units": "meters",
+    "up_axis": "Z",
+    "floor_z_m": 0,
+    "yaw_convention": "degrees_ccw_about_positive_z",
+    "navigation_model": "point_robot"
+  },
+  "calibration": {
+    "method": "floorplan_image_extent_registered_to_usd_wall2_bounds",
+    "status": "human_review_updates_applied_openusd_recheck_pending_for_moved_nodes",
+    "entrance_mapping": "hospital_1f.entrance_mapping.json",
+    "landmarks": [
+      {
+        "label": "大厅转运担架停放点",
+        "usd_xyz_m": [
+          -5.8644,
+          12.3637,
+          0
+        ]
+      },
+      {
+        "label": "东侧候诊轮椅停放点",
+        "usd_xyz_m": [
+          17.541,
+          9.3051,
+          0
+        ]
+      },
+      {
+        "label": "病房一入口转运床位",
+        "usd_xyz_m": [
+          -20.0305,
+          -6.8614,
+          0
+        ]
+      }
+    ],
+    "routing_grid_resolution_m": 0.15,
+    "robot_radius_m": 0.0,
+    "collision_height_band_m": [
+      0.12,
+      1.85
+    ],
+    "no_through_zones_file": "hospital_1f.no_through_zones.json",
+    "no_through_zone_status": "floorplan_traced_pending_onsite_verification"
+  },
+  "node_coordinates": {
+    "sg-f1-information-desk": {
+      "usd_xyz_m": [
+        -10.65,
+        23.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -10.65,
+        23.55
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-mental-health": {
+      "usd_xyz_m": [
+        -7.2,
+        23.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -7.2,
+        23.55
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-occupational-rehabilitation": {
+      "usd_xyz_m": [
+        -3.75,
+        23.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -3.75,
+        23.55
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-neurological-rehabilitation": {
+      "usd_xyz_m": [
+        -0.45,
+        23.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -0.45,
+        23.55
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-cardiopulmonary-rehabilitation": {
+      "usd_xyz_m": [
+        3.0,
+        23.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        3.0,
+        23.55
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-spinal-cord-rehabilitation": {
+      "usd_xyz_m": [
+        6.45,
+        23.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        6.45,
+        23.55
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-spinal-cord-rehabilitation-east": {
+      "usd_xyz_m": [
+        9.75,
+        23.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        9.75,
+        23.55
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-orthopedic-rehabilitation": {
+      "usd_xyz_m": [
+        12.45,
+        23.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        12.45,
+        23.55
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-restroom": {
+      "usd_xyz_m": [
+        15.3,
+        26.85,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        15.3,
+        26.85
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-consultation-rooms": {
+      "usd_xyz_m": [
+        -15.0,
+        17.4,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -15.0,
+        17.4
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-queue-ticket-machine": {
+      "usd_xyz_m": [
+        -9.3,
+        21.15,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -9.3,
+        21.15
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-notice-board": {
+      "usd_xyz_m": [
+        -13.95,
+        12.45,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -13.95,
+        12.45
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-outpatient-waiting": {
+      "usd_xyz_m": [
+        -8.4,
+        17.4,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "operator_requested_colocation_with_marker_70_openusd_recheck_pending",
+      "source_seed_usd_xy_m": [
+        -8.4,
+        17.4
+      ],
+      "usd_snap_displacement_m": null
+    },
+    "sg-f1-registration-payment-counter": {
+      "usd_xyz_m": [
+        9.6,
+        12.3,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        9.648362,
+        12.313541
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-consultation-room": {
+      "usd_xyz_m": [
+        13.05,
+        10.95,
+        0.0
+      ],
+      "yaw_deg": 180.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        13.05,
+        10.95
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-public-elevator-hall": {
+      "usd_xyz_m": [
+        -28.05,
+        2.7,
+        0.0
+      ],
+      "yaw_deg": 180.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -28.05,
+        2.7
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-nebulization-room": {
+      "usd_xyz_m": [
+        -20.85,
+        -6.75,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -20.805227,
+        -6.733153
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-emergency-room-entrance": {
+      "usd_xyz_m": [
+        -19.8,
+        8.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -19.798784,
+        8.565221
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-medication-consultation": {
+      "usd_xyz_m": [
+        -3.400697,
+        -3.298646,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "human_floorplan_reviewed_openusd_recheck_pending",
+      "source_seed_usd_xy_m": [
+        -3.400697,
+        -3.298646
+      ],
+      "usd_snap_displacement_m": null
+    },
+    "sg-f1-pharmacy": {
+      "usd_xyz_m": [
+        -1.283696,
+        1.417263,
+        0.0
+      ],
+      "yaw_deg": 180.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "operator_image_provisional",
+      "source_seed_usd_xy_m": [
+        -1.283696,
+        1.417263
+      ],
+      "usd_snap_displacement_m": null
+    },
+    "sg-f1-patient-service-center": {
+      "usd_xyz_m": [
+        10.5,
+        1.8,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        10.515985,
+        1.800812
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-self-service-registration-payment": {
+      "usd_xyz_m": [
+        21.0,
+        4.8,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        21.0,
+        4.8
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-self-service-registration-payment-south": {
+      "usd_xyz_m": [
+        -32.7,
+        -9.9,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -32.700347,
+        -9.897432
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-self-service-report-machine": {
+      "usd_xyz_m": [
+        13.049446,
+        -18.300641,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "human_floorplan_reviewed_openusd_recheck_pending",
+      "source_seed_usd_xy_m": [
+        13.049446,
+        -18.300641
+      ],
+      "usd_snap_displacement_m": null
+    },
+    "sg-f1-escalator": {
+      "usd_xyz_m": [
+        14.4,
+        -3.3,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        14.4,
+        -3.3
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-accessible-restroom": {
+      "usd_xyz_m": [
+        15.3,
+        21.6,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        15.3,
+        21.6
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-functional-exam-waiting": {
+      "usd_xyz_m": [
+        -15.859772,
+        -14.247226,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "operator_requested_left_adjustment_openusd_recheck_pending",
+      "source_seed_usd_xy_m": [
+        -15.859772,
+        -14.247226
+      ],
+      "usd_snap_displacement_m": null
+    },
+    "sg-f1-stairs": {
+      "usd_xyz_m": [
+        -32.7,
+        -9.9,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -32.7,
+        -9.9
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-safe-stop-west": {
+      "usd_xyz_m": [
+        -7.2,
+        10.65,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -7.2,
+        10.65
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-safe-stop-east": {
+      "usd_xyz_m": [
+        4.95,
+        10.65,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        4.95,
+        10.65
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-functional-exam-waiting-east": {
+      "usd_xyz_m": [
+        12.75,
+        -12.15,
+        0.0
+      ],
+      "yaw_deg": 180.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        12.75,
+        -12.15
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-stairs-lower-right": {
+      "usd_xyz_m": [
+        15.15,
+        -18.3,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        15.15,
+        -18.3
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-restroom-lower-left": {
+      "usd_xyz_m": [
+        -27.59872,
+        -21.900771,
+        0.0
+      ],
+      "yaw_deg": 180.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "human_floorplan_reviewed_openusd_recheck_pending",
+      "source_seed_usd_xy_m": [
+        -27.59872,
+        -21.900771
+      ],
+      "usd_snap_displacement_m": null
+    },
+    "sg-f1-accessible-restroom-lower-left": {
+      "usd_xyz_m": [
+        -27.6,
+        -21.9,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -27.6,
+        -21.9
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-accessible-restroom-lower-right": {
+      "usd_xyz_m": [
+        15.3,
+        -25.65,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        15.3,
+        -25.65
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "sg-f1-infusion-room": {
+      "usd_xyz_m": [
+        -18.6,
+        1.2,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -18.549406,
+        1.155752
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-spine-01": {
+      "usd_xyz_m": [
+        -8.4,
+        23.25,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -8.398209,
+        23.209818
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-spine-02": {
+      "usd_xyz_m": [
+        1.35,
+        23.25,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        1.319175,
+        23.209818
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-spine-03": {
+      "usd_xyz_m": [
+        1.35,
+        10.8,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        1.319175,
+        10.831647
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-spine-04": {
+      "usd_xyz_m": [
+        -8.4,
+        10.8,
+        0.0
+      ],
+      "yaw_deg": 180.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -8.398209,
+        10.831647
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-spine-05": {
+      "usd_xyz_m": [
+        -30.3,
+        10.8,
+        0.0
+      ],
+      "yaw_deg": 180.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -30.262324,
+        10.831647
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-spine-06": {
+      "usd_xyz_m": [
+        1.35,
+        -7.5,
+        0.0
+      ],
+      "yaw_deg": 180.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        1.319175,
+        -7.474099
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-spine-07": {
+      "usd_xyz_m": [
+        -29.550873,
+        -7.50025,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "operator_x_aligned_with_marker_99_openusd_recheck_pending",
+      "source_seed_usd_xy_m": [
+        -29.550873,
+        -7.50025
+      ],
+      "usd_snap_displacement_m": null
+    },
+    "nav-f1-spine-08": {
+      "usd_xyz_m": [
+        15.15,
+        10.8,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        15.201153,
+        10.831647
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-corridor-01": {
+      "usd_xyz_m": [
+        -12.0,
+        23.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -12.042229,
+        23.558499
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-corridor-02": {
+      "usd_xyz_m": [
+        -5.4,
+        23.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -5.448289,
+        23.558499
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-corridor-03": {
+      "usd_xyz_m": [
+        0.45,
+        23.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        0.451551,
+        23.558499
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-corridor-04": {
+      "usd_xyz_m": [
+        8.4,
+        23.55,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        8.346926,
+        23.558499
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-corridor-05": {
+      "usd_xyz_m": [
+        15.296591,
+        24.220993,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "operator_requested_midpoint_between_markers_09_27_openusd_recheck_pending",
+      "source_seed_usd_xy_m": [
+        15.296591,
+        24.220993
+      ],
+      "usd_snap_displacement_m": null
+    },
+    "nav-f1-corridor-06": {
+      "usd_xyz_m": [
+        -11.1,
+        17.4,
+        0.0
+      ],
+      "yaw_deg": 180.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -11.174605,
+        17.404282
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-corridor-07": {
+      "usd_xyz_m": [
+        -8.1,
+        20.4,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -8.137922,
+        20.420371
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-corridor-08": {
+      "usd_xyz_m": [
+        1.8,
+        21.0,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        1.839749,
+        21.117733
+      ],
+      "usd_snap_displacement_m": 0.15
+    },
+    "nav-f1-corridor-09": {
+      "usd_xyz_m": [
+        9.6,
+        10.8,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        9.648362,
+        10.831647
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-corridor-11": {
+      "usd_xyz_m": [
+        -22.5,
+        8.7,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -22.453712,
+        8.739562
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-corridor-12": {
+      "usd_xyz_m": [
+        -11.55,
+        8.7,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -11.521654,
+        8.739562
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-corridor-13": {
+      "usd_xyz_m": [
+        -28.8,
+        0.15,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -28.874127,
+        0.10971
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-corridor-14": {
+      "usd_xyz_m": [
+        -0.45,
+        0.15,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -0.416072,
+        0.10971
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-corridor-15": {
+      "usd_xyz_m": [
+        15.15,
+        0.15,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        15.201153,
+        0.10971
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-corridor-16": {
+      "usd_xyz_m": [
+        -22.5,
+        -7.5,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -22.453712,
+        -7.474099
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-corridor-17": {
+      "usd_xyz_m": [
+        -10.65,
+        -10.35,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -10.654031,
+        -10.350717
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-corridor-18": {
+      "usd_xyz_m": [
+        8.4,
+        -10.35,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        8.346926,
+        -10.350717
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-corridor-19": {
+      "usd_xyz_m": [
+        -27.6,
+        -16.95,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -27.659454,
+        -16.888483
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-corridor-20": {
+      "usd_xyz_m": [
+        15.15,
+        -14.7,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        15.201153,
+        -14.709228
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-corridor-21": {
+      "usd_xyz_m": [
+        -19.8,
+        8.7,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -19.798784,
+        8.695977
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-corridor-22": {
+      "usd_xyz_m": [
+        -0.45,
+        -7.5,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -0.416072,
+        -7.474099
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-corridor-23": {
+      "usd_xyz_m": [
+        -8.4,
+        17.4,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        -8.398209,
+        17.325828
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-corridor-24": {
+      "usd_xyz_m": [
+        6.6,
+        -8.1,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "openusd_static_collision_point_verified",
+      "source_seed_usd_xy_m": [
+        6.603003,
+        -8.101725
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-001": {
+      "usd_xyz_m": [
+        -8.693201,
+        23.549782,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -8.693201,
+        23.549782
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-002": {
+      "usd_xyz_m": [
+        -11.547683,
+        20.472673,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -11.547683,
+        20.472673
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-003": {
+      "usd_xyz_m": [
+        -2.47234,
+        23.549782,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -2.47234,
+        23.549782
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-004": {
+      "usd_xyz_m": [
+        4.425268,
+        23.549782,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        4.425268,
+        23.549782
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-005": {
+      "usd_xyz_m": [
+        -9.751702,
+        20.333201,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -9.751702,
+        20.333201
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-006": {
+      "usd_xyz_m": [
+        -4.329055,
+        20.995695,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -4.329055,
+        20.995695
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-007": {
+      "usd_xyz_m": [
+        -1.80427,
+        21.21362,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -1.80427,
+        21.21362
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-008": {
+      "usd_xyz_m": [
+        -8.398209,
+        14.10053,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -8.398209,
+        14.10053
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-009": {
+      "usd_xyz_m": [
+        1.431966,
+        15.939822,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        1.431966,
+        15.939822
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-010": {
+      "usd_xyz_m": [
+        -3.522165,
+        10.796779,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -3.522165,
+        10.796779
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-011": {
+      "usd_xyz_m": [
+        5.475092,
+        10.796779,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        5.475092,
+        10.796779
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-012": {
+      "usd_xyz_m": [
+        12.3727,
+        10.796779,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        12.3727,
+        10.796779
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-013": {
+      "usd_xyz_m": [
+        -13.872914,
+        10.796779,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -13.872914,
+        10.796779
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-014": {
+      "usd_xyz_m": [
+        -19.347619,
+        10.796779,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -19.347619,
+        10.796779
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-015": {
+      "usd_xyz_m": [
+        -24.822324,
+        10.796779,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -24.822324,
+        10.796779
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-016": {
+      "usd_xyz_m": [
+        -26.392723,
+        9.750736,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -26.392723,
+        9.750736
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-017": {
+      "usd_xyz_m": [
+        -15.668895,
+        8.695977,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -15.668895,
+        8.695977
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-018": {
+      "usd_xyz_m": [
+        0.451551,
+        5.479395,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        0.451551,
+        5.479395
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-019": {
+      "usd_xyz_m": [
+        -0.450777,
+        -3.673478,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -0.450777,
+        -3.673478
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-020": {
+      "usd_xyz_m": [
+        3.974103,
+        -8.921125,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        3.974103,
+        -8.921125
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-021": {
+      "usd_xyz_m": [
+        -16.987683,
+        -7.50025,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -16.987683,
+        -7.50025
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-022": {
+      "usd_xyz_m": [
+        -11.469597,
+        -7.50025,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -11.469597,
+        -7.50025
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-023": {
+      "usd_xyz_m": [
+        -5.960187,
+        -7.50025,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -5.960187,
+        -7.50025
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-024": {
+      "usd_xyz_m": [
+        -26.557572,
+        7.850425,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -26.557572,
+        7.850425
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-025": {
+      "usd_xyz_m": [
+        -28.032532,
+        4.259012,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -28.032532,
+        4.259012
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-026": {
+      "usd_xyz_m": [
+        -28.015179,
+        -3.699629,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -28.015179,
+        -3.699629
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-027": {
+      "usd_xyz_m": [
+        -26.349342,
+        -6.689567,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -26.349342,
+        -6.689567
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-028": {
+      "usd_xyz_m": [
+        -29.550873,
+        -3.673478,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -29.550873,
+        -3.673478
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-029": {
+      "usd_xyz_m": [
+        1.327851,
+        -8.014555,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        1.327851,
+        -8.014555
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-030": {
+      "usd_xyz_m": [
+        -3.938624,
+        -7.927385,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -3.938624,
+        -7.927385
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-031": {
+      "usd_xyz_m": [
+        -9.213776,
+        -7.840214,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -9.213776,
+        -7.840214
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-032": {
+      "usd_xyz_m": [
+        -14.480251,
+        -7.761761,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -14.480251,
+        -7.761761
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-033": {
+      "usd_xyz_m": [
+        -19.755402,
+        -7.674591,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -19.755402,
+        -7.674591
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-034": {
+      "usd_xyz_m": [
+        -25.021878,
+        -7.587421,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -25.021878,
+        -7.587421
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-035": {
+      "usd_xyz_m": [
+        2.290914,
+        -8.659614,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        2.290914,
+        -8.659614
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-036": {
+      "usd_xyz_m": [
+        -2.029852,
+        -9.226221,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -2.029852,
+        -9.226221
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-037": {
+      "usd_xyz_m": [
+        -6.341941,
+        -9.792827,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -6.341941,
+        -9.792827
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-038": {
+      "usd_xyz_m": [
+        3.071775,
+        -7.805346,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        3.071775,
+        -7.805346
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-039": {
+      "usd_xyz_m": [
+        -26.392723,
+        -7.50025,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -26.392723,
+        -7.50025
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-040": {
+      "usd_xyz_m": [
+        -18.549406,
+        -8.450406,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -18.549406,
+        -8.450406
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-041": {
+      "usd_xyz_m": [
+        -14.601718,
+        -9.400561,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -14.601718,
+        -9.400561
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-042": {
+      "usd_xyz_m": [
+        -6.654286,
+        -9.400561,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -6.654286,
+        -9.400561
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-043": {
+      "usd_xyz_m": [
+        -2.645865,
+        -8.450406,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -2.645865,
+        -8.450406
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-044": {
+      "usd_xyz_m": [
+        4.876432,
+        -8.921125,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        4.876432,
+        -8.921125
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-045": {
+      "usd_xyz_m": [
+        -5.890777,
+        -10.350717,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -5.890777,
+        -10.350717
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-046": {
+      "usd_xyz_m": [
+        -1.127524,
+        -10.350717,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -1.127524,
+        -10.350717
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-047": {
+      "usd_xyz_m": [
+        3.63573,
+        -10.350717,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        3.63573,
+        -10.350717
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-048": {
+      "usd_xyz_m": [
+        1.35388,
+        6.220342,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        1.35388,
+        6.220342
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-049": {
+      "usd_xyz_m": [
+        1.35388,
+        1.643906,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        1.35388,
+        1.643906
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-050": {
+      "usd_xyz_m": [
+        1.35388,
+        -2.923814,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        1.35388,
+        -2.923814
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-051": {
+      "usd_xyz_m": [
+        15.149095,
+        5.479395,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        15.149095,
+        5.479395
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-052": {
+      "usd_xyz_m": [
+        13.465906,
+        -10.490189,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        13.465906,
+        -10.490189
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-053": {
+      "usd_xyz_m": [
+        -28.943536,
+        -12.224876,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_collision_checked_parent_edge",
+      "source_seed_usd_xy_m": [
+        -28.943536,
+        -12.224876
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "task-f1-pharmacy-medication-delivery": {
+      "usd_xyz_m": [
+        -9.092308,
+        1.504433,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "operator_image_provisional",
+      "source_seed_usd_xy_m": [
+        -9.092308,
+        1.504433
+      ],
+      "usd_snap_displacement_m": null
+    },
+    "task-f1-pharmacy-delivery-north-gate": {
+      "usd_xyz_m": [
+        -14.992149,
+        9.001072,
+        0.0
+      ],
+      "yaw_deg": -90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "operator_annotated_task_route_openusd_recheck_pending",
+      "source_seed_usd_xy_m": [
+        -14.992149,
+        9.001072
+      ],
+      "usd_snap_displacement_m": null
+    },
+    "task-f1-pharmacy-delivery-junction": {
+      "usd_xyz_m": [
+        -14.862005,
+        1.286508,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "operator_annotated_task_route_openusd_recheck_pending",
+      "source_seed_usd_xy_m": [
+        -14.862005,
+        1.286508
+      ],
+      "usd_snap_displacement_m": null
+    },
+    "task-f1-pharmacy-delivery-south-gate": {
+      "usd_xyz_m": [
+        -15.122292,
+        -7.997121,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "operator_annotated_task_route_openusd_recheck_pending",
+      "source_seed_usd_xy_m": [
+        -15.122292,
+        -7.997121
+      ],
+      "usd_snap_displacement_m": null
+    },
+    "nav-f1-waypoint-054": {
+      "usd_xyz_m": [
+        15.218505,
+        -20.174801,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_existing_parent_edge_polyline",
+      "source_seed_usd_xy_m": [
+        15.218505,
+        -20.174801
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-055": {
+      "usd_xyz_m": [
+        -19.200123,
+        -4.405708,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_existing_parent_edge_polyline",
+      "source_seed_usd_xy_m": [
+        -19.200123,
+        -4.405708
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-056": {
+      "usd_xyz_m": [
+        10.047469,
+        6.298795,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_existing_parent_edge_polyline",
+      "source_seed_usd_xy_m": [
+        10.047469,
+        6.298795
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-057": {
+      "usd_xyz_m": [
+        -27.234318,
+        7.475593,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_existing_parent_edge_polyline",
+      "source_seed_usd_xy_m": [
+        -27.234318,
+        7.475593
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-058": {
+      "usd_xyz_m": [
+        -4.979772,
+        15.643443,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_existing_parent_edge_polyline",
+      "source_seed_usd_xy_m": [
+        -4.979772,
+        15.643443
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-059": {
+      "usd_xyz_m": [
+        18.072987,
+        7.798123,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_existing_parent_edge_polyline",
+      "source_seed_usd_xy_m": [
+        18.072987,
+        7.798123
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-060": {
+      "usd_xyz_m": [
+        15.747756,
+        3.30014,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_existing_parent_edge_polyline",
+      "source_seed_usd_xy_m": [
+        15.747756,
+        3.30014
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-061": {
+      "usd_xyz_m": [
+        11.77404,
+        6.377249,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_existing_parent_edge_polyline",
+      "source_seed_usd_xy_m": [
+        11.77404,
+        6.377249
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-062": {
+      "usd_xyz_m": [
+        -15.755658,
+        -8.55501,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_existing_parent_edge_polyline",
+      "source_seed_usd_xy_m": [
+        -15.755658,
+        -8.55501
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-063": {
+      "usd_xyz_m": [
+        8.19943,
+        -3.141739,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_existing_parent_edge_polyline",
+      "source_seed_usd_xy_m": [
+        8.19943,
+        -3.141739
+      ],
+      "usd_snap_displacement_m": 0.0
+    },
+    "nav-f1-waypoint-064": {
+      "usd_xyz_m": [
+        -28.943536,
+        -14.700511,
+        0.0
+      ],
+      "yaw_deg": 0.0,
+      "clearance_radius_m": 0.0,
+      "coordinate_status": "derived_from_existing_parent_edge_polyline",
+      "source_seed_usd_xy_m": [
+        -28.943536,
+        -14.700511
+      ],
+      "usd_snap_displacement_m": 0.0
+    }
+  }
+}

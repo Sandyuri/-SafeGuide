@@ -1,0 +1,51 @@
+{
+  "name": "qwen3_06b_natural_split_lora_v01",
+  "seeds": [
+    20261023,
+    20261024,
+    20261025
+  ],
+  "seed_gate": "run first seed, continue only if protocol, count macro-F1 and 3-recall clearly improve vs zero-shot",
+  "model_path": "${TRAINING_PROJECT}/models/Qwen3-0.6B",
+  "train_path": "${TRAINING_DATASET}/frozen/multi_intent_splitter_v0.2/train.jsonl",
+  "train_sha256": "65cf8b09b7f0eddd88b68bb55265353a3648ff2fe48b74841cdc730ccf5cae48",
+  "dev_path": "${TRAINING_DATASET}/frozen/multi_intent_splitter_v0.2/dev_all.jsonl",
+  "dev_sha256": "0dccccabb28d149df39237f0aaf1bbfb48e21bf761a03f3a8e20d6e362b42874",
+  "test_accessed": false,
+  "target_source": "segments[].standalone_text plus shared_request_span text for each applies_to intent",
+  "precision": "bf16",
+  "quantization": false,
+  "lora": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ]
+  },
+  "learning_rate": 0.0002,
+  "batch_size": 1,
+  "gradient_accumulation": 8,
+  "max_sequence_length": 384,
+  "max_new_tokens_dev": 256,
+  "epochs_max": 8,
+  "patience": 2,
+  "dev_decoding": "greedy",
+  "gradient_checkpointing": true,
+  "smoke": {
+    "mode": "bf16_lora",
+    "status": "passed",
+    "batch_size": 1,
+    "sequence_tokens": 342,
+    "loss": 0.1013822853565216,
+    "trainable_parameters": 4587520,
+    "peak_gpu_allocated_mib": 1777.8935546875,
+    "peak_gpu_reserved_mib": 1892.0,
+    "seconds": 3.02835481998045
+  },
+  "selection": "eligible if protocol>=0.70 and macro-F1>=0.30; then suspected risk changes, suspected answers, macro-F1, 3-recall, shared literal, complete proxy; semantic counts require human audit",
+  "torch_version": "2.11.0+cu128"
+}

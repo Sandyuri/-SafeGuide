@@ -1,0 +1,2714 @@
+{
+  "schema_version": "1.0.0",
+  "map_id": "hospital_1f",
+  "source_image": "source/hospital_1f_floorplan.jpg",
+  "source_image_size_px": [
+    6709,
+    6702
+  ],
+  "coordinate_frame": "floorplan_image_top_left_origin_x_right_y_down",
+  "usd_mapping_modified": true,
+  "nodes": [
+    {
+      "display_number": 1,
+      "node_id": "sg-f1-information-desk",
+      "name_zh": "咨询处",
+      "floorplan_pixel_xy": [
+        2860,
+        761
+      ],
+      "floorplan_normalized_xy": [
+        0.426293,
+        0.113548
+      ],
+      "semantic_floorplan_pixel_xy": [
+        2864,
+        360
+      ],
+      "source_label": "咨询处",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 2,
+      "node_id": "sg-f1-mental-health",
+      "name_zh": "精神心理科",
+      "floorplan_pixel_xy": [
+        3258,
+        761
+      ],
+      "floorplan_normalized_xy": [
+        0.485616,
+        0.113548
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3257,
+        360
+      ],
+      "source_label": "精神心理科",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 3,
+      "node_id": "sg-f1-occupational-rehabilitation",
+      "name_zh": "职业康复科",
+      "floorplan_pixel_xy": [
+        3656,
+        761
+      ],
+      "floorplan_normalized_xy": [
+        0.54494,
+        0.113548
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3650,
+        360
+      ],
+      "source_label": "职业康复科",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 4,
+      "node_id": "sg-f1-neurological-rehabilitation",
+      "name_zh": "神经康复科",
+      "floorplan_pixel_xy": [
+        4036,
+        761
+      ],
+      "floorplan_normalized_xy": [
+        0.60158,
+        0.113548
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4043,
+        360
+      ],
+      "source_label": "神经康复科",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 5,
+      "node_id": "sg-f1-cardiopulmonary-rehabilitation",
+      "name_zh": "心肺康复科",
+      "floorplan_pixel_xy": [
+        4434,
+        761
+      ],
+      "floorplan_normalized_xy": [
+        0.660903,
+        0.113548
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4435,
+        360
+      ],
+      "source_label": "心肺康复科",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 6,
+      "node_id": "sg-f1-spinal-cord-rehabilitation",
+      "name_zh": "脊髓损伤康复科（西入口）",
+      "floorplan_pixel_xy": [
+        4831,
+        761
+      ],
+      "floorplan_normalized_xy": [
+        0.720078,
+        0.113548
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4828,
+        360
+      ],
+      "source_label": "脊髓损伤康复科",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 7,
+      "node_id": "sg-f1-spinal-cord-rehabilitation-east",
+      "name_zh": "脊髓损伤康复科（东入口）",
+      "floorplan_pixel_xy": [
+        5212,
+        761
+      ],
+      "floorplan_normalized_xy": [
+        0.776867,
+        0.113548
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5220,
+        360
+      ],
+      "source_label": "脊髓损伤康复科",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 8,
+      "node_id": "sg-f1-orthopedic-rehabilitation",
+      "name_zh": "骨科康复科",
+      "floorplan_pixel_xy": [
+        5523,
+        761
+      ],
+      "floorplan_normalized_xy": [
+        0.823223,
+        0.113548
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5519,
+        360
+      ],
+      "source_label": "骨科康复科",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 9,
+      "node_id": "sg-f1-restroom",
+      "name_zh": "卫生间",
+      "floorplan_pixel_xy": [
+        5851,
+        382
+      ],
+      "floorplan_normalized_xy": [
+        0.872112,
+        0.056998
+      ],
+      "semantic_floorplan_pixel_xy": [
+        6320,
+        390
+      ],
+      "source_label": "卫生间",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 10,
+      "node_id": "sg-f1-consultation-rooms",
+      "name_zh": "诊室区入口",
+      "floorplan_pixel_xy": [
+        2359,
+        1466
+      ],
+      "floorplan_normalized_xy": [
+        0.351617,
+        0.218741
+      ],
+      "semantic_floorplan_pixel_xy": [
+        2300,
+        1900
+      ],
+      "source_label": "诊室区",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 12,
+      "node_id": "sg-f1-queue-ticket-machine",
+      "name_zh": "取号机",
+      "floorplan_pixel_xy": [
+        3016,
+        1036
+      ],
+      "floorplan_normalized_xy": [
+        0.449545,
+        0.154581
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3020,
+        1040
+      ],
+      "source_label": "取号机",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 13,
+      "node_id": "sg-f1-notice-board",
+      "name_zh": "宣讲、布告栏",
+      "floorplan_pixel_xy": [
+        2480,
+        2034
+      ],
+      "floorplan_normalized_xy": [
+        0.369653,
+        0.303491
+      ],
+      "semantic_floorplan_pixel_xy": [
+        2480,
+        2020
+      ],
+      "source_label": "宣讲、布告栏",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 14,
+      "node_id": "sg-f1-outpatient-waiting",
+      "name_zh": "门诊候诊",
+      "floorplan_pixel_xy": [
+        3120,
+        1466
+      ],
+      "floorplan_normalized_xy": [
+        0.465047,
+        0.218741
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3650,
+        1480
+      ],
+      "source_label": "门诊候诊",
+      "alignment_status": "operator_requested_colocation_with_marker_70_openusd_recheck_pending",
+      "usd_snap_displacement_m": null
+    },
+    {
+      "display_number": 15,
+      "node_id": "sg-f1-registration-payment-counter",
+      "name_zh": "挂号收费窗口",
+      "floorplan_pixel_xy": [
+        5194,
+        2052
+      ],
+      "floorplan_normalized_xy": [
+        0.774184,
+        0.306177
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5360,
+        1740
+      ],
+      "source_label": "挂号收费窗口",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 16,
+      "node_id": "sg-f1-consultation-room",
+      "name_zh": "咨询室",
+      "floorplan_pixel_xy": [
+        5592,
+        2206
+      ],
+      "floorplan_normalized_xy": [
+        0.833507,
+        0.329155
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5600,
+        2200
+      ],
+      "source_label": "咨询室",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 17,
+      "node_id": "sg-f1-public-elevator-hall",
+      "name_zh": "电梯厅",
+      "floorplan_pixel_xy": [
+        855,
+        3153
+      ],
+      "floorplan_normalized_xy": [
+        0.127441,
+        0.470457
+      ],
+      "semantic_floorplan_pixel_xy": [
+        860,
+        3160
+      ],
+      "source_label": "电梯厅",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 18,
+      "node_id": "sg-f1-nebulization-room",
+      "name_zh": "雾化室",
+      "floorplan_pixel_xy": [
+        1685,
+        4237
+      ],
+      "floorplan_normalized_xy": [
+        0.251155,
+        0.632199
+      ],
+      "semantic_floorplan_pixel_xy": [
+        1690,
+        4100
+      ],
+      "source_label": "雾化室",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 19,
+      "node_id": "sg-f1-emergency-room-entrance",
+      "name_zh": "抢救室门口",
+      "floorplan_pixel_xy": [
+        1806,
+        2482
+      ],
+      "floorplan_normalized_xy": [
+        0.269191,
+        0.370337
+      ],
+      "semantic_floorplan_pixel_xy": [
+        1800,
+        2540
+      ],
+      "source_label": "抢救室门口",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 20,
+      "node_id": "sg-f1-medication-consultation",
+      "name_zh": "药物咨询室",
+      "floorplan_pixel_xy": [
+        3696,
+        3841
+      ],
+      "floorplan_normalized_xy": [
+        0.550902,
+        0.573113
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3550,
+        4070
+      ],
+      "source_label": "药物咨询室",
+      "alignment_status": "human_reviewed_floorplan_route_pose_openusd_recheck_pending",
+      "usd_snap_displacement_m": null
+    },
+    {
+      "display_number": 21,
+      "node_id": "sg-f1-pharmacy",
+      "name_zh": "药房取药显示屏",
+      "floorplan_pixel_xy": [
+        3940,
+        3300
+      ],
+      "floorplan_normalized_xy": [
+        0.587271,
+        0.49239
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3780,
+        3300
+      ],
+      "source_label": "显示屏",
+      "alignment_status": "operator_image_public_side_provisional",
+      "usd_snap_displacement_m": null
+    },
+    {
+      "display_number": 22,
+      "node_id": "sg-f1-patient-service-center",
+      "name_zh": "便民服务中心（预检、导诊）",
+      "floorplan_pixel_xy": [
+        5298,
+        3256
+      ],
+      "floorplan_normalized_xy": [
+        0.789685,
+        0.485825
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5000,
+        3260
+      ],
+      "source_label": "便民服务中心（预检、导诊）",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 23,
+      "node_id": "sg-f1-self-service-registration-payment",
+      "name_zh": "自助挂号收费机（北侧）",
+      "floorplan_pixel_xy": [
+        6508,
+        2912
+      ],
+      "floorplan_normalized_xy": [
+        0.97004,
+        0.434497
+      ],
+      "semantic_floorplan_pixel_xy": [
+        6500,
+        2910
+      ],
+      "source_label": "自助挂号收费",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 24,
+      "node_id": "sg-f1-self-service-registration-payment-south",
+      "name_zh": "自助挂号收费机（南侧）",
+      "floorplan_pixel_xy": [
+        319,
+        4598
+      ],
+      "floorplan_normalized_xy": [
+        0.047548,
+        0.686064
+      ],
+      "semantic_floorplan_pixel_xy": [
+        6500,
+        3900
+      ],
+      "source_label": "自助挂号收费",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 25,
+      "node_id": "sg-f1-self-service-report-machine",
+      "name_zh": "自助取报告机",
+      "floorplan_pixel_xy": [
+        5592,
+        5562
+      ],
+      "floorplan_normalized_xy": [
+        0.833507,
+        0.829902
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5600,
+        5450
+      ],
+      "source_label": "自助取报告机",
+      "alignment_status": "human_reviewed_floorplan_route_pose_openusd_recheck_pending",
+      "usd_snap_displacement_m": null
+    },
+    {
+      "display_number": 26,
+      "node_id": "sg-f1-escalator",
+      "name_zh": "扶梯",
+      "floorplan_pixel_xy": [
+        5748,
+        3841
+      ],
+      "floorplan_normalized_xy": [
+        0.85676,
+        0.573113
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5750,
+        3900
+      ],
+      "source_label": "扶梯",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 27,
+      "node_id": "sg-f1-accessible-restroom",
+      "name_zh": "无障碍卫生间",
+      "floorplan_pixel_xy": [
+        5851,
+        985
+      ],
+      "floorplan_normalized_xy": [
+        0.872112,
+        0.146971
+      ],
+      "semantic_floorplan_pixel_xy": [
+        6250,
+        820
+      ],
+      "source_label": "无障碍卫生间",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 28,
+      "node_id": "sg-f1-functional-exam-waiting",
+      "name_zh": "功能检查候诊",
+      "floorplan_pixel_xy": [
+        2260,
+        5097
+      ],
+      "floorplan_normalized_xy": [
+        0.336861,
+        0.760519
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3020,
+        5100
+      ],
+      "source_label": "功能检查科候诊",
+      "alignment_status": "operator_requested_left_adjustment_openusd_recheck_pending",
+      "usd_snap_displacement_m": null
+    },
+    {
+      "display_number": 29,
+      "node_id": "sg-f1-stairs",
+      "name_zh": "楼梯",
+      "floorplan_pixel_xy": [
+        319,
+        4598
+      ],
+      "floorplan_normalized_xy": [
+        0.047548,
+        0.686064
+      ],
+      "semantic_floorplan_pixel_xy": [
+        520,
+        5030
+      ],
+      "source_label": "楼梯1-4",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 30,
+      "node_id": "nav-f1-safe-stop-west",
+      "name_zh": "西侧安全停靠点",
+      "floorplan_pixel_xy": [
+        3258,
+        2241
+      ],
+      "floorplan_normalized_xy": [
+        0.485616,
+        0.334378
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3260,
+        2240
+      ],
+      "source_label": "西侧开敞通道",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 31,
+      "node_id": "nav-f1-safe-stop-east",
+      "name_zh": "东侧安全停靠点",
+      "floorplan_pixel_xy": [
+        4658,
+        2241
+      ],
+      "floorplan_normalized_xy": [
+        0.694291,
+        0.334378
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4650,
+        2240
+      ],
+      "source_label": "东侧开敞通道",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 34,
+      "node_id": "sg-f1-functional-exam-waiting-east",
+      "name_zh": "功能检查等候区",
+      "floorplan_pixel_xy": [
+        5557,
+        4856
+      ],
+      "floorplan_normalized_xy": [
+        0.82829,
+        0.72456
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5550,
+        4850
+      ],
+      "source_label": "等候",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 35,
+      "node_id": "sg-f1-stairs-lower-right",
+      "name_zh": "右下楼梯",
+      "floorplan_pixel_xy": [
+        5834,
+        5562
+      ],
+      "floorplan_normalized_xy": [
+        0.869578,
+        0.829902
+      ],
+      "semantic_floorplan_pixel_xy": [
+        6200,
+        5350
+      ],
+      "source_label": "右下楼梯",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 36,
+      "node_id": "sg-f1-restroom-lower-left",
+      "name_zh": "左下卫生间",
+      "floorplan_pixel_xy": [
+        907,
+        5975
+      ],
+      "floorplan_normalized_xy": [
+        0.135192,
+        0.891525
+      ],
+      "semantic_floorplan_pixel_xy": [
+        520,
+        6000
+      ],
+      "source_label": "左下卫生间",
+      "alignment_status": "human_reviewed_floorplan_route_pose_openusd_recheck_pending",
+      "usd_snap_displacement_m": null
+    },
+    {
+      "display_number": 37,
+      "node_id": "sg-f1-accessible-restroom-lower-left",
+      "name_zh": "左下无障碍卫生间",
+      "floorplan_pixel_xy": [
+        907,
+        5975
+      ],
+      "floorplan_normalized_xy": [
+        0.135192,
+        0.891525
+      ],
+      "semantic_floorplan_pixel_xy": [
+        900,
+        6000
+      ],
+      "source_label": "左下无障碍卫生间",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 38,
+      "node_id": "sg-f1-accessible-restroom-lower-right",
+      "name_zh": "右下无障碍卫生间",
+      "floorplan_pixel_xy": [
+        5851,
+        6405
+      ],
+      "floorplan_normalized_xy": [
+        0.872112,
+        0.955685
+      ],
+      "semantic_floorplan_pixel_xy": [
+        6200,
+        6350
+      ],
+      "source_label": "右下无障碍卫生间",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 39,
+      "node_id": "sg-f1-infusion-room",
+      "name_zh": "输液室",
+      "floorplan_pixel_xy": [
+        1944,
+        3325
+      ],
+      "floorplan_normalized_xy": [
+        0.28976,
+        0.496121
+      ],
+      "semantic_floorplan_pixel_xy": [
+        1740,
+        3300
+      ],
+      "source_label": "输液室",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 40,
+      "node_id": "nav-f1-spine-01",
+      "name_zh": "北侧候诊通道西节点",
+      "floorplan_pixel_xy": [
+        3120,
+        795
+      ],
+      "floorplan_normalized_xy": [
+        0.465047,
+        0.118621
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3120,
+        800
+      ],
+      "source_label": "operator_redline_navigation_structure",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 41,
+      "node_id": "nav-f1-spine-02",
+      "name_zh": "北侧候诊通道东节点",
+      "floorplan_pixel_xy": [
+        4244,
+        795
+      ],
+      "floorplan_normalized_xy": [
+        0.632583,
+        0.118621
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4240,
+        800
+      ],
+      "source_label": "operator_redline_navigation_structure",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 42,
+      "node_id": "nav-f1-spine-03",
+      "name_zh": "东侧主通道节点",
+      "floorplan_pixel_xy": [
+        4244,
+        2224
+      ],
+      "floorplan_normalized_xy": [
+        0.632583,
+        0.331841
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4240,
+        2220
+      ],
+      "source_label": "operator_redline_navigation_structure",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 43,
+      "node_id": "nav-f1-spine-04",
+      "name_zh": "门诊大厅中央通道",
+      "floorplan_pixel_xy": [
+        3120,
+        2224
+      ],
+      "floorplan_normalized_xy": [
+        0.465047,
+        0.331841
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3120,
+        2220
+      ],
+      "source_label": "operator_redline_navigation_structure",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 44,
+      "node_id": "nav-f1-spine-05",
+      "name_zh": "西侧主通道节点",
+      "floorplan_pixel_xy": [
+        596,
+        2224
+      ],
+      "floorplan_normalized_xy": [
+        0.088836,
+        0.331841
+      ],
+      "semantic_floorplan_pixel_xy": [
+        600,
+        2220
+      ],
+      "source_label": "operator_redline_navigation_structure",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 45,
+      "node_id": "nav-f1-spine-06",
+      "name_zh": "南侧功能检查通道节点",
+      "floorplan_pixel_xy": [
+        4244,
+        4323
+      ],
+      "floorplan_normalized_xy": [
+        0.632583,
+        0.645031
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4240,
+        4320
+      ],
+      "source_label": "operator_redline_navigation_structure",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 46,
+      "node_id": "nav-f1-spine-07",
+      "name_zh": "南侧西端通道节点",
+      "floorplan_pixel_xy": [
+        682,
+        4323
+      ],
+      "floorplan_normalized_xy": [
+        0.101654,
+        0.645031
+      ],
+      "semantic_floorplan_pixel_xy": [
+        600,
+        4320
+      ],
+      "source_label": "operator_redline_navigation_structure",
+      "alignment_status": "operator_x_aligned_with_marker_99_openusd_recheck_pending",
+      "usd_snap_displacement_m": null
+    },
+    {
+      "display_number": 47,
+      "node_id": "nav-f1-spine-08",
+      "name_zh": "东侧门诊连接节点",
+      "floorplan_pixel_xy": [
+        5834,
+        2224
+      ],
+      "floorplan_normalized_xy": [
+        0.869578,
+        0.331841
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5840,
+        2220
+      ],
+      "source_label": "operator_redline_navigation_structure",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 48,
+      "node_id": "nav-f1-corridor-01",
+      "name_zh": "北侧康复走廊西接近点",
+      "floorplan_pixel_xy": [
+        2705,
+        761
+      ],
+      "floorplan_normalized_xy": [
+        0.40319,
+        0.113548
+      ],
+      "semantic_floorplan_pixel_xy": [
+        2700,
+        760
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 49,
+      "node_id": "nav-f1-corridor-02",
+      "name_zh": "北侧康复走廊中西接近点",
+      "floorplan_pixel_xy": [
+        3466,
+        761
+      ],
+      "floorplan_normalized_xy": [
+        0.516619,
+        0.113548
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3460,
+        760
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 50,
+      "node_id": "nav-f1-corridor-03",
+      "name_zh": "北侧康复走廊中央接近点",
+      "floorplan_pixel_xy": [
+        4140,
+        761
+      ],
+      "floorplan_normalized_xy": [
+        0.617082,
+        0.113548
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4140,
+        760
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 51,
+      "node_id": "nav-f1-corridor-04",
+      "name_zh": "北侧康复走廊中东接近点",
+      "floorplan_pixel_xy": [
+        5056,
+        761
+      ],
+      "floorplan_normalized_xy": [
+        0.753615,
+        0.113548
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5050,
+        760
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 52,
+      "node_id": "nav-f1-corridor-05",
+      "name_zh": "北侧康复走廊东接近点",
+      "floorplan_pixel_xy": [
+        5851,
+        684
+      ],
+      "floorplan_normalized_xy": [
+        0.872112,
+        0.102059
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5700,
+        760
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "operator_requested_midpoint_between_markers_09_27_openusd_recheck_pending",
+      "usd_snap_displacement_m": null
+    },
+    {
+      "display_number": 53,
+      "node_id": "nav-f1-corridor-06",
+      "name_zh": "大厅西北通道节点",
+      "floorplan_pixel_xy": [
+        2809,
+        1466
+      ],
+      "floorplan_normalized_xy": [
+        0.418691,
+        0.218741
+      ],
+      "semantic_floorplan_pixel_xy": [
+        2800,
+        1466
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 54,
+      "node_id": "nav-f1-corridor-07",
+      "name_zh": "大厅北部中央通道节点",
+      "floorplan_pixel_xy": [
+        3154,
+        1122
+      ],
+      "floorplan_normalized_xy": [
+        0.470115,
+        0.167413
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3150,
+        1120
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 55,
+      "node_id": "nav-f1-corridor-08",
+      "name_zh": "大厅东北通道节点",
+      "floorplan_pixel_xy": [
+        4295,
+        1054
+      ],
+      "floorplan_normalized_xy": [
+        0.640185,
+        0.157266
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4300,
+        1040
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.15
+    },
+    {
+      "display_number": 56,
+      "node_id": "nav-f1-corridor-09",
+      "name_zh": "挂号收费南侧通道节点",
+      "floorplan_pixel_xy": [
+        5194,
+        2224
+      ],
+      "floorplan_normalized_xy": [
+        0.774184,
+        0.331841
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5200,
+        2220
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 58,
+      "node_id": "nav-f1-corridor-11",
+      "name_zh": "西侧中部路口",
+      "floorplan_pixel_xy": [
+        1495,
+        2465
+      ],
+      "floorplan_normalized_xy": [
+        0.222835,
+        0.367801
+      ],
+      "semantic_floorplan_pixel_xy": [
+        1500,
+        2460
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 59,
+      "node_id": "nav-f1-corridor-12",
+      "name_zh": "药房北侧接近节点",
+      "floorplan_pixel_xy": [
+        2757,
+        2465
+      ],
+      "floorplan_normalized_xy": [
+        0.410941,
+        0.367801
+      ],
+      "semantic_floorplan_pixel_xy": [
+        2760,
+        2460
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 60,
+      "node_id": "nav-f1-corridor-13",
+      "name_zh": "电梯厅西侧绕行节点",
+      "floorplan_pixel_xy": [
+        769,
+        3445
+      ],
+      "floorplan_normalized_xy": [
+        0.114622,
+        0.514026
+      ],
+      "semantic_floorplan_pixel_xy": [
+        760,
+        3450
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 61,
+      "node_id": "nav-f1-corridor-14",
+      "name_zh": "药房东侧通道节点",
+      "floorplan_pixel_xy": [
+        4036,
+        3445
+      ],
+      "floorplan_normalized_xy": [
+        0.60158,
+        0.514026
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4040,
+        3450
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 62,
+      "node_id": "nav-f1-corridor-15",
+      "name_zh": "东侧中部通道节点",
+      "floorplan_pixel_xy": [
+        5834,
+        3445
+      ],
+      "floorplan_normalized_xy": [
+        0.869578,
+        0.514026
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5840,
+        3450
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 63,
+      "node_id": "nav-f1-corridor-16",
+      "name_zh": "南侧西部路口",
+      "floorplan_pixel_xy": [
+        1495,
+        4323
+      ],
+      "floorplan_normalized_xy": [
+        0.222835,
+        0.645031
+      ],
+      "semantic_floorplan_pixel_xy": [
+        1500,
+        4320
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 64,
+      "node_id": "nav-f1-corridor-17",
+      "name_zh": "功能检查西接近节点",
+      "floorplan_pixel_xy": [
+        2860,
+        4650
+      ],
+      "floorplan_normalized_xy": [
+        0.426293,
+        0.693823
+      ],
+      "semantic_floorplan_pixel_xy": [
+        2860,
+        4650
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 65,
+      "node_id": "nav-f1-corridor-18",
+      "name_zh": "功能检查东接近节点",
+      "floorplan_pixel_xy": [
+        5056,
+        4650
+      ],
+      "floorplan_normalized_xy": [
+        0.753615,
+        0.693823
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5050,
+        4650
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 66,
+      "node_id": "nav-f1-corridor-19",
+      "name_zh": "左下设施接近节点",
+      "floorplan_pixel_xy": [
+        907,
+        5407
+      ],
+      "floorplan_normalized_xy": [
+        0.135192,
+        0.806774
+      ],
+      "semantic_floorplan_pixel_xy": [
+        900,
+        5400
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 67,
+      "node_id": "nav-f1-corridor-20",
+      "name_zh": "右下设施接近节点",
+      "floorplan_pixel_xy": [
+        5834,
+        5149
+      ],
+      "floorplan_normalized_xy": [
+        0.869578,
+        0.768278
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5840,
+        5150
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 68,
+      "node_id": "nav-f1-corridor-21",
+      "name_zh": "抢救室门口上方接近节点",
+      "floorplan_pixel_xy": [
+        1806,
+        2465
+      ],
+      "floorplan_normalized_xy": [
+        0.269191,
+        0.367801
+      ],
+      "semantic_floorplan_pixel_xy": [
+        1806,
+        2465
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 69,
+      "node_id": "nav-f1-corridor-22",
+      "name_zh": "药房东南侧绕行节点",
+      "floorplan_pixel_xy": [
+        4036,
+        4323
+      ],
+      "floorplan_normalized_xy": [
+        0.60158,
+        0.645031
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4040,
+        4320
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 70,
+      "node_id": "nav-f1-corridor-23",
+      "name_zh": "候诊区横向通道交汇节点",
+      "floorplan_pixel_xy": [
+        3120,
+        1466
+      ],
+      "floorplan_normalized_xy": [
+        0.465047,
+        0.218741
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3120,
+        1475
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 71,
+      "node_id": "nav-f1-corridor-24",
+      "name_zh": "服务中心至功能检查绕行节点",
+      "floorplan_pixel_xy": [
+        4849,
+        4392
+      ],
+      "floorplan_normalized_xy": [
+        0.72276,
+        0.655327
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4849,
+        4392
+      ],
+      "source_label": "USD点机器人走廊结构节点",
+      "alignment_status": "openusd_point_collision_snapped_route_pose",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 72,
+      "node_id": "nav-f1-waypoint-001",
+      "name_zh": "走廊细分点001",
+      "floorplan_pixel_xy": [
+        3086,
+        761
+      ],
+      "floorplan_normalized_xy": [
+        0.459979,
+        0.113548
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3086,
+        761
+      ],
+      "source_label": "derived from E201",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 73,
+      "node_id": "nav-f1-waypoint-002",
+      "name_zh": "走廊细分点002",
+      "floorplan_pixel_xy": [
+        2757,
+        1114
+      ],
+      "floorplan_normalized_xy": [
+        0.410941,
+        0.166219
+      ],
+      "semantic_floorplan_pixel_xy": [
+        2757,
+        1114
+      ],
+      "source_label": "derived from E203",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 74,
+      "node_id": "nav-f1-waypoint-003",
+      "name_zh": "走廊细分点003",
+      "floorplan_pixel_xy": [
+        3803,
+        761
+      ],
+      "floorplan_normalized_xy": [
+        0.56685,
+        0.113548
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3803,
+        761
+      ],
+      "source_label": "derived from E204",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 75,
+      "node_id": "nav-f1-waypoint-004",
+      "name_zh": "走廊细分点004",
+      "floorplan_pixel_xy": [
+        4598,
+        761
+      ],
+      "floorplan_normalized_xy": [
+        0.685348,
+        0.113548
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4598,
+        761
+      ],
+      "source_label": "derived from E205",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 76,
+      "node_id": "nav-f1-waypoint-005",
+      "name_zh": "走廊细分点005",
+      "floorplan_pixel_xy": [
+        2964,
+        1130
+      ],
+      "floorplan_normalized_xy": [
+        0.441795,
+        0.168606
+      ],
+      "semantic_floorplan_pixel_xy": [
+        2964,
+        1130
+      ],
+      "source_label": "derived from E208",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 77,
+      "node_id": "nav-f1-waypoint-006",
+      "name_zh": "走廊细分点006",
+      "floorplan_pixel_xy": [
+        3589,
+        1054
+      ],
+      "floorplan_normalized_xy": [
+        0.534953,
+        0.157266
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3589,
+        1054
+      ],
+      "source_label": "derived from E211",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 78,
+      "node_id": "nav-f1-waypoint-007",
+      "name_zh": "走廊细分点007",
+      "floorplan_pixel_xy": [
+        3880,
+        1029
+      ],
+      "floorplan_normalized_xy": [
+        0.578328,
+        0.153536
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3880,
+        1029
+      ],
+      "source_label": "derived from E211",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 79,
+      "node_id": "nav-f1-waypoint-008",
+      "name_zh": "走廊细分点008",
+      "floorplan_pixel_xy": [
+        3120,
+        1845
+      ],
+      "floorplan_normalized_xy": [
+        0.465047,
+        0.275291
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3120,
+        1845
+      ],
+      "source_label": "derived from E214",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 80,
+      "node_id": "nav-f1-waypoint-009",
+      "name_zh": "走廊细分点009",
+      "floorplan_pixel_xy": [
+        4253,
+        1634
+      ],
+      "floorplan_normalized_xy": [
+        0.633925,
+        0.243808
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4253,
+        1634
+      ],
+      "source_label": "derived from E215",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 81,
+      "node_id": "nav-f1-waypoint-010",
+      "name_zh": "走廊细分点010",
+      "floorplan_pixel_xy": [
+        3682,
+        2224
+      ],
+      "floorplan_normalized_xy": [
+        0.548815,
+        0.331841
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3682,
+        2224
+      ],
+      "source_label": "derived from E216",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 82,
+      "node_id": "nav-f1-waypoint-011",
+      "name_zh": "走廊细分点011",
+      "floorplan_pixel_xy": [
+        4719,
+        2224
+      ],
+      "floorplan_normalized_xy": [
+        0.703384,
+        0.331841
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4719,
+        2224
+      ],
+      "source_label": "derived from E217",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 83,
+      "node_id": "nav-f1-waypoint-012",
+      "name_zh": "走廊细分点012",
+      "floorplan_pixel_xy": [
+        5514,
+        2224
+      ],
+      "floorplan_normalized_xy": [
+        0.821881,
+        0.331841
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5514,
+        2224
+      ],
+      "source_label": "derived from E218",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 84,
+      "node_id": "nav-f1-waypoint-013",
+      "name_zh": "走廊细分点013",
+      "floorplan_pixel_xy": [
+        2489,
+        2224
+      ],
+      "floorplan_normalized_xy": [
+        0.370994,
+        0.331841
+      ],
+      "semantic_floorplan_pixel_xy": [
+        2489,
+        2224
+      ],
+      "source_label": "derived from E220",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 85,
+      "node_id": "nav-f1-waypoint-014",
+      "name_zh": "走廊细分点014",
+      "floorplan_pixel_xy": [
+        1858,
+        2224
+      ],
+      "floorplan_normalized_xy": [
+        0.276941,
+        0.331841
+      ],
+      "semantic_floorplan_pixel_xy": [
+        1858,
+        2224
+      ],
+      "source_label": "derived from E220",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 86,
+      "node_id": "nav-f1-waypoint-015",
+      "name_zh": "走廊细分点015",
+      "floorplan_pixel_xy": [
+        1227,
+        2224
+      ],
+      "floorplan_normalized_xy": [
+        0.182889,
+        0.331841
+      ],
+      "semantic_floorplan_pixel_xy": [
+        1227,
+        2224
+      ],
+      "source_label": "derived from E220",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 87,
+      "node_id": "nav-f1-waypoint-016",
+      "name_zh": "走廊细分点016",
+      "floorplan_pixel_xy": [
+        1046,
+        2344
+      ],
+      "floorplan_normalized_xy": [
+        0.15591,
+        0.349746
+      ],
+      "semantic_floorplan_pixel_xy": [
+        1046,
+        2344
+      ],
+      "source_label": "derived from E221",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 88,
+      "node_id": "nav-f1-waypoint-017",
+      "name_zh": "走廊细分点017",
+      "floorplan_pixel_xy": [
+        2282,
+        2465
+      ],
+      "floorplan_normalized_xy": [
+        0.34014,
+        0.367801
+      ],
+      "semantic_floorplan_pixel_xy": [
+        2282,
+        2465
+      ],
+      "source_label": "derived from E223",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 89,
+      "node_id": "nav-f1-waypoint-018",
+      "name_zh": "走廊细分点018",
+      "floorplan_pixel_xy": [
+        4140,
+        2834
+      ],
+      "floorplan_normalized_xy": [
+        0.617082,
+        0.422859
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4140,
+        2834
+      ],
+      "source_label": "derived from E224",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 90,
+      "node_id": "nav-f1-waypoint-019",
+      "name_zh": "走廊细分点019",
+      "floorplan_pixel_xy": [
+        4036,
+        3884
+      ],
+      "floorplan_normalized_xy": [
+        0.60158,
+        0.579528
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4036,
+        3884
+      ],
+      "source_label": "derived from E225",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 91,
+      "node_id": "nav-f1-waypoint-020",
+      "name_zh": "走廊细分点020",
+      "floorplan_pixel_xy": [
+        4546,
+        4486
+      ],
+      "floorplan_normalized_xy": [
+        0.677597,
+        0.669352
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4546,
+        4486
+      ],
+      "source_label": "derived from E226",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 92,
+      "node_id": "nav-f1-waypoint-021",
+      "name_zh": "走廊细分点021",
+      "floorplan_pixel_xy": [
+        2130,
+        4323
+      ],
+      "floorplan_normalized_xy": [
+        0.317484,
+        0.645031
+      ],
+      "semantic_floorplan_pixel_xy": [
+        2130,
+        4323
+      ],
+      "source_label": "derived from E228",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 93,
+      "node_id": "nav-f1-waypoint-022",
+      "name_zh": "走廊细分点022",
+      "floorplan_pixel_xy": [
+        2766,
+        4323
+      ],
+      "floorplan_normalized_xy": [
+        0.412282,
+        0.645031
+      ],
+      "semantic_floorplan_pixel_xy": [
+        2766,
+        4323
+      ],
+      "source_label": "derived from E228",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 94,
+      "node_id": "nav-f1-waypoint-023",
+      "name_zh": "走廊细分点023",
+      "floorplan_pixel_xy": [
+        3401,
+        4323
+      ],
+      "floorplan_normalized_xy": [
+        0.506931,
+        0.645031
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3401,
+        4323
+      ],
+      "source_label": "derived from E228",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 95,
+      "node_id": "nav-f1-waypoint-024",
+      "name_zh": "走廊细分点024",
+      "floorplan_pixel_xy": [
+        1027,
+        2562
+      ],
+      "floorplan_normalized_xy": [
+        0.153078,
+        0.382274
+      ],
+      "semantic_floorplan_pixel_xy": [
+        1027,
+        2562
+      ],
+      "source_label": "derived from E229",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 96,
+      "node_id": "nav-f1-waypoint-025",
+      "name_zh": "走廊细分点025",
+      "floorplan_pixel_xy": [
+        857,
+        2974
+      ],
+      "floorplan_normalized_xy": [
+        0.127739,
+        0.443748
+      ],
+      "semantic_floorplan_pixel_xy": [
+        857,
+        2974
+      ],
+      "source_label": "derived from E229",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 97,
+      "node_id": "nav-f1-waypoint-026",
+      "name_zh": "走廊细分点026",
+      "floorplan_pixel_xy": [
+        859,
+        3887
+      ],
+      "floorplan_normalized_xy": [
+        0.128037,
+        0.579976
+      ],
+      "semantic_floorplan_pixel_xy": [
+        859,
+        3887
+      ],
+      "source_label": "derived from E230",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 98,
+      "node_id": "nav-f1-waypoint-027",
+      "name_zh": "走廊细分点027",
+      "floorplan_pixel_xy": [
+        1051,
+        4230
+      ],
+      "floorplan_normalized_xy": [
+        0.156655,
+        0.631155
+      ],
+      "semantic_floorplan_pixel_xy": [
+        1051,
+        4230
+      ],
+      "source_label": "derived from E230",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 99,
+      "node_id": "nav-f1-waypoint-028",
+      "name_zh": "走廊细分点028",
+      "floorplan_pixel_xy": [
+        682,
+        3884
+      ],
+      "floorplan_normalized_xy": [
+        0.101654,
+        0.579528
+      ],
+      "semantic_floorplan_pixel_xy": [
+        682,
+        3884
+      ],
+      "source_label": "derived from E231",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 100,
+      "node_id": "nav-f1-waypoint-029",
+      "name_zh": "走廊细分点029",
+      "floorplan_pixel_xy": [
+        4241,
+        4382
+      ],
+      "floorplan_normalized_xy": [
+        0.632136,
+        0.653835
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4241,
+        4382
+      ],
+      "source_label": "derived from E232",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 101,
+      "node_id": "nav-f1-waypoint-030",
+      "name_zh": "走廊细分点030",
+      "floorplan_pixel_xy": [
+        3634,
+        4372
+      ],
+      "floorplan_normalized_xy": [
+        0.54166,
+        0.652343
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3634,
+        4372
+      ],
+      "source_label": "derived from E232",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 102,
+      "node_id": "nav-f1-waypoint-031",
+      "name_zh": "走廊细分点031",
+      "floorplan_pixel_xy": [
+        3026,
+        4362
+      ],
+      "floorplan_normalized_xy": [
+        0.451036,
+        0.65085
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3026,
+        4362
+      ],
+      "source_label": "derived from E232",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 103,
+      "node_id": "nav-f1-waypoint-032",
+      "name_zh": "走廊细分点032",
+      "floorplan_pixel_xy": [
+        2419,
+        4353
+      ],
+      "floorplan_normalized_xy": [
+        0.36056,
+        0.649508
+      ],
+      "semantic_floorplan_pixel_xy": [
+        2419,
+        4353
+      ],
+      "source_label": "derived from E232",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 104,
+      "node_id": "nav-f1-waypoint-033",
+      "name_zh": "走廊细分点033",
+      "floorplan_pixel_xy": [
+        1811,
+        4343
+      ],
+      "floorplan_normalized_xy": [
+        0.269936,
+        0.648016
+      ],
+      "semantic_floorplan_pixel_xy": [
+        1811,
+        4343
+      ],
+      "source_label": "derived from E232",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 105,
+      "node_id": "nav-f1-waypoint-034",
+      "name_zh": "走廊细分点034",
+      "floorplan_pixel_xy": [
+        1204,
+        4333
+      ],
+      "floorplan_normalized_xy": [
+        0.17946,
+        0.646523
+      ],
+      "semantic_floorplan_pixel_xy": [
+        1204,
+        4333
+      ],
+      "source_label": "derived from E232",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 106,
+      "node_id": "nav-f1-waypoint-035",
+      "name_zh": "走廊细分点035",
+      "floorplan_pixel_xy": [
+        4352,
+        4456
+      ],
+      "floorplan_normalized_xy": [
+        0.648681,
+        0.664876
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4352,
+        4456
+      ],
+      "source_label": "derived from E234",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 107,
+      "node_id": "nav-f1-waypoint-036",
+      "name_zh": "走廊细分点036",
+      "floorplan_pixel_xy": [
+        3854,
+        4521
+      ],
+      "floorplan_normalized_xy": [
+        0.574452,
+        0.674575
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3854,
+        4521
+      ],
+      "source_label": "derived from E234",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 108,
+      "node_id": "nav-f1-waypoint-037",
+      "name_zh": "走廊细分点037",
+      "floorplan_pixel_xy": [
+        3357,
+        4586
+      ],
+      "floorplan_normalized_xy": [
+        0.500373,
+        0.684273
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3357,
+        4586
+      ],
+      "source_label": "derived from E234",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 109,
+      "node_id": "nav-f1-waypoint-038",
+      "name_zh": "走廊细分点038",
+      "floorplan_pixel_xy": [
+        4442,
+        4358
+      ],
+      "floorplan_normalized_xy": [
+        0.662096,
+        0.650254
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4442,
+        4358
+      ],
+      "source_label": "derived from E235",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 110,
+      "node_id": "nav-f1-waypoint-039",
+      "name_zh": "走廊细分点039",
+      "floorplan_pixel_xy": [
+        1046,
+        4323
+      ],
+      "floorplan_normalized_xy": [
+        0.15591,
+        0.645031
+      ],
+      "semantic_floorplan_pixel_xy": [
+        1046,
+        4323
+      ],
+      "source_label": "derived from E236",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 111,
+      "node_id": "nav-f1-waypoint-040",
+      "name_zh": "走廊细分点040",
+      "floorplan_pixel_xy": [
+        1950,
+        4432
+      ],
+      "floorplan_normalized_xy": [
+        0.290654,
+        0.661295
+      ],
+      "semantic_floorplan_pixel_xy": [
+        1950,
+        4432
+      ],
+      "source_label": "derived from E237",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 112,
+      "node_id": "nav-f1-waypoint-041",
+      "name_zh": "走廊细分点041",
+      "floorplan_pixel_xy": [
+        2405,
+        4541
+      ],
+      "floorplan_normalized_xy": [
+        0.358474,
+        0.677559
+      ],
+      "semantic_floorplan_pixel_xy": [
+        2405,
+        4541
+      ],
+      "source_label": "derived from E237",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 113,
+      "node_id": "nav-f1-waypoint-042",
+      "name_zh": "走廊细分点042",
+      "floorplan_pixel_xy": [
+        3321,
+        4541
+      ],
+      "floorplan_normalized_xy": [
+        0.495007,
+        0.677559
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3321,
+        4541
+      ],
+      "source_label": "derived from E238",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 114,
+      "node_id": "nav-f1-waypoint-043",
+      "name_zh": "走廊细分点043",
+      "floorplan_pixel_xy": [
+        3783,
+        4432
+      ],
+      "floorplan_normalized_xy": [
+        0.563869,
+        0.661295
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3783,
+        4432
+      ],
+      "source_label": "derived from E238",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 115,
+      "node_id": "nav-f1-waypoint-044",
+      "name_zh": "走廊细分点044",
+      "floorplan_pixel_xy": [
+        4650,
+        4486
+      ],
+      "floorplan_normalized_xy": [
+        0.693099,
+        0.669352
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4650,
+        4486
+      ],
+      "source_label": "derived from E239",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 116,
+      "node_id": "nav-f1-waypoint-045",
+      "name_zh": "走廊细分点045",
+      "floorplan_pixel_xy": [
+        3409,
+        4650
+      ],
+      "floorplan_normalized_xy": [
+        0.508123,
+        0.693823
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3409,
+        4650
+      ],
+      "source_label": "derived from E240",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 117,
+      "node_id": "nav-f1-waypoint-046",
+      "name_zh": "走廊细分点046",
+      "floorplan_pixel_xy": [
+        3958,
+        4650
+      ],
+      "floorplan_normalized_xy": [
+        0.589954,
+        0.693823
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3958,
+        4650
+      ],
+      "source_label": "derived from E240",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 118,
+      "node_id": "nav-f1-waypoint-047",
+      "name_zh": "走廊细分点047",
+      "floorplan_pixel_xy": [
+        4507,
+        4650
+      ],
+      "floorplan_normalized_xy": [
+        0.671784,
+        0.693823
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4507,
+        4650
+      ],
+      "source_label": "derived from E240",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 119,
+      "node_id": "nav-f1-waypoint-048",
+      "name_zh": "走廊细分点048",
+      "floorplan_pixel_xy": [
+        4244,
+        2749
+      ],
+      "floorplan_normalized_xy": [
+        0.632583,
+        0.410176
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4244,
+        2749
+      ],
+      "source_label": "derived from E241",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 120,
+      "node_id": "nav-f1-waypoint-049",
+      "name_zh": "走廊细分点049",
+      "floorplan_pixel_xy": [
+        4244,
+        3274
+      ],
+      "floorplan_normalized_xy": [
+        0.632583,
+        0.488511
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4244,
+        3274
+      ],
+      "source_label": "derived from E241",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 121,
+      "node_id": "nav-f1-waypoint-050",
+      "name_zh": "走廊细分点050",
+      "floorplan_pixel_xy": [
+        4244,
+        3798
+      ],
+      "floorplan_normalized_xy": [
+        0.632583,
+        0.566697
+      ],
+      "semantic_floorplan_pixel_xy": [
+        4244,
+        3798
+      ],
+      "source_label": "derived from E241",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 122,
+      "node_id": "nav-f1-waypoint-051",
+      "name_zh": "走廊细分点051",
+      "floorplan_pixel_xy": [
+        5834,
+        2834
+      ],
+      "floorplan_normalized_xy": [
+        0.869578,
+        0.422859
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5834,
+        2834
+      ],
+      "source_label": "derived from E242",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 123,
+      "node_id": "nav-f1-waypoint-052",
+      "name_zh": "走廊细分点052",
+      "floorplan_pixel_xy": [
+        5640,
+        4666
+      ],
+      "floorplan_normalized_xy": [
+        0.840662,
+        0.69621
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5640,
+        4666
+      ],
+      "source_label": "derived from E243",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 124,
+      "node_id": "nav-f1-waypoint-053",
+      "name_zh": "走廊细分点053",
+      "floorplan_pixel_xy": [
+        752,
+        4865
+      ],
+      "floorplan_normalized_xy": [
+        0.112088,
+        0.725903
+      ],
+      "semantic_floorplan_pixel_xy": [
+        752,
+        4865
+      ],
+      "source_label": "derived from E244",
+      "alignment_status": "derived_from_verified_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 125,
+      "node_id": "task-f1-pharmacy-medication-delivery",
+      "name_zh": "药房送药服务点",
+      "floorplan_pixel_xy": [
+        3040,
+        3290
+      ],
+      "floorplan_normalized_xy": [
+        0.453123,
+        0.490898
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3040,
+        3290
+      ],
+      "source_label": "药房内部自动分药机旁开放通道",
+      "alignment_status": "operator_image_task_pose_provisional",
+      "usd_snap_displacement_m": null
+    },
+    {
+      "display_number": 126,
+      "node_id": "task-f1-pharmacy-delivery-north-gate",
+      "name_zh": "药房送药北侧任务门点",
+      "floorplan_pixel_xy": [
+        2360,
+        2430
+      ],
+      "floorplan_normalized_xy": [
+        0.351766,
+        0.362578
+      ],
+      "semantic_floorplan_pixel_xy": [
+        2360,
+        2430
+      ],
+      "source_label": "送药专用北侧门点",
+      "alignment_status": "operator_annotated_task_route_openusd_recheck_pending",
+      "usd_snap_displacement_m": null
+    },
+    {
+      "display_number": 127,
+      "node_id": "task-f1-pharmacy-delivery-junction",
+      "name_zh": "药房送药内部汇合点",
+      "floorplan_pixel_xy": [
+        2375,
+        3315
+      ],
+      "floorplan_normalized_xy": [
+        0.354002,
+        0.494628
+      ],
+      "semantic_floorplan_pixel_xy": [
+        2375,
+        3315
+      ],
+      "source_label": "两条送药路线内部汇合点",
+      "alignment_status": "operator_annotated_task_route_openusd_recheck_pending",
+      "usd_snap_displacement_m": null
+    },
+    {
+      "display_number": 128,
+      "node_id": "task-f1-pharmacy-delivery-south-gate",
+      "name_zh": "药房送药南侧任务门点",
+      "floorplan_pixel_xy": [
+        2345,
+        4380
+      ],
+      "floorplan_normalized_xy": [
+        0.34953,
+        0.653536
+      ],
+      "semantic_floorplan_pixel_xy": [
+        2345,
+        4380
+      ],
+      "source_label": "送药专用南侧门点",
+      "alignment_status": "operator_annotated_task_route_openusd_recheck_pending",
+      "usd_snap_displacement_m": null
+    },
+    {
+      "display_number": 129,
+      "node_id": "nav-f1-waypoint-054",
+      "name_zh": "长边细分点054",
+      "floorplan_pixel_xy": [
+        5842,
+        5777
+      ],
+      "floorplan_normalized_xy": [
+        0.870771,
+        0.861981
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5842,
+        5777
+      ],
+      "source_label": "8 m split of E249",
+      "alignment_status": "derived_from_existing_parent_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 130,
+      "node_id": "nav-f1-waypoint-055",
+      "name_zh": "长边细分点055",
+      "floorplan_pixel_xy": [
+        1875,
+        3968
+      ],
+      "floorplan_normalized_xy": [
+        0.279475,
+        0.592062
+      ],
+      "semantic_floorplan_pixel_xy": [
+        1875,
+        3968
+      ],
+      "source_label": "8 m split of E258",
+      "alignment_status": "derived_from_existing_parent_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 131,
+      "node_id": "nav-f1-waypoint-056",
+      "name_zh": "长边细分点056",
+      "floorplan_pixel_xy": [
+        5246,
+        2740
+      ],
+      "floorplan_normalized_xy": [
+        0.781935,
+        0.408833
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5246,
+        2740
+      ],
+      "source_label": "8 m split of E267",
+      "alignment_status": "derived_from_existing_parent_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 132,
+      "node_id": "nav-f1-waypoint-057",
+      "name_zh": "长边细分点057",
+      "floorplan_pixel_xy": [
+        949,
+        2605
+      ],
+      "floorplan_normalized_xy": [
+        0.141452,
+        0.38869
+      ],
+      "semantic_floorplan_pixel_xy": [
+        949,
+        2605
+      ],
+      "source_label": "8 m split of E269",
+      "alignment_status": "derived_from_existing_parent_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 133,
+      "node_id": "nav-f1-waypoint-058",
+      "name_zh": "长边细分点058",
+      "floorplan_pixel_xy": [
+        3514,
+        1668
+      ],
+      "floorplan_normalized_xy": [
+        0.523774,
+        0.248881
+      ],
+      "semantic_floorplan_pixel_xy": [
+        3514,
+        1668
+      ],
+      "source_label": "8 m split of E287",
+      "alignment_status": "derived_from_existing_parent_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 134,
+      "node_id": "nav-f1-waypoint-059",
+      "name_zh": "长边细分点059",
+      "floorplan_pixel_xy": [
+        6171,
+        2568
+      ],
+      "floorplan_normalized_xy": [
+        0.919809,
+        0.383169
+      ],
+      "semantic_floorplan_pixel_xy": [
+        6171,
+        2568
+      ],
+      "source_label": "8 m split of E290",
+      "alignment_status": "derived_from_existing_parent_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 135,
+      "node_id": "nav-f1-waypoint-060",
+      "name_zh": "长边细分点060",
+      "floorplan_pixel_xy": [
+        5903,
+        3084
+      ],
+      "floorplan_normalized_xy": [
+        0.879863,
+        0.460161
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5903,
+        3084
+      ],
+      "source_label": "8 m split of E292",
+      "alignment_status": "derived_from_existing_parent_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 136,
+      "node_id": "nav-f1-waypoint-061",
+      "name_zh": "长边细分点061",
+      "floorplan_pixel_xy": [
+        5445,
+        2731
+      ],
+      "floorplan_normalized_xy": [
+        0.811596,
+        0.40749
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5445,
+        2731
+      ],
+      "source_label": "8 m split of E294",
+      "alignment_status": "derived_from_existing_parent_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 137,
+      "node_id": "nav-f1-waypoint-062",
+      "name_zh": "长边细分点062",
+      "floorplan_pixel_xy": [
+        2272,
+        4444
+      ],
+      "floorplan_normalized_xy": [
+        0.33865,
+        0.663086
+      ],
+      "semantic_floorplan_pixel_xy": [
+        2272,
+        4444
+      ],
+      "source_label": "8 m split of E295",
+      "alignment_status": "derived_from_existing_parent_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 138,
+      "node_id": "nav-f1-waypoint-063",
+      "name_zh": "长边细分点063",
+      "floorplan_pixel_xy": [
+        5033,
+        3823
+      ],
+      "floorplan_normalized_xy": [
+        0.750186,
+        0.570427
+      ],
+      "semantic_floorplan_pixel_xy": [
+        5033,
+        3823
+      ],
+      "source_label": "8 m split of E296",
+      "alignment_status": "derived_from_existing_parent_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    },
+    {
+      "display_number": 139,
+      "node_id": "nav-f1-waypoint-064",
+      "name_zh": "长边细分点064",
+      "floorplan_pixel_xy": [
+        752,
+        5149
+      ],
+      "floorplan_normalized_xy": [
+        0.112088,
+        0.768278
+      ],
+      "semantic_floorplan_pixel_xy": [
+        752,
+        5149
+      ],
+      "source_label": "8 m split of E298",
+      "alignment_status": "derived_from_existing_parent_edge_polyline",
+      "usd_snap_displacement_m": 0.0
+    }
+  ],
+  "routing_pose_definition": "floorplan_pixel_xy_is_inverse_projection_of_usd_collision_free_point_pose"
+}

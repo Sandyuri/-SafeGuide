@@ -1,0 +1,33 @@
+{
+  "instruct_v0.1": {
+    "backend_name": "instruct_v0.1",
+    "role": "splitter",
+    "artifact_path": "artifacts/lsg_natural_splitter_v0.1",
+    "model_type": "qwen_lora_natural_splitter",
+    "base_model_key": "qwen3_0_6b",
+    "checkpoint_relative_path": "best/adapter_model.safetensors",
+    "expected_hash": "50ac3eb962b481bb8d0156723ef08d264e456ce256227f34970acf6c4a055887",
+    "labels": ["intent_1", "intent_2", "intent_3"],
+    "input_format_version": "natural_split_v0.1",
+    "output_contract_version": "splitter.v0.1",
+    "enabled": true
+  },
+  "embedding_v0.1": {
+    "backend_name": "embedding_v0.1",
+    "role": "gate",
+    "artifact_path": "artifacts/lsg_single_intent_v0.1",
+    "model_type": "qwen_embedding_gate_a",
+    "base_model_key": "qwen3_embedding_0_6b",
+    "checkpoint_relative_path": "model.pt",
+    "expected_hash": "b2a75c8e6e2aac87fa442aab0bd562fcf757c108eca3a031e9151f517fab494b",
+    "labels": {
+      "decision": ["AUTHORIZE", "DEFER", "REJECT"],
+      "task_type": ["RESPONSE_TASK", "ROBOT_TASK"],
+      "response_branch": ["CARE_GUIDANCE", "PUBLIC_CARE_INFORMATION", "MEDICATION_INFORMATION", "DEPARTMENT_GUIDANCE"],
+      "defer_type": ["NEEDS_USER_INPUT", "HUMAN_ESCALATION_REQUIRED"]
+    },
+    "input_format_version": "candidate_aware_v0.1",
+    "output_contract_version": "gate_prediction.v0.1",
+    "enabled": true
+  }
+}

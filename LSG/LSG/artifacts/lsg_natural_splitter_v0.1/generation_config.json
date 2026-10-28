@@ -1,0 +1,6 @@
+{
+  "do_sample": false,
+  "max_new_tokens": 256,
+  "enable_thinking": false,
+  "dtype": "bfloat16"
+}

@@ -1,0 +1,297 @@
+{
+  "schema_version": "1.0",
+  "authorization_id": "lsg-evaluation-0cc22a24-bfeb-4ea6-b058-66e8a916ab64",
+  "request_id": "lsg-request-a65ed193-873e-47d0-b839-5eb6ee4c5950",
+  "scene_snapshot_id": "snapshot-hospital-1f-aa-robot-20261004-v1-navigation-sandbox",
+  "scene_snapshot_hash": "1158435e64e981960e05d4aec430c56b7cc6f6dc0d200178553fe52496e2c8c0",
+  "planner": "joint",
+  "replanner": "none",
+  "events": {
+    "schema_version": "1.0",
+    "plan_version": 1,
+    "events": []
+  },
+  "decision": "ALLOW",
+  "reason_code": "NAVIGATION_PLAN_ALLOWED",
+  "message": "Destination binding, route permissions, and action shape passed.",
+  "routes": [
+    {
+      "planner": "joint",
+      "plan_version": 1,
+      "route_refs": [
+        "task-source-1",
+        "task-region-73",
+        "task-region-64",
+        "task-region-49",
+        "task-destination-1"
+      ],
+      "route_region_ids": [
+        "nav-f1-spine-04",
+        "nav-f1-waypoint-008",
+        "nav-f1-corridor-23",
+        "nav-f1-corridor-07",
+        "sg-f1-mental-health"
+      ],
+      "distance_m": 12.897,
+      "estimated_time_s": 10.7475,
+      "risk_score": 0.0,
+      "patient_burden": 0.0,
+      "risk_components": {},
+      "workflow_trace": [
+        [
+          "WF-001",
+          "ARRIVE:sg-f1-mental-health",
+          "GO_TO_1",
+          "COMPLETE",
+          true
+        ]
+      ],
+      "selection_profile": "",
+      "selection_reason": "",
+      "candidate_count": 0,
+      "candidate_comparisons": [],
+      "execution_authorized": true,
+      "safety_certificate_id": "sha256:42ea39a970575266723f67224d1559402f5e83b3f07b28cf9a6054ac7e65d131",
+      "safety_certificate": {
+        "schema_version": "1.0",
+        "decision": "ALLOW",
+        "reason_code": "EXECUTION_PERMIT_ISSUED",
+        "source_type": "JOINT_ASTAR",
+        "authorization_id": "lsg-evaluation-0cc22a24-bfeb-4ea6-b058-66e8a916ab64",
+        "request_id": "lsg-request-a65ed193-873e-47d0-b839-5eb6ee4c5950",
+        "scene_snapshot_id": "snapshot-hospital-1f-aa-robot-20261004-v1-navigation-sandbox",
+        "scene_snapshot_hash": "1158435e64e981960e05d4aec430c56b7cc6f6dc0d200178553fe52496e2c8c0",
+        "map_id": "hospital_1f",
+        "map_version": 2,
+        "plan_version": 1,
+        "result": {
+          "decision": "ALLOW",
+          "reason_code": "JOINT_PLAN_ALLOWED",
+          "message": "Route and workflow satisfy all hard constraints.",
+          "planner": "joint",
+          "plan_version": 1,
+          "route": [
+            "task-source-1",
+            "task-region-73",
+            "task-region-64",
+            "task-region-49",
+            "task-destination-1"
+          ],
+          "distance_m": 12.897,
+          "estimated_time_s": 10.7475,
+          "risk_score": 0.0,
+          "patient_burden": 0.0,
+          "risk_components": {},
+          "workflow_trace": [
+            {
+              "rule_id": "WF-001",
+              "action": "ARRIVE:task-destination-1",
+              "from_state": "GO_TO_1",
+              "to_state": "COMPLETE",
+              "accepted": true,
+              "detail": "ordered destination reached"
+            }
+          ],
+          "checked_rules": [
+            "ROUTE_CONNECTIVITY",
+            "ROUTE_REGION_AVAILABLE",
+            "ROUTE_ACCESS_PERMISSION",
+            "ROUTE_CARGO_COMPATIBILITY",
+            "ROUTE_ACCESSIBILITY",
+            "ROUTE_POLICY",
+            "ROUTE_MEDICAL_RISK",
+            "WORKFLOW_ORDER",
+            "PLAN_VERSION_CURRENT",
+            "GRAPH-001",
+            "GRAPH-002",
+            "GRAPH-003",
+            "GRAPH-004",
+            "GRAPH-005",
+            "GRAPH-006",
+            "GRAPH-007",
+            "GRAPH-008",
+            "ACCESS-001",
+            "ACCESS-002",
+            "ACCESS-003",
+            "ACCESS-004",
+            "ACCESSIBILITY-001",
+            "ACCESSIBILITY-002",
+            "ACCESSIBILITY-003",
+            "ACCESSIBILITY-004",
+            "WORKFLOW-001",
+            "WORKFLOW-002",
+            "WORKFLOW-003",
+            "EVENT-001",
+            "EVENT-002",
+            "EVENT-003",
+            "EVENT-005",
+            "METRIC-001",
+            "METRIC-002",
+            "RISK-001",
+            "VERSION-001",
+            "VERSION-002"
+          ],
+          "failed_node": null,
+          "replan_allowed": false,
+          "expanded_states": 6,
+          "selection_profile": "",
+          "selection_reason": "",
+          "candidate_count": 0,
+          "candidate_comparisons": [],
+          "validation_receipt": {
+            "receipt_id": "sha256:dd50a7889fae44076f78aba3fda0e6af516d5f2d476ef645c5f6e9c1512b7ce8",
+            "decision": "VALID",
+            "route": [
+              "nav-f1-spine-04",
+              "nav-f1-waypoint-008",
+              "nav-f1-corridor-23",
+              "nav-f1-corridor-07",
+              "sg-f1-mental-health"
+            ],
+            "map_id": "hospital_1f",
+            "map_version": "hospital_1f.v1.0",
+            "context_map_version": "2",
+            "plan_version": 1,
+            "event_digest": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "workflow_trace": [
+              [
+                "WF-001",
+                "ARRIVE:sg-f1-mental-health",
+                "GO_TO_1",
+                "COMPLETE",
+                true
+              ]
+            ],
+            "checked_rules": [
+              "GRAPH-001",
+              "GRAPH-002",
+              "GRAPH-003",
+              "GRAPH-004",
+              "GRAPH-005",
+              "GRAPH-006",
+              "GRAPH-007",
+              "GRAPH-008",
+              "ACCESS-001",
+              "ACCESS-002",
+              "ACCESS-003",
+              "ACCESS-004",
+              "ACCESSIBILITY-001",
+              "ACCESSIBILITY-002",
+              "ACCESSIBILITY-003",
+              "ACCESSIBILITY-004",
+              "WORKFLOW-001",
+              "WORKFLOW-002",
+              "WORKFLOW-003",
+              "EVENT-001",
+              "EVENT-002",
+              "EVENT-003",
+              "EVENT-005",
+              "METRIC-001",
+              "METRIC-002",
+              "RISK-001",
+              "VERSION-001",
+              "VERSION-002"
+            ],
+            "recomputed": {
+              "distance_m": 12.897,
+              "travel_time_s": 10.7475,
+              "risk_score": 0.0,
+              "risk_components": {}
+            }
+          }
+        },
+        "checked_rules": [
+          "VALIDATION_RECEIPT_VALID",
+          "VALIDATION_ROUTE_BINDING",
+          "AUTHORIZATION_BINDING",
+          "SCENE_HASH_BINDING",
+          "MAP_VERSION_BINDING",
+          "PLAN_VERSION_CURRENT",
+          "DYNAMIC_EVENT_BINDING",
+          "VALIDATION_METRIC_BINDING",
+          "VALIDATION_WORKFLOW_BINDING"
+        ],
+        "validation_receipt": {
+          "receipt_id": "sha256:dd50a7889fae44076f78aba3fda0e6af516d5f2d476ef645c5f6e9c1512b7ce8",
+          "decision": "VALID",
+          "route": [
+            "nav-f1-spine-04",
+            "nav-f1-waypoint-008",
+            "nav-f1-corridor-23",
+            "nav-f1-corridor-07",
+            "sg-f1-mental-health"
+          ],
+          "map_id": "hospital_1f",
+          "map_version": "hospital_1f.v1.0",
+          "context_map_version": "2",
+          "plan_version": 1,
+          "event_digest": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "workflow_trace": [
+            [
+              "WF-001",
+              "ARRIVE:sg-f1-mental-health",
+              "GO_TO_1",
+              "COMPLETE",
+              true
+            ]
+          ],
+          "checked_rules": [
+            "GRAPH-001",
+            "GRAPH-002",
+            "GRAPH-003",
+            "GRAPH-004",
+            "GRAPH-005",
+            "GRAPH-006",
+            "GRAPH-007",
+            "GRAPH-008",
+            "ACCESS-001",
+            "ACCESS-002",
+            "ACCESS-003",
+            "ACCESS-004",
+            "ACCESSIBILITY-001",
+            "ACCESSIBILITY-002",
+            "ACCESSIBILITY-003",
+            "ACCESSIBILITY-004",
+            "WORKFLOW-001",
+            "WORKFLOW-002",
+            "WORKFLOW-003",
+            "EVENT-001",
+            "EVENT-002",
+            "EVENT-003",
+            "EVENT-005",
+            "METRIC-001",
+            "METRIC-002",
+            "RISK-001",
+            "VERSION-001",
+            "VERSION-002"
+          ],
+          "recomputed": {
+            "distance_m": 12.897,
+            "travel_time_s": 10.7475,
+            "risk_score": 0.0,
+            "risk_components": {}
+          }
+        },
+        "certificate_id": "sha256:42ea39a970575266723f67224d1559402f5e83b3f07b28cf9a6054ac7e65d131"
+      }
+    }
+  ],
+  "checked_rules": [
+    "AUTHORIZATION_BINDING",
+    "DYNAMIC_EVENT_BINDING",
+    "MAP_VERSION_BINDING",
+    "PLAN_VERSION_CURRENT",
+    "SCENE_HASH_BINDING",
+    "VALIDATION_METRIC_BINDING",
+    "VALIDATION_RECEIPT_VALID",
+    "VALIDATION_ROUTE_BINDING",
+    "VALIDATION_WORKFLOW_BINDING"
+  ],
+  "checked_ltlf": [
+    "F(arrive_1)",
+    "G(paused -> X(paused | replan))"
+  ],
+  "violated_rules": [],
+  "failed_route_node": null,
+  "replan_allowed": false
+}

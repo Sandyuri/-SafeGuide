@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0.0",
+  "map_id": "hospital_1f",
+  "coordinate_frame": "floorplan_image_top_left_origin_x_right_y_down",
+  "source_image_size_px": [
+    6709,
+    6702
+  ],
+  "policy": "forbid_transit_through_room_interiors_and_stop_at_public_side_approach",
+  "provenance": "operator floor-plan review; original medication-delivery north/south routes transcribed on 2026-10-22; redundant gate connectors requested on 2026-10-23; pending onsite verification",
+  "zones": [
+    {
+      "id": "pharmacy_interior",
+      "name_zh": "药房内部",
+      "polygon_pixel_xy": [
+        [
+          2030,
+          2540
+        ],
+        [
+          3860,
+          2540
+        ],
+        [
+          3860,
+          3740
+        ],
+        [
+          3430,
+          3740
+        ],
+        [
+          3430,
+          4220
+        ],
+        [
+          2030,
+          4220
+        ]
+      ],
+      "destination_node_id": "sg-f1-pharmacy",
+      "public_approach_seed_pixel_xy": [
+        3940,
+        3300
+      ],
+      "authorized_task_destination_node_ids": [
+        "task-f1-pharmacy-medication-delivery",
+        "task-f1-pharmacy-delivery-junction"
+      ],
+      "authorized_task_edge_ids": [
+        "TDE302",
+        "TDE303",
+        "TDE304"
+      ],
+      "note": "Public pickup remains outside the display. Only the declared medication-delivery task routes may enter the pharmacy interior; all task-route nodes and edges are forbidden to general navigation. OpenUSD/on-site review remains pending."
+    },
+    {
+      "id": "emergency_room_interior",
+      "name_zh": "抢救室内部",
+      "polygon_pixel_xy": [
+        [
+          1300,
+          2540
+        ],
+        [
+          1900,
+          2540
+        ],
+        [
+          1900,
+          3110
+        ],
+        [
+          1300,
+          3110
+        ]
+      ],
+      "destination_node_id": "sg-f1-emergency-room-entrance",
+      "public_approach_seed_pixel_xy": [
+        1806,
+        2480
+      ]
+    },
+    {
+      "id": "infusion_room_interior",
+      "name_zh": "输液室内部",
+      "polygon_pixel_xy": [
+        [
+          1300,
+          3110
+        ],
+        [
+          1870,
+          3110
+        ],
+        [
+          1870,
+          3760
+        ],
+        [
+          1300,
+          3760
+        ]
+      ],
+      "destination_node_id": "sg-f1-infusion-room",
+      "public_approach_seed_pixel_xy": [
+        1950,
+        3330
+      ]
+    },
+    {
+      "id": "nebulization_room_interior",
+      "name_zh": "雾化室内部",
+      "polygon_pixel_xy": [
+        [
+          1300,
+          3760
+        ],
+        [
+          1870,
+          3760
+        ],
+        [
+          1870,
+          4220
+        ],
+        [
+          1300,
+          4220
+        ]
+      ],
+      "destination_node_id": "sg-f1-nebulization-room",
+      "public_approach_seed_pixel_xy": [
+        1690,
+        4235
+      ]
+    },
+    {
+      "id": "elevator_shafts_interior",
+      "name_zh": "电梯井及电梯轿厢内部",
+      "polygon_pixel_xy": [
+        [
+          930,
+          2630
+        ],
+        [
+          1175,
+          2630
+        ],
+        [
+          1175,
+          4190
+        ],
+        [
+          930,
+          4190
+        ]
+      ],
+      "destination_node_id": null,
+      "public_approach_seed_pixel_xy": null
+    }
+  ]
+}
